@@ -1,0 +1,206 @@
+==================================================================
+https://keybase.io/snazzah
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://snazzah-is.cool
+  * I am snazzah (https://keybase.io/snazzah) on keybase.
+  * I have a public key with fingerprint 719B F2BD 4FD3 6D62 530A  78B8 992D 1E03 1269 1AC4
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01017d10bd9da37d3bb7b92d7a2afb24036f65f60d27c009477d0c43ed58d3f09fa70a",
+      "fingerprint": "719bf2bd4fd36d62530a78b8992d1e0312691ac4",
+      "host": "keybase.io",
+      "key_id": "992d1e0312691ac4",
+      "kid": "01017d10bd9da37d3bb7b92d7a2afb24036f65f60d27c009477d0c43ed58d3f09fa70a",
+      "uid": "7ccf6f50790d1fe5a32e3e599ecd8819",
+      "username": "snazzah"
+    },
+    "service": {
+      "hostname": "snazzah-is.cool",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1527330754,
+  "expire_in": 157680000,
+  "prev": "57bd659a3cd1c1b634658f47e2c368a1eba5b7e4eb6538e3b07e7e2790bdd0c0",
+  "seqno": 82,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMIrAnicrVJtSBRBGD4rLc2o8IMCqVyIEsxmd3Z3dq9EMSoo+vgjxCmeMzuzuma3
+5+3edd5hVMr1ARVFRWlFURSURglRlD9K5SKiDwojgv70YVFC9CGE9DUr9SPoZ/Nn
+Zt55nmee5+UdnDbRl5NR1zK0rjy1sCzj7q3OqK8mG/UnBWLTVsGfFDay8Y01U+a4
+wY0WFfwCEIGIqAgI1SmGiEJCENElirCETSLJAKqmqpgqoBIyANBlhCgwZMioolFo
+At3ECGChVDCtUAOLhCNWyOWySNSJKREqmxSqVJUUCDDSiKZzaZEBKEqqLmJD5sRG
+2/EY3BzBDiuzbF7jl+C4vX/g/7Pv6LgcMgxTNRWAdEBFkykYSgwyRdeZQTVN1D2g
+wyIhvIlxtBPCiQRuFNpKBV6MWQbz+uoF+RuwyHLKDNtu5uxwxHZtgx/9QqPrhh2/
+R3Zbwx56MyPB3zpBYoUo7yRnxFjEseyQ4Bc50nAtT1hUJAQhQIpcKrB42IqwoOUh
+FKRqgC/vHxbjkgoiVFV0DA0qGiJRoawqmikjJhlQ1bDICFYIYjIjqgI1BglAjD/y
++ITyPgHBS9YSsgW/JnGfuMELZTWEsBuNMKGt/2btJF9Gji8rc4I3Yr6c7Bl/Bm/o
+0+Sf0Xjvm+5avE3eO7X93cOcmd+N6JWJvQWLpbq6wPmxFbOaFlw6eLwzT+ne/jZe
+tWdyx5mBfSeqY8Wo5PCpPaNPTtYu2pD89jT38epAesmdvguBG1cHgwe3plfN3fVg
+6az+b4+2jDm7fbuS8W0D6Z5Dx9YdkPdVJIa/FM7MLfkQ+Fg50LN85+j8PpyY92L/
+mr7ci0WVUwrmdH1qqJgN2LJUfL2dHF5ZnPeyfq31/EAq/bW6/XTf663vj84bKc9P
+rMo0R86Wt51Yu+PV59a7qQorNYJjWdfm1HQenV5V+HxCV9e9zR2Xlx0pKila8qPY
+GO0415R3vbhx5P5etR4V5j8bO3QVZN3u/gUdnz4L
+=TlG9
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/snazzah
+
+==================================================================
+
+==================================================================
+https://keybase.io/snazzah
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://snazzah.com
+  * I am snazzah (https://keybase.io/snazzah) on keybase.
+  * I have a public key with fingerprint 719B F2BD 4FD3 6D62 530A  78B8 992D 1E03 1269 1AC4
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01017d10bd9da37d3bb7b92d7a2afb24036f65f60d27c009477d0c43ed58d3f09fa70a",
+      "fingerprint": "719bf2bd4fd36d62530a78b8992d1e0312691ac4",
+      "host": "keybase.io",
+      "key_id": "992d1e0312691ac4",
+      "kid": "01017d10bd9da37d3bb7b92d7a2afb24036f65f60d27c009477d0c43ed58d3f09fa70a",
+      "uid": "7ccf6f50790d1fe5a32e3e599ecd8819",
+      "username": "snazzah"
+    },
+    "service": {
+      "hostname": "snazzah.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1573005881,
+  "expire_in": 157680000,
+  "prev": "c72e7adbacd58a4c7a764d8fcf976b2b2030ccc5053087443364fd1b80002198",
+  "seqno": 89,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.3
+Comment: https://keybase.io/crypto
+
+yMIeAnicrVJZaBNBGE68eniLFURF3QeRUsLszu7OTlDigYIXAWkR1Brn2nZp3Y3J
+JppUwQN8EMWqRK0IgoqCiC/FeuJRD8QbtRbqgVS8FY+Aogg6W/RB8NF5Geaf7/vm
+++b/Lw3sHSoPL1neEZ+8YWIkfP3Cjkyotr0SNynU4zkl2qQ0iJ5NNHKR9hMNDlei
+ClCBirgKKMecQMQhpYhijSOiEZtqOoCmbRq2CbiGGABYR4gDpkPBDYtDG2CbIECU
+KsV23DqRSqYc15eySMXU1ijXbQ5NbmoGBARZ1MJSWhUAqpqJVcJ0Saz30gFDmqMk
+LSKOJ2vykOix9w/8f/ad6ZFDjNmmbQCEAVdtYRCoCSgMjAXjlqXiAJgWKZcsExKd
+dkk+T+qV1VWKLGYdJoJ/DYL8DYgwb5lkJlOe7zGvUV7U+34yHQ2Ifi4ZIFcImvit
+kaCOy+UvSkZWpNKO5ypRVSKZ7wSiqoEgAIZ0U6WIlUknJRKO21M2LSBX8I7ISkmG
+NIEIp4TJrERniCBT55bNbIxMqlENQMAYM4BsioV0HUJTtkmlgYqmYksJUi13PSVq
+YemT1AWBnDqX+JmUUFa3n1/cJxQuD/Xr2ysYr1B52ZA/Q3dzbcmPsgWFBjruW3xS
+Zuru40bxUfWb/oMSJyri51bdO11S21DZrO1a96a8rTvyMVyabft8NDe+gIa3x67+
+qKkbemrf9k5ysAaPmHWxK7fiWHjnQnAj1ZE70xW7M/jQi59PBj6t6AzDx00T9p/B
+H6aemngkEuuaXVZav+bAIDe3heyE1U5xdLq7ueZyR6Ezmok9HLH067NC00vc2vpF
+ZIsDZmy0P22efmXU2PbDLVNy2Znbxlx/3l07q2RSy12/8fXt+4uGVW4qNF/eNDff
+8vLs2Znf28bl7xU3vK+Iv5r7eePb3NY5mQerqjOx1vkXTo58d/TWExgp3Tu4M78+
+Uzy/K76ndt6eade0X3ajQY8=
+=Yppo
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/snazzah
+
+==================================================================
+
+==================================================================
+https://keybase.io/snazzah
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://snaz.in
+  * I am snazzah (https://keybase.io/snazzah) on keybase.
+  * I have a public key with fingerprint 719B F2BD 4FD3 6D62 530A  78B8 992D 1E03 1269 1AC4
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01017d10bd9da37d3bb7b92d7a2afb24036f65f60d27c009477d0c43ed58d3f09fa70a",
+      "fingerprint": "719bf2bd4fd36d62530a78b8992d1e0312691ac4",
+      "host": "keybase.io",
+      "key_id": "992d1e0312691ac4",
+      "kid": "01017d10bd9da37d3bb7b92d7a2afb24036f65f60d27c009477d0c43ed58d3f09fa70a",
+      "uid": "7ccf6f50790d1fe5a32e3e599ecd8819",
+      "username": "snazzah"
+    },
+    "service": {
+      "hostname": "snaz.in",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1573005965,
+  "expire_in": 157680000,
+  "prev": "62334cb96e30338e7fdf62be95d6b5b86d1101d18065cd354bed1e32406f3879",
+  "seqno": 91,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.3
+Comment: https://keybase.io/crypto
+
+yMIpAnicrVJbSBRRGN71UrkhqdVDWW1NZZG2nDNn58zMSnahApPsRnShWubMOaOD
+2+y2s27umqjUFhkiiRRSkKgUkRFmFPRQ2YWiooKopAsERT0kUUaUBNGZpaCHHjsv
+h/Pxfd/5/o//Zm6my+PesevJmkX75/vc9wbba13bry9orRdImCaEQL1Qw9IXC1Fm
+x4I1JhUCAoAAyhQCQlWqIZkiQmSiilTWRM0goh8gbGDJwICKsg6A6pdlCnQ/YlRS
+KDKAamgy0IQSwTCtKhaNRE0rxm1lqBJDJNRvUIQpFiUENFkhisqtIQMIiliFmu7n
+wuqw7Sh4OKLZzGeGOcYfwXS8f/D/c+7atJ2s6wY2JCCrgEKDSRoSGWKSqjKdKgpU
+HaLNopa2k3G2bWnJpFYtNJQIHIybOnN6dQb5i+AzLa6KRMOxsB4OcbA6FovYAUcU
+S0Qc1m5Ggr/1QWJalDfIFXEWtc2wJQQgZ+ox0zGEkowAkFQslQisLmJGWdC00jBW
+AD/OPyzOLbGIkF8nKmYIIKQw2aAGFglTJYqJRBRMIS+OQgVgSadI8hPG+0W8L2wg
+RXbmtNkuKywEVMhzalXOMGaVpcVqo0xouH5tW5bL7XGNyc5wVsvlycn7s3ATO8b+
+yLr/qWBHcdPcK8/e3T6aP+KpOHV7RkfF4VTP2e7m4unsRir4wGN8OT2+J4DK3a3C
+yVtLro1r6TpyfFMvNVcWv8rov7kO9re2FKX2PC7M6RyceWFSy+y2nmUFbRumDBxr
+H1q/FnbA5weLSvsWnpscODNnZHik+3v+7NyVFW8e+vLLQHzTmJmJ0jz8wuPZMnHW
+m67hxYOFmTeUAw2Nq7yXh6zm8hU/F3orP3emDoU2VL7/2F7zIfFy6dVHZO/ytbdy
+hrd+XdDdOzVp9W++O9Ax+tk71Dcvs6z9feODbyfOTxuI+IR9dedz7atPzywNvZVX
+N+2+Ujkv+dQ72njn4oUJlwqzC8peb/wFCls1Lw==
+=yYfP
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/snazzah
+
+==================================================================

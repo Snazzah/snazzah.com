@@ -1,0 +1,21 @@
+{
+  "name": "Snazzah",
+  "short_name": "Snazzah",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#171717",
+  "theme_color": "#fc2929",
+  "icons": [
+    {
+      "src": "/i/m/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/i/m/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

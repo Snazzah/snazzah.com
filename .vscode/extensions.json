@@ -1,0 +1,3 @@
+{
+  "recommendations": ["deepscan.vscode-deepscan", "editorconfig.editorconfig", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "gamunu.vscode-yarn", "bradlc.vscode-tailwindcss", "heybourn.headwind"]
+}

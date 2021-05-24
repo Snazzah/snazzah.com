@@ -1,0 +1,22 @@
+html, body {
+  background-color: #171717;
+}
+
+.drop-shadow-txt {
+  --tw-drop-shadow: drop-shadow(0 3px 1px rgba(0, 0, 0, 0.5)) drop-shadow(0 4px 3px rgba(0, 0, 0, 0.1));
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,.1);
+  border-radius: 10px;
+  border: 2px solid #171717;
+}
+
+html::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
