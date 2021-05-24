@@ -10,7 +10,11 @@ const Home: FunctionalComponent = () => {
         <div class="bg-brand sm:rounded-xl overflow-hidden">
           <div class="flex flex-row items-center justify-center space-x-4 sm:rounded-t-xl">
             <SnazzahLogo />
-            <img src="/snazzah-icon.svg" draggable={false} class="xl:h-48 xl:mt-2 lg:h-32 h-20 self-end select-none" />
+            <img
+              src="/i/snazzah-icon.svg"
+              draggable={false}
+              class="xl:h-48 xl:mt-2 lg:h-32 h-20 self-end select-none"
+            />
           </div>
           <div class="p-2 text-center font-light flex flex-col space-y-1 lg:text-xl lg:p-4 bg-black bg-opacity-25">
             <span>
