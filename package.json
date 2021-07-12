@@ -22,7 +22,7 @@
     "@iconify-icons/simple-icons": "^1.1.32",
     "@iconify/react": "^1.1.4",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
-    "@typescript-eslint/parser": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.2",
     "eslint": "^7.30.0",
     "eslint-config-preact": "^1.1.1",
     "eslint-config-prettier": "^8.3.0",
