@@ -1066,10 +1066,10 @@
   resolved "https://registry.yarnpkg.com/@iconify-icons/mdi/-/mdi-1.1.17.tgz#e96afe71577983a376a638e4c517800c0d79deff"
   integrity sha512-ssRWa5z2gyDVSsHD2aVjNmIOd4vl6zr9RuKp7ol2Hg0xrwdihQELSZ6VG4N4BPytfajYEcOZsuFL/+aB5N5tgw==
 
-"@iconify-icons/simple-icons@^1.1.35":
-  version "1.1.35"
-  resolved "https://registry.yarnpkg.com/@iconify-icons/simple-icons/-/simple-icons-1.1.35.tgz#08e66de3ad45c38486efdd7412ba827de285d5c0"
-  integrity sha512-3ffKYyzRHFoMhk9s36odjCvalx4iG30skqO1yIG3PnL5uttF6sr993ggVtnuPcra9w5tcANbc9NxRpERyPMB1Q==
+"@iconify-icons/simple-icons@^1.1.36":
+  version "1.1.36"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/simple-icons/-/simple-icons-1.1.36.tgz#b78955024fda3c8dcda19d315b39c7416eb593a8"
+  integrity sha512-o//q+ToEH/2dLAqVqLfcFRfjUuJCbvtE9wF8R2qLqZkHbnatdsVUuqd5TgxNQx2ATm2MHRJ8mlm1XwMs+jNAVw==
 
 "@iconify/react@^1.1.4":
   version "1.1.4"
