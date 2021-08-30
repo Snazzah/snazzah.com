@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "preact build",
-    "build:fix": "cp src/{i,m,o,argoto,steemcord-schema,telegram-stickers,keybase.txt,browserconfig.xml,snazzah-icon.svg,favicon.ico,google7504fd97e384ccf9.html} build -r",
+    "build:fix": "cp src/{i,m,o,argoto,steemcord-schema,telegram-stickers,keybase.txt,browserconfig.xml,snazzah-icon.svg,favicon.ico,google7504fd97e384ccf9.html,.well-known} build -r",
     "build:clean": "rm -rf build",
     "serve": "sirv build --port 8080 --cors --single",
     "dev": "preact watch",
