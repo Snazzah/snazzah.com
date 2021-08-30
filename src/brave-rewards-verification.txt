@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: snazzah.com
+Token: 250728a428cc259567ec8e9e6a0f791a756ade92aa32a87a5b016b9cf2ead5b2
