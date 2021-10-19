@@ -7439,10 +7439,10 @@ postcss@^8.2.1, postcss@^8.2.10, postcss@^8.2.15:
     nanoid "^3.1.23"
     source-map-js "^0.6.2"
 
-preact-cli@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/preact-cli/-/preact-cli-3.3.0.tgz#74657f1a0b1f166472882446dec1e0c5c0b07304"
-  integrity sha512-Tppe6DFDAQ6vjbxz7SVZEc48rQ8oiU3QBVojb8UOGAzoWJCC5cG1pidCYMmQX3E/Ma7wNccqeSRshLEHYYxJkQ==
+preact-cli@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/preact-cli/-/preact-cli-3.3.1.tgz#4b39b6fe7bbcdc3f1ef5de5688310525306a34ae"
+  integrity sha512-ODvjErOqVtbmfS2pc1M3lGm4ffwAXcZiYrijRItnIPLDjRQjIRIz81aW4iRws1OPdozc4nGIJKCAJxUAigfrjw==
   dependencies:
     "@babel/core" "^7.13.16"
     "@babel/plugin-proposal-class-properties" "^7.13.0"
