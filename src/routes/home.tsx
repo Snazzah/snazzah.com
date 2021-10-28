@@ -1,7 +1,264 @@
-import { FunctionalComponent, h } from 'preact';
-import { Icon } from '@iconify/react';
+import { Fragment, FunctionalComponent, h } from 'preact';
+import { Icon, IconifyIcon } from '@iconify/react';
 import * as icons from '../icons';
 import SnazzahLogo from '../components/svg/snazzah-logo';
+
+type IconSectionContent = [
+  string,
+  {
+    name: string;
+    url: string;
+    color: string;
+    icon: IconifyIcon;
+  }[]
+][];
+
+type SectionContent = {
+  icons?: IconifyIcon[];
+  name: string;
+  description: string;
+  buttons?: {
+    url: string;
+    name: string;
+  }[];
+}[];
+
+const skills: IconSectionContent = [
+  [
+    'Language & Syntax',
+    [
+      {
+        name: 'HTML',
+        url: 'https://www.w3schools.com/html/',
+        color: 'orange-500',
+        icon: icons.html
+      },
+      {
+        name: 'CSS',
+        url: 'https://www.w3schools.com/css/',
+        color: 'blue-400',
+        icon: icons.css
+      },
+      {
+        name: 'JavaScript',
+        url: 'https://www.javascript.com/',
+        color: 'yellow-300',
+        icon: icons.js
+      },
+      {
+        name: 'TypeScript',
+        url: 'https://www.typescriptlang.org/',
+        color: 'blue-500',
+        icon: icons.ts
+      },
+      {
+        name: 'Node.js',
+        url: 'https://www.nodejs.org/',
+        color: 'green-500',
+        icon: icons.nodejs
+      },
+      {
+        name: 'Python',
+        url: 'https://www.python.org/',
+        color: 'yellow-300',
+        icon: icons.python
+      },
+      {
+        name: 'Ruby',
+        url: 'https://www.ruby-lang.org/en/',
+        color: 'red-500',
+        icon: icons.ruby
+      },
+      {
+        name: 'Sass',
+        url: 'https://sass-lang.com/',
+        color: 'pink-400',
+        icon: icons.sass
+      },
+      {
+        name: 'Stylus',
+        url: 'https://stylus-lang.com/',
+        color: 'tgray-400',
+        icon: icons.stylus
+      }
+    ]
+  ],
+  [
+    'Frameworks',
+    [
+      {
+        name: 'Vue',
+        url: 'https://vuejs.org/',
+        color: 'green-500',
+        icon: icons.vue
+      },
+      {
+        name: 'React',
+        url: 'https://reactjs.org/',
+        color: 'blue-400',
+        icon: icons.react
+      },
+      {
+        name: 'TailwindCSS',
+        url: 'https://tailwindcss.com/',
+        color: 'teal-500',
+        icon: icons.tailwind
+      },
+      {
+        name: 'Fastify',
+        url: 'https://fastify.io/',
+        color: 'tgray-200',
+        icon: icons.fastify
+      },
+      {
+        name: 'Express',
+        url: 'https://expressjs.com/',
+        color: 'tgray-200',
+        icon: icons.express
+      }
+    ]
+  ],
+  [
+    'Tools',
+    [
+      {
+        name: 'Visual Studio Code',
+        url: 'https://code.visualstudio.com/',
+        color: 'blue-500',
+        icon: icons.vscode
+      },
+      {
+        name: 'Sublime Text',
+        url: 'https://www.sublimetext.com/',
+        color: 'yellow-500',
+        icon: icons.sublime
+      },
+      {
+        name: 'Git',
+        url: 'https://git-scm.com/',
+        color: 'red-500',
+        icon: icons.git
+      },
+      {
+        name: 'PostgreSQL',
+        url: 'https://www.postgresql.org/',
+        color: 'blue-500',
+        icon: icons.psql
+      },
+      {
+        name: 'Redis',
+        url: 'https://redis.io/',
+        color: 'red-500',
+        icon: icons.redis
+      },
+      {
+        name: 'nginx',
+        url: 'https://nginx.org/en/',
+        color: 'green-400',
+        icon: icons.nginx
+      }
+    ]
+  ]
+];
+
+const projects: SectionContent = [
+  {
+    icons: [icons.python],
+    name: 'SnazzahAPI',
+    description: 'API endpoints for various services.',
+    buttons: [
+      {
+        name: 'Website',
+        url: 'https://api.snaz.in/docs'
+      }
+    ]
+  },
+  {
+    icons: [icons.python],
+    name: 'HotImage',
+    description: 'Easy-to-use application that turns folders into image API.',
+    buttons: [
+      {
+        name: 'GitHub',
+        url: 'https://github.com/Snazzah/HotImage'
+      },
+      {
+        name: 'Website',
+        url: 'https://hi.snaz.in/'
+      }
+    ]
+  },
+  {
+    icons: [icons.discord, icons.nodejs],
+    name: 'PhotoBox',
+    description: 'A Discord bot that uses image processing to make pictures from templates.',
+    buttons: [
+      {
+        name: 'Bot Invite',
+        url: 'https://invite.snaz.in/photobox'
+      },
+      {
+        name: 'Website',
+        url: 'https://photobox.pw'
+      }
+    ]
+  },
+  {
+    icons: [icons.js, icons.chrome],
+    name: 'Media Session Master',
+    description: 'A Discord bot that uses image processing to make pictures from templates.',
+    buttons: [
+      {
+        name: 'GitHub',
+        url: 'https://github.com/Snazzah/MediaSessionMaster'
+      },
+      {
+        name: 'View in Chrome Web Store',
+        url: 'https://chrome.google.com/webstore/detail/media-session-master/ifnpfinojkapkmeidcimnaigcclnahjb'
+      }
+    ]
+  }
+];
+
+const contribs: SectionContent = [
+  {
+    icons: [icons.nodejs, icons.discord],
+    name: 'Taco',
+    description: 'A Discord bot that manages Trello boards.',
+    buttons: [
+      {
+        name: 'Website',
+        url: 'https://tacobot.app/'
+      }
+    ]
+  },
+  {
+    icons: [icons.sass],
+    name: 'Modesta',
+    description: 'Developer team of DiscordRPG: A text-based RPG bot on Discord.',
+    buttons: [
+      {
+        name: 'GitHub',
+        url: 'https://github.com/AlexFlipnote/Modesta'
+      },
+      {
+        name: 'Website',
+        url: 'https://modesta.alexflipnote.dev'
+      }
+    ]
+  },
+  {
+    icons: [icons.nodejs, icons.discord],
+    name: 'Discord Dungeons',
+    description: 'Developer team of DiscordRPG: A text-based RPG bot on Discord.',
+    buttons: [
+      {
+        name: 'Website',
+        url: 'https://discorddungeons.me/'
+      }
+    ]
+  }
+];
 
 const Home: FunctionalComponent = () => {
   return (
@@ -130,268 +387,53 @@ const Home: FunctionalComponent = () => {
 
         <div class="bg-yellow-500 sm:rounded-xl overflow-hidden">
           <h3 class="text-2xl lg:text-3xl py-4 px-6 font-bold text-center filter drop-shadow-txt">Skills</h3>
-          <h4 class="text-md py-2 px-6 bg-black bg-opacity-20">Language &amp; Syntax</h4>
-          <div class="flex flex-row flex-wrap pb-3 px-4 bg-black bg-opacity-20">
-            <a
-              href="https://www.w3schools.com/html/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-orange-500 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.html} />
-            </a>
-            <a
-              href="https://www.w3schools.com/css/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-blue-400 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.css} />
-            </a>
-            <a
-              href="https://www.javascript.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-yellow-300 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.js} />
-            </a>
-            <a
-              href="https://www.typescriptlang.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-blue-500 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.ts} />
-            </a>
-            <a
-              href="https://www.nodejs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-green-500 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.nodejs} />
-            </a>
-            <a
-              href="https://www.python.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-yellow-300 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.python} />
-            </a>
-            <a
-              href="https://www.ruby-lang.org/en/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-red-500 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.ruby} />
-            </a>
-            <a
-              href="https://sass-lang.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-pink-400 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.sass} />
-            </a>
-            <a
-              href="https://stylus-lang.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-tgray-400 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.stylus} />
-            </a>
-          </div>
-          <h4 class="text-md py-2 px-6 bg-black bg-opacity-30">Frameworks</h4>
-          <div class="flex flex-row flex-wrap pb-3 px-4 bg-black bg-opacity-30">
-            <a
-              href="https://vuejs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-green-500 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.vue} />
-            </a>
-            <a
-              href="https://tailwindcss.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-teal-500 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.tailwind} />
-            </a>
-            <a
-              href="https://fastify.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-tgray-200 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.fastify} />
-            </a>
-            <a
-              href="https://expressjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-tgray-200 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.express} />
-            </a>
-          </div>
-          <h4 class="text-md py-2 px-6 bg-black bg-opacity-40">Tools</h4>
-          <div class="flex flex-row flex-wrap pb-3 px-4 bg-black bg-opacity-40">
-            <a
-              href="https://code.visualstudio.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-blue-500 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.vscode} />
-            </a>
-            <a
-              href="https://www.sublimetext.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-yellow-500 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.sublime} />
-            </a>
-            <a
-              href="https://git-scm.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-red-500 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.git} />
-            </a>
-            <a
-              href="https://www.postgresql.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-blue-500 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.psql} />
-            </a>
-            <a
-              href="https://redis.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-red-500 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.redis} />
-            </a>
-            <a
-              href="https://nginx.org/en/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-green-400 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.nginx} />
-            </a>
-          </div>
+          {skills.map(([title, icons], i) => (
+            <Fragment key={i}>
+              <h4 class={`text-md py-2 px-6 bg-black bg-opacity-${i + 2}0`}>{title}</h4>
+              <div class={`flex flex-row flex-wrap pb-3 px-4 bg-black bg-opacity-${i + 2}0`}>
+                {icons.map((icon, i) => (
+                  <a
+                    key={i}
+                    title={icon.name}
+                    href={icon.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class={`text-white hover:text-${icon.color} m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none`}
+                  >
+                    <Icon className="w-8 h-8" icon={icon.icon} />
+                  </a>
+                ))}
+              </div>
+            </Fragment>
+          ))}
         </div>
 
         <div class="bg-green-500 sm:rounded-xl overflow-hidden">
           <h3 class="text-2xl lg:text-3xl py-4 px-6 font-bold text-center filter drop-shadow-txt">Projects</h3>
-          <div class="flex flex-col p-4 bg-black bg-opacity-20 space-y-2">
-            <span class="text-xl flex flex-row items-center space-x-2">
-              <Icon icon={icons.python} />
-              <Icon icon={icons.nodejs} />
-              <b>SnazzahAPI</b>
-            </span>
-            <span>API endpoints for various services.</span>
-            <div class="flex flex-row space-x-2">
-              <a
-                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-500 focus:ring-green-300 focus:ring-2 outline-none"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://api.snaz.in/docs"
-              >
-                Website
-              </a>
+          {projects.map((project, i) => (
+            <div key={i} class={`flex flex-col p-4 bg-black bg-opacity-2${(i % 2) * 5} space-y-2`}>
+              <span class="text-xl flex flex-row items-center space-x-2">
+                {project.icons && project.icons.map((icon, i) => <Icon key={i} icon={icon} />)}
+                <b>{project.name}</b>
+              </span>
+              <span>{project.description}</span>
+              {project.buttons && (
+                <div class="flex flex-row space-x-2">
+                  {project.buttons.map((button, i) => (
+                    <a
+                      key={i}
+                      class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-500 focus:ring-green-300 focus:ring-2 outline-none"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={button.url}
+                    >
+                      {button.name}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
-          </div>
-          <div class="flex flex-col p-4 bg-black bg-opacity-25 space-y-2">
-            <span class="text-xl flex flex-row items-center space-x-2">
-              <Icon icon={icons.python} />
-              <b>HotImage</b>
-            </span>
-            <span>Easy-to-use application that turns folders into image API.</span>
-            <div class="flex flex-row space-x-2">
-              <a
-                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-500 focus:ring-green-300 focus:ring-2 outline-none"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/Snazzah/HotImage"
-              >
-                GitHub
-              </a>
-              <a
-                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-500 focus:ring-green-300 focus:ring-2 outline-none"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://hi.snaz.in"
-              >
-                Website
-              </a>
-            </div>
-          </div>
-          <div class="flex flex-col p-4 bg-black bg-opacity-20 space-y-2">
-            <span class="text-xl flex flex-row items-center space-x-2">
-              <Icon icon={icons.nodejs} />
-              <Icon icon={icons.discord} />
-              <b>PhotoBox</b>
-            </span>
-            <span>A Discord bot that uses image processing to make pictures from templates.</span>
-            <div class="flex flex-row space-x-2">
-              <a
-                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-500 focus:ring-green-300 focus:ring-2 outline-none"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://invite.snaz.in/photobox"
-              >
-                Bot Invite
-              </a>
-              <a
-                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-500 focus:ring-green-300 focus:ring-2 outline-none"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://photobox.pw"
-              >
-                Website
-              </a>
-            </div>
-          </div>
-          <div class="flex flex-col p-4 bg-black bg-opacity-25 space-y-2">
-            <span class="text-xl flex flex-row items-center space-x-2">
-              <Icon icon={icons.js} />
-              <Icon icon={icons.chrome} />
-              <b>Media Session Master</b>
-            </span>
-            <span>
-              A Chrome extension that utilizes Chrome's MediaSession API in sites that don't fully support it.
-            </span>
-            <div class="flex flex-row space-x-2">
-              <a
-                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-500 focus:ring-green-300 focus:ring-2 outline-none"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/Snazzah/MediaSessionMaster"
-              >
-                GitHub
-              </a>
-              <a
-                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-500 focus:ring-green-300 focus:ring-2 outline-none"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://chrome.google.com/webstore/detail/media-session-master/ifnpfinojkapkmeidcimnaigcclnahjb"
-              >
-                Chrome Webstore
-              </a>
-            </div>
-          </div>
+          ))}
           <h4 class="text-md py-2 px-6 bg-black bg-opacity-40 italic text-center">View more projects&hellip;</h4>
           <div class="flex flex-row flex-wrap pb-3 px-4 bg-black bg-opacity-40 justify-center">
             <a
@@ -423,49 +465,30 @@ const Home: FunctionalComponent = () => {
 
         <div class="bg-blue-500 sm:rounded-xl overflow-hidden">
           <h3 class="text-2xl lg:text-3xl py-4 px-6 font-bold text-center filter drop-shadow-txt">Contributions</h3>
-          <div class="flex flex-col p-4 bg-black bg-opacity-20 space-y-2">
-            <span class="text-xl flex flex-row items-center space-x-2">
-              <Icon icon={icons.nodejs} />
-              <Icon icon={icons.discord} />
-              <b>Discord Dungeons</b>
-            </span>
-            <span>Developer team of DiscordRPG: A text-based RPG bot on Discord.</span>
-            <div class="flex flex-row space-x-2">
-              <a
-                class="rounded-full bg-blue-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-blue-500 focus:ring-blue-300 focus:ring-2 outline-none"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://api.snaz.in/docs"
-              >
-                Website
-              </a>
+          {contribs.map((project, i) => (
+            <div key={i} class={`flex flex-col p-4 bg-black bg-opacity-2${(i % 2) * 5} space-y-2`}>
+              <span class="text-xl flex flex-row items-center space-x-2">
+                {project.icons && project.icons.map((icon, i) => <Icon key={i} icon={icon} />)}
+                <b>{project.name}</b>
+              </span>
+              <span>{project.description}</span>
+              {project.buttons && (
+                <div class="flex flex-row space-x-2">
+                  {project.buttons.map((button, i) => (
+                    <a
+                      key={i}
+                      class="rounded-full bg-blue-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-blue-500 focus:ring-blue-300 focus:ring-2 outline-none"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={button.url}
+                    >
+                      {button.name}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
-          </div>
-          <div class="flex flex-col p-4 bg-black bg-opacity-25 space-y-2">
-            <span class="text-xl flex flex-row items-center space-x-2">
-              <Icon icon={icons.sass} />
-              <b>Modesta</b>
-            </span>
-            <span>A clean CSS framework made to be dark, responsive and easy to build with.</span>
-            <div class="flex flex-row space-x-2">
-              <a
-                class="rounded-full bg-blue-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-blue-500 focus:ring-blue-300 focus:ring-2 outline-none"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/AlexFlipnote/Modesta"
-              >
-                GitHub
-              </a>
-              <a
-                class="rounded-full bg-blue-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-blue-500 focus:ring-blue-300 focus:ring-2 outline-none"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://modesta.alexflipnote.dev"
-              >
-                Website
-              </a>
-            </div>
-          </div>
+          ))}
         </div>
 
         <div class="flex flex-col p-10 space-y-2 text-center">

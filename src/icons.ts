@@ -24,6 +24,7 @@ export { default as vue } from '@iconify-icons/simple-icons/vuejs';
 export { default as tailwind } from '@iconify-icons/simple-icons/tailwindcss';
 export { default as fastify } from '@iconify-icons/simple-icons/fastify';
 export { default as express } from '@iconify-icons/simple-icons/express';
+export { default as react } from '@iconify-icons/simple-icons/react';
 
 export { default as vscode } from '@iconify-icons/simple-icons/visualstudiocode';
 export { default as sublime } from '@iconify-icons/simple-icons/sublimetext';
