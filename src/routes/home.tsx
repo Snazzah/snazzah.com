@@ -304,7 +304,7 @@ const Home: FunctionalComponent = () => {
             <span>API endpoints for various services.</span>
             <div class="flex flex-row space-x-2">
               <a
-                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-700 focus:ring-green-300 focus:ring-2 outline-none"
+                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-500 focus:ring-green-300 focus:ring-2 outline-none"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://api.snaz.in/docs"
@@ -321,7 +321,7 @@ const Home: FunctionalComponent = () => {
             <span>Easy-to-use application that turns folders into image API.</span>
             <div class="flex flex-row space-x-2">
               <a
-                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-700 focus:ring-green-300 focus:ring-2 outline-none"
+                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-500 focus:ring-green-300 focus:ring-2 outline-none"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/Snazzah/HotImage"
@@ -329,7 +329,7 @@ const Home: FunctionalComponent = () => {
                 GitHub
               </a>
               <a
-                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-700 focus:ring-green-300 focus:ring-2 outline-none"
+                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-500 focus:ring-green-300 focus:ring-2 outline-none"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://hi.snaz.in"
@@ -347,7 +347,7 @@ const Home: FunctionalComponent = () => {
             <span>A Discord bot that uses image processing to make pictures from templates.</span>
             <div class="flex flex-row space-x-2">
               <a
-                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-700 focus:ring-green-300 focus:ring-2 outline-none"
+                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-500 focus:ring-green-300 focus:ring-2 outline-none"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://invite.snaz.in/photobox"
@@ -355,7 +355,7 @@ const Home: FunctionalComponent = () => {
                 Bot Invite
               </a>
               <a
-                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-700 focus:ring-green-300 focus:ring-2 outline-none"
+                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-500 focus:ring-green-300 focus:ring-2 outline-none"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://photobox.pw"
@@ -375,7 +375,7 @@ const Home: FunctionalComponent = () => {
             </span>
             <div class="flex flex-row space-x-2">
               <a
-                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-700 focus:ring-green-300 focus:ring-2 outline-none"
+                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-500 focus:ring-green-300 focus:ring-2 outline-none"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/Snazzah/MediaSessionMaster"
@@ -383,7 +383,7 @@ const Home: FunctionalComponent = () => {
                 GitHub
               </a>
               <a
-                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-700 focus:ring-green-300 focus:ring-2 outline-none"
+                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-500 focus:ring-green-300 focus:ring-2 outline-none"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://chrome.google.com/webstore/detail/media-session-master/ifnpfinojkapkmeidcimnaigcclnahjb"
@@ -432,7 +432,7 @@ const Home: FunctionalComponent = () => {
             <span>Developer team of DiscordRPG: A text-based RPG bot on Discord.</span>
             <div class="flex flex-row space-x-2">
               <a
-                class="rounded-full bg-blue-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-blue-400 focus:ring-blue-300 focus:ring-2 outline-none"
+                class="rounded-full bg-blue-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-blue-500 focus:ring-blue-300 focus:ring-2 outline-none"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://api.snaz.in/docs"
@@ -449,7 +449,7 @@ const Home: FunctionalComponent = () => {
             <span>A clean CSS framework made to be dark, responsive and easy to build with.</span>
             <div class="flex flex-row space-x-2">
               <a
-                class="rounded-full bg-blue-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-blue-400 focus:ring-blue-300 focus:ring-2 outline-none"
+                class="rounded-full bg-blue-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-blue-500 focus:ring-blue-300 focus:ring-2 outline-none"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/AlexFlipnote/Modesta"
@@ -457,7 +457,7 @@ const Home: FunctionalComponent = () => {
                 GitHub
               </a>
               <a
-                class="rounded-full bg-blue-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-blue-400 focus:ring-blue-300 focus:ring-2 outline-none"
+                class="rounded-full bg-blue-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-blue-500 focus:ring-blue-300 focus:ring-2 outline-none"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://modesta.alexflipnote.dev"
