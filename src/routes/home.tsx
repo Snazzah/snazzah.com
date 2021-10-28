@@ -502,7 +502,7 @@ const Home: FunctionalComponent = () => {
             >
               Snazzah
             </a>
-            &copy; 2021
+            &copy; {new Date().getFullYear()}
           </div>
           <span class="text-sm">
             Made with{' '}
