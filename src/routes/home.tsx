@@ -30,55 +30,55 @@ const skills: IconSectionContent = [
       {
         name: 'HTML',
         url: 'https://www.w3schools.com/html/',
-        color: 'orange-500',
+        color: 'hover:text-orange-500',
         icon: icons.html
       },
       {
         name: 'CSS',
         url: 'https://www.w3schools.com/css/',
-        color: 'blue-400',
+        color: 'hover:text-blue-400',
         icon: icons.css
       },
       {
         name: 'JavaScript',
         url: 'https://www.javascript.com/',
-        color: 'yellow-300',
+        color: 'hover:text-yellow-300',
         icon: icons.js
       },
       {
         name: 'TypeScript',
         url: 'https://www.typescriptlang.org/',
-        color: 'blue-500',
+        color: 'hover:text-blue-500',
         icon: icons.ts
       },
       {
         name: 'Node.js',
         url: 'https://www.nodejs.org/',
-        color: 'green-500',
+        color: 'hover:text-green-500',
         icon: icons.nodejs
       },
       {
         name: 'Python',
         url: 'https://www.python.org/',
-        color: 'yellow-300',
+        color: 'hover:text-yellow-300',
         icon: icons.python
       },
       {
         name: 'Ruby',
         url: 'https://www.ruby-lang.org/en/',
-        color: 'red-500',
+        color: 'hover:text-red-500',
         icon: icons.ruby
       },
       {
         name: 'Sass',
         url: 'https://sass-lang.com/',
-        color: 'pink-400',
+        color: 'hover:text-pink-400',
         icon: icons.sass
       },
       {
         name: 'Stylus',
         url: 'https://stylus-lang.com/',
-        color: 'tgray-400',
+        color: 'hover:text-tgray-400',
         icon: icons.stylus
       }
     ]
@@ -89,31 +89,31 @@ const skills: IconSectionContent = [
       {
         name: 'Vue',
         url: 'https://vuejs.org/',
-        color: 'green-500',
+        color: 'hover:text-green-500',
         icon: icons.vue
       },
       {
         name: 'React',
         url: 'https://reactjs.org/',
-        color: 'blue-400',
+        color: 'hover:text-blue-400',
         icon: icons.react
       },
       {
         name: 'TailwindCSS',
         url: 'https://tailwindcss.com/',
-        color: 'teal-500',
+        color: 'hover:text-teal-500',
         icon: icons.tailwind
       },
       {
         name: 'Fastify',
         url: 'https://fastify.io/',
-        color: 'tgray-200',
+        color: 'hover:text-tgray-200',
         icon: icons.fastify
       },
       {
         name: 'Express',
         url: 'https://expressjs.com/',
-        color: 'tgray-200',
+        color: 'hover:text-tgray-200',
         icon: icons.express
       }
     ]
@@ -124,37 +124,37 @@ const skills: IconSectionContent = [
       {
         name: 'Visual Studio Code',
         url: 'https://code.visualstudio.com/',
-        color: 'blue-500',
+        color: 'hover:text-blue-500',
         icon: icons.vscode
       },
       {
         name: 'Sublime Text',
         url: 'https://www.sublimetext.com/',
-        color: 'yellow-500',
+        color: 'hover:text-yellow-500',
         icon: icons.sublime
       },
       {
         name: 'Git',
         url: 'https://git-scm.com/',
-        color: 'red-500',
+        color: 'hover:text-red-500',
         icon: icons.git
       },
       {
         name: 'PostgreSQL',
         url: 'https://www.postgresql.org/',
-        color: 'blue-500',
+        color: 'hover:text-blue-500',
         icon: icons.psql
       },
       {
         name: 'Redis',
         url: 'https://redis.io/',
-        color: 'red-500',
+        color: 'hover:text-red-500',
         icon: icons.redis
       },
       {
         name: 'nginx',
         url: 'https://nginx.org/en/',
-        color: 'green-400',
+        color: 'hover:text-green-400',
         icon: icons.nginx
       }
     ]
@@ -388,6 +388,7 @@ const Home: FunctionalComponent = () => {
         <div class="bg-yellow-500 sm:rounded-xl overflow-hidden">
           <h3 class="text-2xl lg:text-3xl py-4 px-6 font-bold text-center filter drop-shadow-txt">Skills</h3>
           {skills.map(([title, icons], i) => (
+            /* bg-opacity-20 bg-opacity-30 bg-opacity-40 */
             <Fragment key={i}>
               <h4 class={`text-md py-2 px-6 bg-black bg-opacity-${i + 2}0`}>{title}</h4>
               <div class={`flex flex-row flex-wrap pb-3 px-4 bg-black bg-opacity-${i + 2}0`}>
@@ -398,7 +399,7 @@ const Home: FunctionalComponent = () => {
                     href={icon.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class={`text-white hover:text-${icon.color} m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none`}
+                    class={`text-white ${icon.color} m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none`}
                   >
                     <Icon className="w-8 h-8" icon={icon.icon} />
                   </a>
@@ -411,6 +412,7 @@ const Home: FunctionalComponent = () => {
         <div class="bg-green-500 sm:rounded-xl overflow-hidden">
           <h3 class="text-2xl lg:text-3xl py-4 px-6 font-bold text-center filter drop-shadow-txt">Projects</h3>
           {projects.map((project, i) => (
+            /* bg-opacity-20 bg-opacity-25 */
             <div key={i} class={`flex flex-col p-4 bg-black bg-opacity-2${(i % 2) * 5} space-y-2`}>
               <span class="text-xl flex flex-row items-center space-x-2">
                 {project.icons && project.icons.map((icon, i) => <Icon key={i} icon={icon} />)}
@@ -466,6 +468,7 @@ const Home: FunctionalComponent = () => {
         <div class="bg-blue-500 sm:rounded-xl overflow-hidden">
           <h3 class="text-2xl lg:text-3xl py-4 px-6 font-bold text-center filter drop-shadow-txt">Contributions</h3>
           {contribs.map((project, i) => (
+            /* bg-opacity-20 bg-opacity-25 */
             <div key={i} class={`flex flex-col p-4 bg-black bg-opacity-2${(i % 2) * 5} space-y-2`}>
               <span class="text-xl flex flex-row items-center space-x-2">
                 {project.icons && project.icons.map((icon, i) => <Icon key={i} icon={icon} />)}
