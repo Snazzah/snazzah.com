@@ -8,7 +8,7 @@ const headerPhrases = ['Uh...', 'Where am I?', 'Wrong turn.', 'Oh no.', 'What is
 const NotFound: FunctionalComponent = () => {
   return (
     <div id="404" class="min-h-screen bg-gray-900 text-white flex justify-center items-center sm:items-baseline">
-      <div class="sm:mx-auto sm:p-24 flex justify-center">
+      <div class="sm:mx-auto px-24 sm:py-24 flex justify-center">
         <div class="flex gap-4">
           <div class="w-24 h-24" title="Even this robot is confused. I thought robots were supposed to be smart.">
             <Icon className="w-24 h-24 text-gray-500 transition-colors hover:text-gray-300" icon={robot} />
