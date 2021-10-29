@@ -15,7 +15,7 @@ const NotFound: FunctionalComponent = () => {
           </div>
           <div class="flex flex-col gap-4">
             <div class="flex flex-col gap-2">
-              <h1 class="text-4xl m-0">{headerPhrases[Math.floor(Math.random() * headerPhrases.length - 0.01)]}</h1>
+              <h1 class="text-4xl m-0">{headerPhrases[Math.floor(Math.random() * headerPhrases.length)]}</h1>
               <p class="text-sm">This page doesn't actually exist. Might wanna turn back now.</p>
             </div>
             <Link
