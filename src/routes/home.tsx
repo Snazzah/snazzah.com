@@ -297,7 +297,7 @@ const contribs: SectionContent = [
   {
     icons: [icons.sass],
     name: 'Modesta',
-    description: 'Developer team of DiscordRPG: A text-based RPG bot on Discord.',
+    description: 'A clean CSS framework made to be dark, responsive and easy to build with.',
     buttons: [
       {
         name: 'GitHub',
