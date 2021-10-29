@@ -23,6 +23,68 @@ type SectionContent = {
   }[];
 }[];
 
+type SimpleLinkContent = {
+  name: string;
+  url: string;
+  icon: IconifyIcon;
+}[];
+
+const links: SimpleLinkContent = [
+  {
+    name: 'Twitter',
+    url: 'https://twitter.com/Snazzah',
+    icon: icons.twitter
+  },
+  {
+    name: 'GitHub',
+    url: 'https://github.com/Snazzah',
+    icon: icons.github
+  },
+  {
+    name: 'Steam',
+    url: 'https://steamcommunity.com/id/Snazzah',
+    icon: icons.steam
+  },
+  {
+    name: 'Twitch',
+    url: 'https://twitch.tv/SnazzahGuy',
+    icon: icons.twitch
+  },
+  {
+    name: 'Discord',
+    url: 'https://snaz.in/discord',
+    icon: icons.discord
+  },
+  {
+    name: 'E-mail',
+    url: 'mailto:me@snazzah.com',
+    icon: icons.email
+  }
+];
+
+const spons: SimpleLinkContent = [
+  {
+    name: 'PayPal',
+    url: 'https://paypal.me/Snazzah',
+    icon: icons.paypal
+  },
+  {
+    name: 'Patreon',
+    url: 'https://patreon.com/Snazzah',
+    icon: icons.patreon
+  },
+  {
+    name: 'Cash.app',
+    url: 'https://cash.app/$Snazzah',
+    icon: icons.cashApp
+  },
+  {
+    name: 'GitHub Sponsors',
+    url: 'https://github.com/sponsors/Snazzah',
+    icon: icons.githubSponsors
+  }
+];
+
 const skills: IconSectionContent = [
   [
     'Language & Syntax',
@@ -300,88 +362,32 @@ const Home: FunctionalComponent = () => {
             </span>
           </div>
           <div class="flex flex-row flex-wrap justify-center p-3 space-x-4 bg-black bg-opacity-50">
-            <a
-              href="https://twitter.com/Snazzah"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-tgray-300 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.twitter} />
-            </a>
-            <a
-              href="https://github.com/Snazzah"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-tgray-300 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.github} />
-            </a>
-            <a
-              href="https://steamcommunity.com/id/Snazzah"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-tgray-300 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.steam} />
-            </a>
-            <a
-              href="https://twitch.tv/SnazzahGuy"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-tgray-300 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.twitch} />
-            </a>
-            <a
-              href="https://snaz.in/discord"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-tgray-300 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.discord} />
-            </a>
-            <a
-              href="mailto:me@snazzah.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-tgray-300 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-8 h-8" icon={icons.email} />
-            </a>
+            {links.map((link, i) => (
+              <a
+                key={i}
+                href={link.url}
+                title={link.name}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-white hover:text-tgray-300 transition-all transform hover:scale-110 focus:scale-110 outline-none"
+              >
+                <Icon className="w-8 h-8" icon={link.icon} />
+              </a>
+            ))}
           </div>
           <div class="flex flex-row flex-wrap justify-center p-3 space-x-6 bg-black bg-opacity-60">
-            <a
-              href="https://paypal.me/Snazzah"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-tgray-300 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-6 h-6" icon={icons.paypal} />
-            </a>
-            <a
-              href="https://cash.app/$Snazzah"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-tgray-300 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-6 h-6" icon={icons.cashApp} />
-            </a>
-            <a
-              href="https://patreon.com/Snazzah"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-tgray-300 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-6 h-6" icon={icons.patreon} />
-            </a>
-            <a
-              href="https://github.com/sponsors/Snazzah"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-white hover:text-tgray-300 transition-all transform hover:scale-110 focus:scale-110 outline-none"
-            >
-              <Icon className="w-6 h-6" icon={icons.githubSponsors} />
-            </a>
+            {spons.map((link, i) => (
+              <a
+                key={i}
+                href={link.url}
+                title={link.name}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-white hover:text-tgray-300 transition-all transform hover:scale-110 focus:scale-110 outline-none"
+              >
+                <Icon className="w-6 h-6" icon={link.icon} />
+              </a>
+            ))}
           </div>
         </div>
 
