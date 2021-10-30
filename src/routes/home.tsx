@@ -368,7 +368,7 @@ const Home: FunctionalComponent = () => {
                 href={link.url}
                 title={link.name}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
                 class="text-white hover:text-tgray-300 transition-all transform hover:scale-110 focus:scale-110 outline-none"
               >
                 <Icon className="w-8 h-8" icon={link.icon} />
@@ -382,7 +382,7 @@ const Home: FunctionalComponent = () => {
                 href={link.url}
                 title={link.name}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
                 class="text-white hover:text-tgray-300 transition-all transform hover:scale-110 focus:scale-110 outline-none"
               >
                 <Icon className="w-6 h-6" icon={link.icon} />
@@ -404,7 +404,7 @@ const Home: FunctionalComponent = () => {
                     title={icon.name}
                     href={icon.url}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener"
                     class={`text-white ${icon.color} m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none`}
                   >
                     <Icon className="w-8 h-8" icon={icon.icon} />
@@ -432,7 +432,7 @@ const Home: FunctionalComponent = () => {
                       key={i}
                       class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-500 focus:ring-green-300 focus:ring-2 outline-none"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener"
                       href={button.url}
                     >
                       {button.name}
@@ -447,7 +447,7 @@ const Home: FunctionalComponent = () => {
             <a
               href="https://github.com/Snazzah?tab=repositories&q=&type=source&language=&sort="
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               class="text-white hover:text-tgray-300 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
             >
               <Icon className="w-8 h-8" icon={icons.github} />
@@ -455,7 +455,7 @@ const Home: FunctionalComponent = () => {
             <a
               href="https://www.npmjs.com/~snazzah"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               class="text-white hover:text-tgray-300 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
             >
               <Icon className="w-8 h-8" icon={icons.npm} />
@@ -463,7 +463,7 @@ const Home: FunctionalComponent = () => {
             <a
               href="https://rubygems.org/profiles/Snazzah"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               class="text-white hover:text-tgray-300 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
             >
               <Icon className="w-8 h-8" icon={icons.rubygems} />
@@ -488,7 +488,7 @@ const Home: FunctionalComponent = () => {
                       key={i}
                       class="rounded-full bg-blue-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-blue-500 focus:ring-blue-300 focus:ring-2 outline-none"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener"
                       href={button.url}
                     >
                       {button.name}
@@ -516,12 +516,12 @@ const Home: FunctionalComponent = () => {
               class="font-bold hover:underline"
               href="https://tailwindcss.com"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
             >
               Tailwind
             </a>{' '}
             and{' '}
-            <a class="font-bold hover:underline" href="https://preactjs.com" target="_blank" rel="noopener noreferrer">
+            <a class="font-bold hover:underline" href="https://preactjs.com" target="_blank" rel="noopener">
               Preact
             </a>
           </span>

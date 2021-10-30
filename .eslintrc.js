@@ -30,6 +30,12 @@ module.exports = {
         destructuring: 'all'
       }
     ],
-    'spaced-comment': 'warn'
+    'spaced-comment': 'warn',
+    'react/jsx-no-target-blank': [
+      'warn',
+      {
+        allowReferrer: true
+      }
+    ]
   }
 };
