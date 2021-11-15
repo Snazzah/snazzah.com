@@ -1016,10 +1016,12 @@
   resolved "https://registry.yarnpkg.com/@iconify-icons/simple-icons/-/simple-icons-1.1.50.tgz#1a6e93de161940a66a7c373a53b278685c3f76e4"
   integrity sha512-7CtG6g/vjuMpvKWV2k8+biR919co3Wz76ZB9dxkte75vsD3CMiUVutLBJ3ctyKQnnkrYPfAO/QMZ5/7h8ZDxYw==
 
-"@iconify/react@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@iconify/react/-/react-3.0.1.tgz#ce2cb3f4a2b6aab5f7af082c833d869b6fb43182"
-  integrity sha512-yUskSSR80JzRSWcqNsBAG9AN802XzZgHsex8mTOkMLYcPQC3fk1XwK17ulnY5vf692OafhGCAMccR8TWKFaGdw==
+"@iconify/react@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@iconify/react/-/react-3.1.0.tgz#7c27627e6613f47094d838887929935ec8704e42"
+  integrity sha512-RBmYRPgjBukT7/qdUBnj0ZFEEP4plKs8f/ANYrPvnMID+T0VXRc1zKzKWWV9tjR5hw/QpsKSw1fmxfKjSihKHg==
+  dependencies:
+    cross-fetch "^3.1.4"
 
 "@mdn/browser-compat-data@^3.3.14":
   version "3.3.14"
@@ -2885,6 +2887,13 @@ critters-webpack-plugin@^2.5.0:
     pretty-bytes "^4.0.2"
     webpack-log "^2.0.0"
     webpack-sources "^1.3.0"
+
+cross-fetch@^3.1.4:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.4.tgz#9723f3a3a247bf8b89039f3a380a9244e8fa2f39"
+  integrity sha512-1eAtFWdIubi6T4XPy6ei9iUFoKpUkIF971QLN8lIvvvwueI65+Nw5haMNKUwfJxabqlIIDODJKGrQ66gxC0PbQ==
+  dependencies:
+    node-fetch "2.6.1"
 
 cross-spawn-promise@^0.10.1:
   version "0.10.2"
@@ -6252,6 +6261,11 @@ node-emoji@^1.11.0:
   integrity sha512-wo2DpQkQp7Sjm2A0cq+sN7EHKO6Sl0ctXeBdFZrL9T9+UywORbufTcTZxom8YqpLQt/FqNMUkOpkZrJVYSKD3A==
   dependencies:
     lodash "^4.17.21"
+
+node-fetch@2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 node-fetch@^2.6.1:
   version "2.6.5"

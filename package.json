@@ -20,7 +20,7 @@
     "@iconify-icons/cib": "^1.1.0",
     "@iconify-icons/mdi": "^1.1.38",
     "@iconify-icons/simple-icons": "^1.1.50",
-    "@iconify/react": "^3.0.1",
+    "@iconify/react": "^3.1.0",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "clsx": "^1.1.1",
