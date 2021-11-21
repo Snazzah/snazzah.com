@@ -512,12 +512,7 @@ const Home: FunctionalComponent = () => {
           </div>
           <span class="text-sm">
             Made with{' '}
-            <a
-              class="font-bold hover:underline"
-              href="https://tailwindcss.com"
-              target="_blank"
-              rel="noopener"
-            >
+            <a class="font-bold hover:underline" href="https://tailwindcss.com" target="_blank" rel="noopener">
               Tailwind
             </a>{' '}
             and{' '}
