@@ -1016,10 +1016,10 @@
   resolved "https://registry.yarnpkg.com/@iconify-icons/simple-icons/-/simple-icons-1.1.56.tgz#1ab1f7e7608d58613ddb0fe7a2ee915f4b3f64e8"
   integrity sha512-ulE6d5iXoUpGKVxe//CbHBV70bwg0g2/BNggcHz3cdxSgIxTxH2apbP9He9WZBK/XLUlImqQvkw1KqIMRPBsfQ==
 
-"@iconify/react@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@iconify/react/-/react-3.1.0.tgz#7c27627e6613f47094d838887929935ec8704e42"
-  integrity sha512-RBmYRPgjBukT7/qdUBnj0ZFEEP4plKs8f/ANYrPvnMID+T0VXRc1zKzKWWV9tjR5hw/QpsKSw1fmxfKjSihKHg==
+"@iconify/react@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@iconify/react/-/react-3.1.1.tgz#a517147b22c6e437529a539fcada4411e2f0cbe6"
+  integrity sha512-KsMXgZD94UTah5kFO41qMTQGVSt9xYnC2OCX3LiV7aRThUuTdjTFyu9EfVzHLjwhgYnkP54/DZNa+3ssBqiLBQ==
   dependencies:
     cross-fetch "^3.1.4"
 
