@@ -11,7 +11,6 @@ module.exports = {
     ecmaVersion: 6,
     sourceType: 'module'
   },
-  ignorePatterns: ['build/'],
   plugins: ['@typescript-eslint'],
   rules: {
     'prettier/prettier': 'warn',
