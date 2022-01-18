@@ -335,11 +335,11 @@ const Home: FunctionalComponent = () => {
               class="xl:h-48 xl:mt-2 lg:h-32 h-20 self-end select-none"
             />
           </div>
-          <div class="p-2 text-center font-light flex flex-col space-y-1 lg:text-xl lg:p-4 bg-black bg-opacity-25">
+          <div class="p-2 text-center flex flex-col space-y-1 lg:text-xl lg:p-4 bg-black bg-opacity-25">
             <span>
               Full-stack developer, mainly proficient in{' '}
               <a
-                class="font-normal hover:underline"
+                class="font-medium hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.typescriptlang.org/"
@@ -348,7 +348,7 @@ const Home: FunctionalComponent = () => {
               </a>{' '}
               and{' '}
               <a
-                class="font-normal hover:underline"
+                class="font-medium hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://python.org/"
