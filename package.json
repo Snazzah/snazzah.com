@@ -14,7 +14,7 @@
   "dependencies": {
     "preact": "^10.6.4",
     "preact-render-to-string": "^5.1.4",
-    "preact-router": "^3.2.1"
+    "preact-router": "^4.0.1"
   },
   "devDependencies": {
     "@iconify-icons/cib": "^1.1.1",
