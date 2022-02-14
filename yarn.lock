@@ -8903,10 +8903,10 @@ postcss@^8.2.1, postcss@^8.2.10, postcss@^8.2.15:
     picocolors "^1.0.0"
     source-map-js "^0.6.2"
 
-preact-cli@^3.3.4:
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/preact-cli/-/preact-cli-3.3.4.tgz#d550adb5f49d7753d56c0448aeb645020d7f5216"
-  integrity sha512-08UaTkhEYbcTrd0eu/JrfwdcwueWREG0SBRY0fUN+sNZ+3HPN86jFEsOGGXCxkzStba1gtKSQ/Il5+/q3gAdhw==
+preact-cli@^3.3.5:
+  version "3.3.5"
+  resolved "https://registry.yarnpkg.com/preact-cli/-/preact-cli-3.3.5.tgz#86b64381d9c0fd60d931e7efbdde259452b2b836"
+  integrity sha512-qtIk8WtheEoY192UoKFQD14cw5CoUnYs9A+gIL95H/WT4aw8Z4CvxsB6+eELMZnsruakkq7OQMd0xRrfyoZNgA==
   dependencies:
     "@babel/core" "^7.13.16"
     "@babel/plugin-proposal-class-properties" "^7.13.0"
