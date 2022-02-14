@@ -1183,10 +1183,10 @@
   resolved "https://registry.yarnpkg.com/@iconify-icons/cib/-/cib-1.1.1.tgz#81402a590244ef953f637a6cde718a4b2f604aef"
   integrity sha512-dmZHatgMjx0QjFkWJsmhjE1PQ6x1o/9jlhJhD3c9COb92TxPUgZ5roMDX/jbIV7kmIpgodLjuypYw7XBEf6EAg==
 
-"@iconify-icons/mdi@^1.1.47":
-  version "1.1.47"
-  resolved "https://registry.yarnpkg.com/@iconify-icons/mdi/-/mdi-1.1.47.tgz#2c72d7cb345dfeeca29baccef3b417bb41a3991d"
-  integrity sha512-2atei7OwOCYOHrM07EbJco3LsSmE4vxP1E/dThGvj/j6kDH6otLuuiBJardwObbywoxgueBAg9TIvGKH9lVLWg==
+"@iconify-icons/mdi@^1.1.48":
+  version "1.1.48"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/mdi/-/mdi-1.1.48.tgz#594b6142f365897756a758d3520f527c335b1455"
+  integrity sha512-4w/dWTCLUHUZeqNe7KKQ18OrB+a37sMMKakMj2VReq1i8STeabO+HdDzZ8n2gYLWnHmgGvkP/eZMMsJ0Vb1bdQ==
 
 "@iconify-icons/simple-icons@^1.1.62":
   version "1.1.62"
