@@ -1178,10 +1178,12 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@iconify-icons/cib@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@iconify-icons/cib/-/cib-1.1.1.tgz#81402a590244ef953f637a6cde718a4b2f604aef"
-  integrity sha512-dmZHatgMjx0QjFkWJsmhjE1PQ6x1o/9jlhJhD3c9COb92TxPUgZ5roMDX/jbIV7kmIpgodLjuypYw7XBEf6EAg==
+"@iconify-icons/cib@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/cib/-/cib-1.2.1.tgz#735e0c3ed95afc7faf35958eecd55e9834572bb1"
+  integrity sha512-OATZGfCVfNBezHTmwwEwappQGyRXMm1TcNkDKZvPTztKcLhID9BjeOC63e7haSB/SgqyOP2pHrgWnp+oFYCJzg==
+  dependencies:
+    "@iconify/types" "^1.0.12"
 
 "@iconify-icons/mdi@^1.1.48":
   version "1.1.48"
@@ -1199,6 +1201,11 @@
   integrity sha512-5InPUQlFXNP2BHrZyN4qoIweEqiFKewUHLSQ5KT1fjqHzh7MO8T6v3GAh5tAbuhzIv5Iz7RKL2+Sb7dtNhIO8A==
   dependencies:
     cross-fetch "^3.1.5"
+
+"@iconify/types@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@iconify/types/-/types-1.0.12.tgz#839f1f784b7030b94482d51996570f4dbd7d6796"
+  integrity sha512-6er6wSGF3hgc1JEZqiGpg21CTCjHBYOUwqLmb2Idzkjiw6ogalGP0ZMLVutCzah+0WB4yP+Zd2oVPN8jvJ+Ftg==
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
