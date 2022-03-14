@@ -21,7 +21,7 @@
     "@iconify-icons/mdi": "^1.2.1",
     "@iconify-icons/simple-icons": "^1.2.4",
     "@iconify/react": "^3.1.4",
-    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/experimental-utils": "^5.10.0",
     "@typescript-eslint/parser": "^5.14.0",
     "clsx": "^1.1.1",
