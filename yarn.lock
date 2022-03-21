@@ -1185,10 +1185,10 @@
   dependencies:
     "@iconify/types" "^1.0.12"
 
-"@iconify-icons/mdi@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@iconify-icons/mdi/-/mdi-1.2.1.tgz#89571ad12f8264ed03931abcf6f6f76a60ed8718"
-  integrity sha512-7D75jtW+QZsrhKwUnrnx4W+eoUz1MoasIQz6KiPn9xjn2LENBJbPpDUPrs37YafcARnQ+wBaROizIP4eCAjgaQ==
+"@iconify-icons/mdi@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/mdi/-/mdi-1.2.2.tgz#086eedafeb341f68e9c0b137619c117769483aee"
+  integrity sha512-asXXEqD0L3S8tlP7fTRuTA0y0I8O+Yf5P9ndwPOwY7GF7QUS3s5A/zv7D+e46iqGgZRQX2F9g4eUYnxWoFvsmA==
   dependencies:
     "@iconify/types" "^1.0.12"
 
