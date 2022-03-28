@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@iconify-icons/cib": "^1.2.2",
-    "@iconify-icons/mdi": "^1.2.2",
+    "@iconify-icons/mdi": "^1.2.4",
     "@iconify-icons/simple-icons": "^1.2.6",
     "@iconify/react": "^3.2.0",
     "@typescript-eslint/eslint-plugin": "^5.16.0",
