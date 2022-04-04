@@ -12,7 +12,7 @@
     "lint:fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix"
   },
   "dependencies": {
-    "preact": "^10.6.6",
+    "preact": "^10.7.0",
     "preact-render-to-string": "^5.1.20",
     "preact-router": "^4.0.1"
   },
