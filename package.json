@@ -7,7 +7,8 @@
     "build": "next build && next export -o build",
     "start": "next dev",
     "serve": "serve build",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix"
   },
   "dependencies": {
     "@iconify-icons/cib": "^1.2.2",
