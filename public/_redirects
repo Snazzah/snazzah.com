@@ -1,9 +1,9 @@
-/steemcord-schema/* https://cdn.snaz.in/steemcord-schema/:splat
-/i/misc/* https://cdn.snaz.in/misc/:splat
-/i/avy/* https://cdn.snaz.in/avy/:splat
-/i/m/* /images/meta/:splat
-
 /i/banner.png /images/banner.png
 /i/banner2.png /images/banner2.png
 /i/snazzah-icon.svg /images/snazzah-icon.svg
 /i/botboy.png https://cdn.snaz.in/botboy.png
+
+/steemcord-schema/* https://cdn.snaz.in/steemcord-schema/:splat
+/i/misc/* https://cdn.snaz.in/misc/:splat
+/i/avy/* https://cdn.snaz.in/avy/:splat
+/i/m/* /images/meta/:splat
