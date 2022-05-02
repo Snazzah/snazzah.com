@@ -271,6 +271,17 @@ export const skills: IconSectionContent = [
 
 export const projects: SectionContent = [
   {
+    icons: [icons.discord, icons.nodejs],
+    name: 'Taco',
+    description: 'A Discord bot that manages Trello boards.',
+    buttons: [
+      {
+        name: 'Website',
+        url: 'https://tacobot.app/'
+      }
+    ]
+  },
+  {
     icons: [icons.python],
     name: 'SnazzahAPI',
     description: 'API endpoints for various services.',
@@ -329,17 +340,6 @@ export const projects: SectionContent = [
 ];
 
 export const contribs: SectionContent = [
-  {
-    icons: [icons.nodejs, icons.discord],
-    name: 'Taco',
-    description: 'A Discord bot that manages Trello boards.',
-    buttons: [
-      {
-        name: 'Website',
-        url: 'https://tacobot.app/'
-      }
-    ]
-  },
   {
     icons: [icons.sass],
     name: 'Modesta',
