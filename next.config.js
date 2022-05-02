@@ -3,7 +3,8 @@ const withPWA = require('next-pwa');
 /** @type {import('next').NextConfig} */
 const nextConfig = withPWA({
   pwa: {
-    dest: 'public'
+    dest: 'public',
+    publicExcludes: ['!_headers', '!_redirects']
   },
   reactStrictMode: true,
   webpack: (config, { dev, isServer }) => {
