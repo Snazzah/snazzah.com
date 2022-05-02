@@ -150,7 +150,7 @@ export const skills: IconSectionContent = [
       {
         name: 'Vue',
         url: 'https://vuejs.org/',
-        color: 'hover:text-green-500',
+        color: 'hover:text-green-400',
         icon: icons.vue
       },
       {
