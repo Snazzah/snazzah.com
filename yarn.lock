@@ -941,6 +941,13 @@
   dependencies:
     "@iconify/types" "^1.0.12"
 
+"@iconify-icons/file-icons@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/file-icons/-/file-icons-1.2.1.tgz#27668f1c4dcedfa1cd518275967b418df48b8187"
+  integrity sha512-cOP47AwiGYATPi2g6xzpR0VYYpcCd+cCxC4N5qGRNLS2wm5BQa7igONcIG275PHI2fLwQfsCfJtp9lx5S8weWQ==
+  dependencies:
+    "@iconify/types" "^1.0.12"
+
 "@iconify-icons/mdi@^1.2.9":
   version "1.2.9"
   resolved "https://registry.yarnpkg.com/@iconify-icons/mdi/-/mdi-1.2.9.tgz#4cf089bd54a1fb4b7a0f1688f665c5b41e001f0a"

@@ -139,7 +139,7 @@ export const skills: IconSectionContent = [
       {
         name: 'Stylus',
         url: 'https://stylus-lang.com/',
-        color: 'hover:text-tgray-400',
+        color: 'hover:text-neutral-400',
         icon: icons.stylus
       }
     ]
@@ -148,16 +148,16 @@ export const skills: IconSectionContent = [
     'Frameworks',
     [
       {
-        name: 'Vue',
-        url: 'https://vuejs.org/',
-        color: 'hover:text-green-400',
-        icon: icons.vue
-      },
-      {
         name: 'React',
         url: 'https://reactjs.org/',
         color: 'hover:text-blue-400',
         icon: icons.react
+      },
+      {
+        name: 'Vue',
+        url: 'https://vuejs.org/',
+        color: 'hover:text-green-400',
+        icon: icons.vue
       },
       {
         name: 'TailwindCSS',
@@ -166,15 +166,27 @@ export const skills: IconSectionContent = [
         icon: icons.tailwind
       },
       {
+        name: 'Next.js',
+        url: 'https://nextjs.org/',
+        color: 'hover:text-neutral-200',
+        icon: icons.nextjs
+      },
+      {
+        name: 'Nuxt.js',
+        url: 'https://nuxtjs.org/',
+        color: 'hover:text-green-400',
+        icon: icons.nuxtjs
+      },
+      {
         name: 'Fastify',
         url: 'https://fastify.io/',
-        color: 'hover:text-tgray-200',
+        color: 'hover:text-neutral-200',
         icon: icons.fastify
       },
       {
         name: 'Express',
         url: 'https://expressjs.com/',
-        color: 'hover:text-tgray-200',
+        color: 'hover:text-neutral-200',
         icon: icons.express
       }
     ]
@@ -229,6 +241,12 @@ export const skills: IconSectionContent = [
         url: 'https://prisma.io/',
         color: 'hover:text-sky-900',
         icon: icons.prisma
+      },
+      {
+        name: 'Figma',
+        url: 'https://figma.com/',
+        color: 'hover:text-blue-500',
+        icon: icons.figma
       }
     ]
   ]

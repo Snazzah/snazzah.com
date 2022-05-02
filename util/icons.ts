@@ -23,10 +23,12 @@ export { default as sass } from '@iconify-icons/simple-icons/sass';
 export { default as stylus } from '@iconify-icons/simple-icons/stylus';
 
 export { default as vue } from '@iconify-icons/simple-icons/vuejs';
+export { default as react } from '@iconify-icons/simple-icons/react';
+export { default as nextjs } from '@iconify-icons/file-icons/nextjs';
+export { default as nuxtjs } from '@iconify-icons/simple-icons/nuxtdotjs';
 export { default as tailwind } from '@iconify-icons/simple-icons/tailwindcss';
 export { default as fastify } from '@iconify-icons/simple-icons/fastify';
 export { default as express } from '@iconify-icons/simple-icons/express';
-export { default as react } from '@iconify-icons/simple-icons/react';
 
 export { default as vscode } from '@iconify-icons/simple-icons/visualstudiocode';
 export { default as sublime } from '@iconify-icons/simple-icons/sublimetext';
@@ -36,6 +38,7 @@ export { default as redis } from '@iconify-icons/cib/redis';
 export { default as nginx } from '@iconify-icons/simple-icons/nginx';
 export { default as cloudflare } from '@iconify-icons/simple-icons/cloudflare';
 export { default as prisma } from '@iconify-icons/simple-icons/prisma';
+export { default as figma } from '@iconify-icons/cib/figma';
 
 export { default as chrome } from '@iconify-icons/simple-icons/googlechrome';
 export { default as npm } from '@iconify-icons/simple-icons/npm';
