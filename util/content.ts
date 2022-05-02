@@ -314,7 +314,7 @@ export const projects: SectionContent = [
   {
     icons: [icons.js, icons.chrome],
     name: 'Media Session Master',
-    description: 'A Discord bot that uses image processing to make pictures from templates.',
+    description: 'Utilize Chrome\'s MediaSession API within multiple sites.',
     buttons: [
       {
         name: 'GitHub',
