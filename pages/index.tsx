@@ -14,6 +14,8 @@ import * as icons from '../util/icons';
 const Home: NextPage = () => {
   const lanyard = useLanyard({ userId: '158049329150427136' });
   const lanyardAvailable = lanyard.data && lanyard.data.success && lanyard.data!.data.discord_status === 'online';
+  const listeningToSpotify = lanyardAvailable && lanyard.data!.data.listening_to_spotify;
+  const spotify = listeningToSpotify ? lanyard.data!.data.spotify! : null;
 
   return (
     <div id="home" className="min-h-screen bg-neutral-900 text-white">
@@ -82,11 +84,9 @@ const Home: NextPage = () => {
                   arrow={true}
                   html={
                     <span>
-                      {lanyardAvailable && lanyard.data!.data.listening_to_spotify ? (
+                      {listeningToSpotify ? (
                         <>
-                          {'Listening to '}
-                          <b>{lanyard.data!.data.spotify!.song}</b>
-                          {` by ${lanyard.data!.data.spotify!.artist}`}
+                          Listening to <b>{spotify!.song}</b> by {spotify!.artist}
                         </>
                       ) : (
                         'Online on Discord'
@@ -94,25 +94,29 @@ const Home: NextPage = () => {
                     </span>
                   }
                 >
-                  <div
-                    className={clsx(
-                      {
-                        'opacity-0': !lanyardAvailable,
-                        'opacity-100': lanyardAvailable,
-                        'lg:w-10 lg:h-10 w-6 h-6': lanyardAvailable && lanyard.data!.data.listening_to_spotify,
-                        'lg:w-8 lg:h-8 w-4 h-4': !lanyardAvailable || !lanyard.data!.data.listening_to_spotify
-                      },
-                      'bg-green-500 whitespace-nowrap flex rounded-full items-center justify-center transition-all shadow-md shadow-black/50'
-                    )}
+                  <a
+                    href={listeningToSpotify ? `https://open.spotify.com/track/${spotify!.track_id}` : undefined}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <Icon
-                      icon={icons.spotify}
+                    <div
                       className={clsx(
-                        'lg:w-6 lg:h-6 transition-colors',
-                        lanyardAvailable && lanyard.data!.data.listening_to_spotify ? 'text-white' : 'text-transparent'
+                        {
+                          'opacity-0': !lanyardAvailable,
+                          'opacity-100': lanyardAvailable,
+                          'lg:w-10 lg:h-10 w-6 h-6': listeningToSpotify,
+                          'lg:w-8 lg:h-8 w-4 h-4': !listeningToSpotify,
+                          'hover:ring hover:ring-green-200/60': listeningToSpotify
+                        },
+                        'bg-green-500 whitespace-nowrap flex rounded-full items-center justify-center transition-all shadow-md shadow-black/50'
                       )}
-                    />
-                  </div>
+                    >
+                      <Icon
+                        icon={icons.spotify}
+                        className={clsx('lg:w-6 lg:h-6 text-white transition-all', listeningToSpotify ? 'opacity-100' : 'opacity-0')}
+                      />
+                    </div>
+                  </a>
                 </Tooltip>
               </div>
             </div>
