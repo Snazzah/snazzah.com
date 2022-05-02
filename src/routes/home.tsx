@@ -330,7 +330,7 @@ const Home: FunctionalComponent = () => {
           <div class="flex flex-row items-center justify-center space-x-4 sm:rounded-t-xl">
             <SnazzahLogo />
             <img
-              src="/i/snazzah-icon.svg"
+              src="/images/snazzah-icon.svg"
               draggable={false}
               class="xl:h-48 xl:mt-2 lg:h-32 h-20 self-end select-none"
             />
