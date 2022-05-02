@@ -231,12 +231,6 @@ export const skills: IconSectionContent = [
         icon: icons.nginx
       },
       {
-        name: 'Cloudflare',
-        url: 'https://cloudflare.com/',
-        color: 'hover:text-amber-500',
-        icon: icons.cloudflare
-      },
-      {
         name: 'Prisma',
         url: 'https://prisma.io/',
         color: 'hover:text-sky-900',
@@ -247,6 +241,29 @@ export const skills: IconSectionContent = [
         url: 'https://figma.com/',
         color: 'hover:text-blue-500',
         icon: icons.figma
+      }
+    ]
+  ],
+  [
+    'Services & APIs',
+    [
+      {
+        name: 'GitHub',
+        url: 'https://github.com/',
+        color: 'hover:text-neutral-200',
+        icon: icons.github
+      },
+      {
+        name: 'Cloudflare',
+        url: 'https://cloudflare.com/',
+        color: 'hover:text-amber-500',
+        icon: icons.cloudflare
+      },
+      {
+        name: 'Discord',
+        url: 'https://discord.com/',
+        color: 'hover:text-blue-500',
+        icon: icons.discord
       }
     ]
   ]

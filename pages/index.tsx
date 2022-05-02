@@ -122,7 +122,7 @@ const Home: NextPage = () => {
         <div className="bg-yellow-500 sm:rounded-xl overflow-hidden">
           <h3 className="text-2xl lg:text-3xl py-4 px-6 font-bold text-center filter drop-shadow-txt">Skills</h3>
           {skills.map(([title, icons], i) => (
-            /* bg-opacity-20 bg-opacity-30 bg-opacity-40 */
+            /* bg-opacity-20 bg-opacity-30 bg-opacity-40 bg-opacity-50 */
             <Fragment key={i}>
               <h4 className={`text-md py-2 px-6 bg-black bg-opacity-${i + 2}0`}>{title}</h4>
               <div className={`flex flex-row flex-wrap pb-3 px-4 bg-black bg-opacity-${i + 2}0`}>
