@@ -32,6 +32,8 @@ export { default as git } from '@iconify-icons/simple-icons/git';
 export { default as psql } from '@iconify-icons/simple-icons/postgresql';
 export { default as redis } from '@iconify-icons/cib/redis';
 export { default as nginx } from '@iconify-icons/simple-icons/nginx';
+export { default as cloudflare } from '@iconify-icons/simple-icons/cloudflare';
+export { default as prisma } from '@iconify-icons/simple-icons/prisma';
 
 export { default as chrome } from '@iconify-icons/simple-icons/googlechrome';
 export { default as npm } from '@iconify-icons/simple-icons/npm';

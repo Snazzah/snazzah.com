@@ -218,6 +218,18 @@ const skills: IconSectionContent = [
         url: 'https://nginx.org/en/',
         color: 'hover:text-green-400',
         icon: icons.nginx
+      },
+      {
+        name: 'Cloudflare',
+        url: 'https://cloudflare.com/',
+        color: 'hover:text-yellow-500',
+        icon: icons.cloudflare
+      },
+      {
+        name: 'Prisma',
+        url: 'https://prisma.io/',
+        color: 'hover:text-blue-900',
+        icon: icons.prisma
       }
     ]
   ]
