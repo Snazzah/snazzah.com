@@ -314,7 +314,7 @@ export const projects: SectionContent = [
   {
     icons: [icons.js, icons.chrome],
     name: 'Media Session Master',
-    description: 'Utilize Chrome\'s MediaSession API within multiple sites.',
+    description: "Utilize Chrome's MediaSession API within multiple sites.",
     buttons: [
       {
         name: 'GitHub',
