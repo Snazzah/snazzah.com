@@ -6,6 +6,7 @@ export { default as steam } from '@iconify-icons/simple-icons/steam';
 export { default as twitch } from '@iconify-icons/simple-icons/twitch';
 export { default as discord } from '@iconify-icons/simple-icons/discord';
 export { default as email } from '@iconify-icons/mdi/email';
+export { default as spotify } from '@iconify-icons/simple-icons/spotify';
 
 export { default as paypal } from '@iconify-icons/simple-icons/paypal';
 export { default as cashApp } from '@iconify-icons/simple-icons/cashapp';

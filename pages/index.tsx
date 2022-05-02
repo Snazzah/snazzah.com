@@ -1,7 +1,10 @@
 import { Icon } from '@iconify/react';
+import clsx from 'clsx';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Fragment } from 'react';
+import { Tooltip } from 'react-tippy';
+import { useLanyard } from 'react-use-lanyard';
 
 import SnazzahAvatar from '../components/SnazzahAvatar';
 import SnazzahLogo from '../components/SnazzahLogo';
@@ -9,6 +12,9 @@ import { contribs, links, projects, skills, spons } from '../util/content';
 import * as icons from '../util/icons';
 
 const Home: NextPage = () => {
+  const lanyard = useLanyard({ userId: '158049329150427136' });
+  const lanyardAvailable = !lanyard.isValidating && lanyard.data && lanyard.data.success;
+
   return (
     <div id="home" className="min-h-screen bg-neutral-900 text-white">
       <Head>
@@ -68,6 +74,37 @@ const Home: NextPage = () => {
             <SnazzahLogo className="fill-current my-4 h-14 lg:h-20 lg:my-8 filter drop-shadow-txt transition-transform transform hover:scale-105" />
             <div className="relative self-end select-none" title="That's me!">
               <SnazzahAvatar className="xl:h-48 xl:mt-2 lg:h-32 h-20" />
+              {lanyardAvailable && lanyard.data!.data.discord_status === 'online' && (
+                <div className="absolute bottom-0 right-0 mb-2 mr-2">
+                  {/* @ts-ignore */}
+                  <Tooltip
+                    position="left"
+                    arrow={true}
+                    html={
+                      <span>
+                        {lanyard.data!.data.listening_to_spotify ? (
+                          <>
+                            {'Listening to '}
+                            <b>{lanyard.data!.data.spotify!.song}</b>
+                            {` by ${lanyard.data!.data.spotify!.artist}`}
+                          </>
+                        ) : (
+                          'Online on Discord'
+                        )}
+                      </span>
+                    }
+                  >
+                    <div
+                      className={clsx(
+                        lanyard.data!.data.listening_to_spotify ? 'lg:w-10 lg:h-10 w-6 h-6' : 'lg:w-6 lg:h-6 w-4 h-4',
+                        'bg-green-500 whitespace-nowrap flex rounded-full items-center justify-center'
+                      )}
+                    >
+                      {lanyard.data!.data.listening_to_spotify && <Icon icon={icons.spotify} className="fill-current text-white lg:w-6 lg:h-6" />}
+                    </div>
+                  </Tooltip>
+                </div>
+              )}
             </div>
           </div>
           <div className="p-2 text-center flex flex-col space-y-1 lg:text-xl lg:p-4 bg-black bg-opacity-25">
