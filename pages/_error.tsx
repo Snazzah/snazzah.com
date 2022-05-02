@@ -67,7 +67,7 @@ const Home: NextPage = () => {
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2">
               <h1 className="text-4xl m-0">{headerPhrases[Math.floor(Math.random() * headerPhrases.length)]}</h1>
-              <p className="text-sm">This page doesn't actually exist. Might wanna turn back now.</p>
+              <p className="text-sm">This page doesn&apos;t actually exist. Might wanna turn back now.</p>
             </div>
             <a
               href="/"

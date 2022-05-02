@@ -65,7 +65,13 @@ const Home: NextPage = () => {
         <div className="bg-brand sm:rounded-xl overflow-hidden">
           <div className="flex flex-row items-center justify-center space-x-4 sm:rounded-t-xl">
             <SnazzahLogo className="fill-current my-4 h-14 lg:h-20 lg:my-8 filter drop-shadow-txt transition-transform transform hover:scale-105" />
-            <img src="/images/snazzah-icon.svg" draggable={false} className="xl:h-48 xl:mt-2 lg:h-32 h-20 self-end select-none" />
+            <img
+              src="/images/snazzah-icon.svg"
+              draggable={false}
+              className="xl:h-48 xl:mt-2 lg:h-32 h-20 self-end select-none"
+              alt="Snazzah's Avatar"
+              title="That's me!"
+            />
           </div>
           <div className="p-2 text-center flex flex-col space-y-1 lg:text-xl lg:p-4 bg-black bg-opacity-25">
             <span>
