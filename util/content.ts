@@ -271,6 +271,36 @@ export const skills: IconSectionContent = [
 
 export const projects: SectionContent = [
   {
+    icons: [icons.ts],
+    name: 'slash-create',
+    description: 'A library for creating Discord slash commands.',
+    buttons: [
+      {
+        name: 'Website',
+        url: 'https://slash-create.js.org/'
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/Snazzah/slash-create'
+      }
+    ]
+  },
+  {
+    icons: [icons.discord, icons.nodejs],
+    name: 'Craig',
+    description: 'A multi-track voice channel recording bot for Discord.',
+    buttons: [
+      {
+        name: 'Website',
+        url: 'https://craig.chat/'
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/CraigChat/craig'
+      }
+    ]
+  },
+  {
     icons: [icons.discord, icons.nodejs],
     name: 'Taco',
     description: 'A Discord bot that manages Trello boards.',
