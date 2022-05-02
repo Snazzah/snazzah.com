@@ -82,7 +82,7 @@ const Home: NextPage = () => {
                   arrow={true}
                   html={
                     <span>
-                      {lanyard.data!.data.listening_to_spotify ? (
+                      {lanyardAvailable && lanyard.data!.data.listening_to_spotify ? (
                         <>
                           {'Listening to '}
                           <b>{lanyard.data!.data.spotify!.song}</b>
@@ -99,15 +99,18 @@ const Home: NextPage = () => {
                       {
                         'opacity-0': !lanyardAvailable,
                         'opacity-100': lanyardAvailable,
-                        'lg:w-10 lg:h-10 w-6 h-6': lanyard.data!.data.listening_to_spotify,
-                        'lg:w-8 lg:h-8 w-4 h-4': !lanyard.data!.data.listening_to_spotify
+                        'lg:w-10 lg:h-10 w-6 h-6': lanyardAvailable && lanyard.data!.data.listening_to_spotify,
+                        'lg:w-8 lg:h-8 w-4 h-4': !lanyardAvailable || !lanyard.data!.data.listening_to_spotify
                       },
                       'bg-green-500 whitespace-nowrap flex rounded-full items-center justify-center transition-all shadow-md shadow-black/50'
                     )}
                   >
                     <Icon
                       icon={icons.spotify}
-                      className={clsx('lg:w-6 lg:h-6 transition-colors', lanyard.data!.data.listening_to_spotify ? 'text-white' : 'text-transparent')}
+                      className={clsx(
+                        'lg:w-6 lg:h-6 transition-colors',
+                        lanyardAvailable && lanyard.data!.data.listening_to_spotify ? 'text-white' : 'text-transparent'
+                      )}
                     />
                   </div>
                 </Tooltip>
