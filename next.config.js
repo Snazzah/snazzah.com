@@ -6,6 +6,10 @@ const nextConfig = withPWA({
     dest: 'public',
     publicExcludes: ['!_headers', '!_redirects']
   },
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en'
+  },
   reactStrictMode: true,
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {
