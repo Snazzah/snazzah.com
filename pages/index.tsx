@@ -82,6 +82,8 @@ const Home: NextPage = () => {
                   disabled={!lanyardAvailable}
                   position="left"
                   arrow={true}
+                  tabIndex={listeningToSpotify ? 0 : -1}
+                  className="outline-none group"
                   html={
                     <span>
                       {listeningToSpotify ? (
@@ -99,7 +101,7 @@ const Home: NextPage = () => {
                     target="_blank"
                     title={listeningToSpotify ? 'Listening on Spotify' : 'Online on Discord'}
                     rel="noopener noreferrer"
-                    tabIndex={listeningToSpotify ? 0 : -1}
+                    tabIndex={-1}
                   >
                     <div
                       className={clsx(
@@ -108,7 +110,7 @@ const Home: NextPage = () => {
                           'opacity-100': lanyardAvailable,
                           'lg:w-10 lg:h-10 w-6 h-6': listeningToSpotify,
                           'lg:w-8 lg:h-8 w-4 h-4': !listeningToSpotify,
-                          'hover:ring hover:ring-green-100/75 focus:ring focus:ring-green-100/50 outline-none': listeningToSpotify
+                          'hover:ring hover:ring-green-100/75 group-focus:ring group-focus:ring-green-100/50': listeningToSpotify
                         },
                         'bg-green-500 whitespace-nowrap flex rounded-full items-center justify-center transition-all shadow-md shadow-black/50'
                       )}
