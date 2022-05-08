@@ -97,6 +97,7 @@ const Home: NextPage = () => {
                   <a
                     href={listeningToSpotify ? `https://open.spotify.com/track/${spotify!.track_id}` : undefined}
                     target="_blank"
+                    title={listeningToSpotify ? 'Listening on Spotify' : 'Online on Discord'}
                     rel="noopener noreferrer"
                   >
                     <div
@@ -223,6 +224,7 @@ const Home: NextPage = () => {
             <a
               href="https://github.com/Snazzah?tab=repositories&q=&type=source&language=&sort="
               target="_blank"
+              title="GitHub Repositories"
               rel="noopener noreferrer"
               className="text-white hover:text-neutral-300 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
             >
@@ -231,6 +233,7 @@ const Home: NextPage = () => {
             <a
               href="https://www.npmjs.com/~snazzah"
               target="_blank"
+              title="NPM Packages"
               rel="noopener noreferrer"
               className="text-white hover:text-neutral-300 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
             >
@@ -239,6 +242,7 @@ const Home: NextPage = () => {
             <a
               href="https://rubygems.org/profiles/Snazzah"
               target="_blank"
+              title="Ruby Gems"
               rel="noopener noreferrer"
               className="text-white hover:text-neutral-300 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
             >
