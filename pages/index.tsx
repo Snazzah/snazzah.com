@@ -3,8 +3,10 @@ import clsx from 'clsx';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Fragment } from 'react';
+import { jsonLdScriptProps } from 'react-schemaorg';
 import { Tooltip } from 'react-tippy';
 import { useLanyard } from 'react-use-lanyard';
+import { Person } from 'schema-dts';
 
 import SnazzahAvatar from '../components/SnazzahAvatar';
 import SnazzahLogo from '../components/SnazzahLogo';
@@ -72,6 +74,18 @@ const Home: NextPage = () => {
         <meta name="theme-color" content="#fc2929" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="shortcut icon" href="/favicon.ico" />
+
+        <script
+          {...jsonLdScriptProps<Person>({
+            '@context': 'https://schema.org',
+            '@type': 'Person',
+            name: 'Snazzah',
+            url: 'https://snazzah.com',
+            image: 'https://snazzah.com/images/avatar.min.png',
+            knowsAbout: ['Computer Science', 'Design', 'Video Games', 'Programming'],
+            sameAs: ['https://github.com/Snazzah', 'https://twitter.com/Snazzah']
+          })}
+        />
       </Head>
 
       <div className="sm:max-w-4xl sm:mx-auto sm:p-12 sm:space-y-10">
