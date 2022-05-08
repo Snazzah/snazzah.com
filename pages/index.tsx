@@ -11,6 +11,10 @@ import SnazzahLogo from '../components/SnazzahLogo';
 import { contribs, links, projects, skills, spons } from '../util/content';
 import * as icons from '../util/icons';
 
+const commonLinkClass = 'hover:underline focus:outline focus:outline-2 focus:outline-offset-2 focus:rounded';
+const commonIconLinkClass =
+  'transition-all transform hover:scale-110 focus:scale-110 outline-none focus:outline focus:outline-2 focus:outline-white/50 focus:outline-offset-2 focus:rounded';
+
 const Home: NextPage = () => {
   const lanyard = useLanyard({ userId: '158049329150427136' });
   const lanyardAvailable = lanyard.data && lanyard.data.success && lanyard.data!.data.discord_status === 'online';
@@ -128,11 +132,21 @@ const Home: NextPage = () => {
           <div className="p-2 text-center flex flex-col space-y-1 lg:text-xl lg:p-4 bg-black bg-opacity-25">
             <span>
               Full-stack developer, mainly proficient in{' '}
-              <a className="font-medium hover:underline" target="_blank" rel="noopener noreferrer" href="https://www.typescriptlang.org/">
+              <a
+                className={`font-medium ${commonLinkClass} focus:outline-white/50`}
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.typescriptlang.org/"
+              >
                 <span>TypeScript</span>
               </a>{' '}
               and{' '}
-              <a className="font-medium hover:underline" target="_blank" rel="noopener noreferrer" href="https://python.org/">
+              <a
+                className={`font-medium ${commonLinkClass} focus:outline-white/50`}
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://python.org/"
+              >
                 <span>Python</span>
               </a>
               .
@@ -149,7 +163,7 @@ const Home: NextPage = () => {
                 title={link.name}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-neutral-300 transition-all transform hover:scale-110 focus:scale-110 outline-none"
+                className={`text-white hover:text-neutral-300 ${commonIconLinkClass}`}
               >
                 <Icon className="w-8 h-8" icon={link.icon} />
               </a>
@@ -163,7 +177,7 @@ const Home: NextPage = () => {
                 title={link.name}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-neutral-300 transition-all transform hover:scale-110 focus:scale-110 outline-none"
+                className={`text-white hover:text-neutral-300 ${commonIconLinkClass}`}
               >
                 <Icon className="w-6 h-6" icon={link.icon} />
               </a>
@@ -185,7 +199,7 @@ const Home: NextPage = () => {
                     href={icon.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`text-white ${icon.color} m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none`}
+                    className={`text-white ${icon.color} m-2 ${commonIconLinkClass}`}
                   >
                     <Icon className="w-8 h-8" icon={icon.icon} />
                   </a>
@@ -229,7 +243,7 @@ const Home: NextPage = () => {
               target="_blank"
               title="GitHub Repositories"
               rel="noopener noreferrer"
-              className="text-white hover:text-neutral-300 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
+              className={`text-white hover:text-neutral-300 m-2 ${commonIconLinkClass}`}
             >
               <Icon className="w-8 h-8" icon={icons.github} />
             </a>
@@ -238,7 +252,7 @@ const Home: NextPage = () => {
               target="_blank"
               title="NPM Packages"
               rel="noopener noreferrer"
-              className="text-white hover:text-neutral-300 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
+              className={`text-white hover:text-neutral-300 m-2 ${commonIconLinkClass}`}
             >
               <Icon className="w-8 h-8" icon={icons.npm} />
             </a>
@@ -247,7 +261,7 @@ const Home: NextPage = () => {
               target="_blank"
               title="Ruby Gems"
               rel="noopener noreferrer"
-              className="text-white hover:text-neutral-300 m-2 transition-all transform hover:scale-110 focus:scale-110 outline-none"
+              className={`text-white hover:text-neutral-300 m-2 ${commonIconLinkClass}`}
             >
               <Icon className="w-8 h-8" icon={icons.rubygems} />
             </a>
@@ -287,7 +301,7 @@ const Home: NextPage = () => {
           <div className="text-xl font-light leading-none tracking-tight">
             <a
               href="https://snazzah.com"
-              className="mr-2 decoration-clone bg-clip-text font-bold text-transparent bg-gradient-to-b from-red-400 to-red-500"
+              className="mr-2 decoration-clone bg-clip-text font-bold text-transparent bg-gradient-to-b from-red-400 to-red-500 focus:outline focus:outline-2 focus:outline-red-200/50 focus:outline-offset-4 focus:rounded"
             >
               Snazzah
             </a>
@@ -295,15 +309,25 @@ const Home: NextPage = () => {
           </div>
           <span className="text-sm">
             Made with{' '}
-            <a className="font-bold hover:underline" href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
+            <a className={`font-bold ${commonLinkClass} focus:outline-white/50`} href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
               Next.js
             </a>
             ,{' '}
-            <a className="font-bold hover:underline" href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer">
+            <a
+              className={`font-bold ${commonLinkClass} focus:outline-white/50`}
+              href="https://tailwindcss.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Tailwind
             </a>{' '}
             and{' '}
-            <a className="font-bold hover:underline" href="https://preactjs.com" target="_blank" rel="noopener noreferrer">
+            <a
+              className={`font-bold ${commonLinkClass} focus:outline-white/50`}
+              href="https://preactjs.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Preact
             </a>
           </span>
