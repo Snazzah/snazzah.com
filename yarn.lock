@@ -948,10 +948,10 @@
   dependencies:
     "@iconify/types" "^1.0.12"
 
-"@iconify-icons/mdi@^1.2.9":
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/@iconify-icons/mdi/-/mdi-1.2.9.tgz#4cf089bd54a1fb4b7a0f1688f665c5b41e001f0a"
-  integrity sha512-jcl0Ow0WXKvDwN3CLVXb182iF3jqjNmiS9sSi6c0FIN/RUlh/E89s6BUR/GThm+lbSLXWX0hq0m6RyK5fdR1YQ==
+"@iconify-icons/mdi@^1.2.10":
+  version "1.2.10"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/mdi/-/mdi-1.2.10.tgz#8adb39080feed6cbef2ab2940576184b9bcba25a"
+  integrity sha512-V80ZmkxLzp8VjwjxaT+8ht0daoBRSkJCf0L2TVMEsHAw+jMduOPfkRObEPd3CT7IL2ATCoXxzy98tTTqBOj4tA==
   dependencies:
     "@iconify/types" "^1.1.0"
 
