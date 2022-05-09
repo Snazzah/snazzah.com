@@ -21,7 +21,7 @@
     "next": "12.1.5",
     "next-pwa": "^5.5.2",
     "postcss": "^8.4.13",
-    "preact": "^10.7.1",
+    "preact": "^10.7.2",
     "preact-compat": "^3.19.0",
     "react": "^18.1.0",
     "react-dom": "18.1.0",
