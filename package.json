@@ -15,7 +15,7 @@
     "@iconify-icons/file-icons": "^1.2.1",
     "@iconify-icons/mdi": "^1.2.14",
     "@iconify-icons/simple-icons": "^1.2.14",
-    "@iconify/react": "^3.2.1",
+    "@iconify/react": "^3.2.2",
     "autoprefixer": "^10.4.7",
     "clsx": "^1.1.1",
     "next": "12.1.6",
