@@ -42,6 +42,6 @@
     "eslint-config-snazzah": "^1.1.0",
     "eslint-plugin-react": "^7.30.0",
     "serve": "^13.0.2",
-    "typescript": "4.7.2"
+    "typescript": "4.7.3"
   }
 }
