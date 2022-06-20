@@ -955,10 +955,10 @@
   dependencies:
     "@iconify/types" "^1.1.0"
 
-"@iconify-icons/simple-icons@^1.2.15":
-  version "1.2.15"
-  resolved "https://registry.yarnpkg.com/@iconify-icons/simple-icons/-/simple-icons-1.2.15.tgz#e9cd54edf96fced1a303d26eb01a94eb4a95b664"
-  integrity sha512-q2EGVJWtN7ompA+tVmcbfc2nnqHyPSrD+TZqx9PnbPGYBjhO9Pdu6zNMqa8P2KJYcLC58hJSFyGxN+G12We3BA==
+"@iconify-icons/simple-icons@^1.2.17":
+  version "1.2.17"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/simple-icons/-/simple-icons-1.2.17.tgz#182e42453fcca7716f0a0a6653c302d6de351403"
+  integrity sha512-Z+uv0+SrF53+rXAfE4pV/2uDdh6xRsfbWWjqvr2AGzV+Q8iS7jQKj8Zigym+WukTR14O2xsdod4/Uc7uQAxvtQ==
   dependencies:
     "@iconify/types" "^1.1.0"
 
@@ -1184,10 +1184,10 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.5.tgz#1001cc5e6a3704b83c236027e77f2f58ea010f40"
   integrity sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==
 
-"@types/node@*", "@types/node@17.0.42":
-  version "17.0.42"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.42.tgz#d7e8f22700efc94d125103075c074396b5f41f9b"
-  integrity sha512-Q5BPGyGKcvQgAMbsr7qEGN/kIPN6zZecYYABeTDBizOsau+2NMdSVTar9UQw21A2+JyA2KRNDYaYrPB0Rpk2oQ==
+"@types/node@*", "@types/node@18.0.0":
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.0.0.tgz#67c7b724e1bcdd7a8821ce0d5ee184d3b4dd525a"
+  integrity sha512-cHlGmko4gWLVI27cGJntjs/Sj8th9aYwplmZFwmmgYQQvL5NUsgVJG7OddLvNfLqYS31KFN0s3qlaD9qCaxACA==
 
 "@types/prop-types@*":
   version "15.7.5"
