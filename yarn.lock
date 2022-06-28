@@ -948,12 +948,12 @@
   dependencies:
     "@iconify/types" "^1.0.12"
 
-"@iconify-icons/mdi@^1.2.19":
-  version "1.2.19"
-  resolved "https://registry.yarnpkg.com/@iconify-icons/mdi/-/mdi-1.2.19.tgz#e124f959a38976a0f6672233d5c41dce5528fd78"
-  integrity sha512-qIGhGzg1saBjAaNiB26cw0C2YCp7Dne/S7SkT9EXV7jSNrge+JdSvuk2eYfGs2ZIGmXsOu3xv6IKqqQGCzSJYw==
+"@iconify-icons/mdi@^1.2.22":
+  version "1.2.22"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/mdi/-/mdi-1.2.22.tgz#1bff778370820a082b32774b2fc180b92193438d"
+  integrity sha512-dk1QJd/jQ6R/5YTg7mOqyrDdSk5g+KuWp59N9o5DAuOLtBPCOWZooW6Sj+Vil3wRA0EsF9Vk8Ythyrlwb75stw==
   dependencies:
-    "@iconify/types" "^1.1.0"
+    "@iconify/types" "*"
 
 "@iconify-icons/simple-icons@^1.2.17":
   version "1.2.17"
@@ -967,7 +967,7 @@
   resolved "https://registry.yarnpkg.com/@iconify/react/-/react-3.2.2.tgz#ab5241dc01562076bae3b0c22238aff7e5f029cc"
   integrity sha512-z3+Jno3VcJzgNHsN5mEvYMsgCkOZkydqdIwOxjXh45+i2Vs9RGH68Y52vt39izwFSfuYUXhaW+1u7m7+IhCn/g==
 
-"@iconify/types@^1.0.12", "@iconify/types@^1.1.0":
+"@iconify/types@*", "@iconify/types@^1.0.12", "@iconify/types@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@iconify/types/-/types-1.1.0.tgz#dc15fc988b1b3fd558dd140a24ede7e0aac11280"
   integrity sha512-Jh0llaK2LRXQoYsorIH8maClebsnzTcve+7U3rQUSnC11X4jtPnFuyatqFLvMxZ8MLG8dB4zfHsbPfuvxluONw==
@@ -3950,10 +3950,10 @@ safe-buffer@^5.0.1, safe-buffer@^5.1.0:
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
 
-sass@^1.52.3:
-  version "1.52.3"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.52.3.tgz#b7cc7ffea2341ccc9a0c4fd372bf1b3f9be1b6cb"
-  integrity sha512-LNNPJ9lafx+j1ArtA7GyEJm9eawXN8KlA1+5dF6IZyoONg1Tyo/g+muOsENWJH/2Q1FHbbV4UwliU0cXMa/VIA==
+sass@^1.53.0:
+  version "1.53.0"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.53.0.tgz#eab73a7baac045cc57ddc1d1ff501ad2659952eb"
+  integrity sha512-zb/oMirbKhUgRQ0/GFz8TSAwRq2IlR29vOUJZOx0l8sV+CkHUfHa4u5nqrG+1VceZp7Jfj59SVW9ogdhTvJDcQ==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
@@ -4271,10 +4271,10 @@ swr@^1.3.0:
   resolved "https://registry.yarnpkg.com/swr/-/swr-1.3.0.tgz#c6531866a35b4db37b38b72c45a63171faf9f4e8"
   integrity sha512-dkghQrOl2ORX9HYrMDtPa7LTVHJjCTeZoB1dqTbnnEDlSvN8JEKpYIYurDfvbQFUUS8Cg8PceFVZNkW0KNNYPw==
 
-tailwindcss@^3.1.3:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.1.3.tgz#b9ef2c1ae537c339679e8e89635af8e143d1c7eb"
-  integrity sha512-PRJNYdSIthrb8hjmAyymEyEN8Yo61TMXpzyFUpxULeeyRn3Y3gpvuw6FlRTKrJvK7thSGKRnhT36VovVx4WeMA==
+tailwindcss@^3.1.4:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.1.4.tgz#64b09059805505902139fa805d97046080bd90b9"
+  integrity sha512-NrxbFV4tYsga/hpWbRyUfIaBrNMXDxx5BsHgBS4v5tlyjf+sDsgBg5m9OxjrXIqAS/uR9kicxLKP+bEHI7BSeQ==
   dependencies:
     arg "^5.0.2"
     chokidar "^3.5.3"
