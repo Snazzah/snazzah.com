@@ -934,12 +934,12 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@iconify-icons/cib@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@iconify-icons/cib/-/cib-1.2.2.tgz#79613e96568b87e7c637ba5d5df3c00265be4988"
-  integrity sha512-l9qTLGCPvFqd/eO8J/eYTtqCoe9q5V9XysdzB8P7sBziv4+dUFWpMkfN4GGhw1kWutQFGw5abpNP8mCjX6ErCQ==
+"@iconify-icons/cib@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/cib/-/cib-1.2.3.tgz#f67c78a3b42859578fe4392bfd515f6b44477fec"
+  integrity sha512-4M3ZCpipSZO3I6zl0eRMVhUua+bvvWSR0WxZGiR/DbLunJPek2SIrxsVWbpEC1UYMJwDiJy0pzJdLRCblInDOw==
   dependencies:
-    "@iconify/types" "^1.0.12"
+    "@iconify/types" "*"
 
 "@iconify-icons/file-icons@^1.2.1":
   version "1.2.1"
