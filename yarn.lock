@@ -3648,10 +3648,10 @@ preact-transition-group@^1.1.1:
   resolved "https://registry.yarnpkg.com/preact-transition-group/-/preact-transition-group-1.1.1.tgz#f0a49327ea515ece34ea2be864c4a7d29e5d6e10"
   integrity sha1-8KSTJ+pRXs406ivoZMSn0p5dbhA=
 
-preact@^10.8.1:
-  version "10.8.1"
-  resolved "https://registry.yarnpkg.com/preact/-/preact-10.8.1.tgz#54227a20a688efe41e07c52d420e7f829c33c8c5"
-  integrity sha512-p5CKQ0MCEXTGKGOHiFaNE2V2nDq2hvDHykXvIlz+4lbfJ9umLZr8JS/fa1bXUwRcHXK+Ljk8zqmDhr25n0LtVg==
+preact@^10.8.2:
+  version "10.8.2"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.8.2.tgz#b8a614f5cc8ab0cd9e63337a3d60dc80410f4ed4"
+  integrity sha512-AKGt0BsDSiAYzVS78jZ9qRwuorY2CoSZtf1iOC6gLb/3QyZt+fLT09aYJBjRc/BEcRc4j+j3ggERMdNE43i1LQ==
 
 prelude-ls@^1.2.1:
   version "1.2.1"
