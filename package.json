@@ -11,7 +11,7 @@
     "lint:fix": "next lint --fix"
   },
   "dependencies": {
-    "@iconify-icons/cib": "^1.2.2",
+    "@iconify-icons/cib": "^1.2.3",
     "@iconify-icons/file-icons": "^1.2.1",
     "@iconify-icons/mdi": "^1.2.22",
     "@iconify-icons/simple-icons": "^1.2.17",
