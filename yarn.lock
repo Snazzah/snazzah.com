@@ -955,10 +955,10 @@
   dependencies:
     "@iconify/types" "*"
 
-"@iconify-icons/simple-icons@^1.2.19":
-  version "1.2.19"
-  resolved "https://registry.yarnpkg.com/@iconify-icons/simple-icons/-/simple-icons-1.2.19.tgz#19f9b23aa87909e67bda6bb4d2f95b8419cebf9e"
-  integrity sha512-CJTDtCBVVhqhhR+LHZRgsZ5A1x4aNR1OtrgUjUbzcjSrpubtYzBIGD/SLHO6kt9fnhDPTXS50O8GaooGwyIhkA==
+"@iconify-icons/simple-icons@^1.2.20":
+  version "1.2.20"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/simple-icons/-/simple-icons-1.2.20.tgz#3c0a45cf20fd0e90fcbd38963bdd7e9b83de40c5"
+  integrity sha512-d/fCLcelSVsqdLUTWhBPlrzjLl+d0MUGJr6NgmOMVnCrBXmdqNLLNCQXyUegctOVVptlxA9lemTn7qhL6oOEWQ==
   dependencies:
     "@iconify/types" "*"
 
