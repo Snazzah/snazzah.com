@@ -1,4 +1,4 @@
-import { Icon } from '@iconify/react';
+import { Icon } from '@iconify/react/offline';
 import clsx from 'clsx';
 import type { NextPage } from 'next';
 import Head from 'next/head';

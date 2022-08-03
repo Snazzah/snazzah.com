@@ -1,4 +1,4 @@
-import { Icon } from '@iconify/react';
+import { Icon } from '@iconify/react/offline';
 import { default as robot } from '@iconify-icons/mdi/robot-confused';
 import type { NextPage } from 'next';
 import Head from 'next/head';
