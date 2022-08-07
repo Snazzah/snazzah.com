@@ -44,3 +44,7 @@ export { default as figma } from '@iconify-icons/cib/figma';
 export { default as chrome } from '@iconify-icons/simple-icons/googlechrome';
 export { default as npm } from '@iconify-icons/simple-icons/npm';
 export { default as rubygems } from '@iconify-icons/simple-icons/rubygems';
+
+// For VSCode Presence
+export { default as json } from '@iconify-icons/mdi/code-json';
+export { default as eslint } from '@iconify-icons/cib/eslint';
