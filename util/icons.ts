@@ -48,3 +48,5 @@ export { default as rubygems } from '@iconify-icons/simple-icons/rubygems';
 // For VSCode Presence
 export { default as json } from '@iconify-icons/mdi/code-json';
 export { default as eslint } from '@iconify-icons/cib/eslint';
+export { default as bash } from '@iconify-icons/simple-icons/gnubash';
+export { default as svelte } from '@iconify-icons/simple-icons/svelte';
