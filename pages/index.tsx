@@ -102,15 +102,6 @@ const Home: NextPage = () => {
                 href="https://www.typescriptlang.org/"
               >
                 <span>TypeScript</span>
-              </a>{' '}
-              and{' '}
-              <a
-                className={`font-medium ${commonLinkClass} focus:outline-white/50`}
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://python.org/"
-              >
-                <span>Python</span>
               </a>
               .
             </span>
