@@ -1,13 +1,11 @@
 import { Icon } from '@iconify/react/offline';
-import clsx from 'clsx';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Fragment } from 'react';
 import { jsonLdScriptProps } from 'react-schemaorg';
-import { Tooltip } from 'react-tippy';
-import { useLanyard } from 'react-use-lanyard';
 import { Person } from 'schema-dts';
 
+import LanyardContainer from '../components/lanyard';
 import SnazzahAvatar from '../components/SnazzahAvatar';
 import SnazzahLogo from '../components/SnazzahLogo';
 import { contribs, links, projects, skills, spons } from '../util/content';
@@ -17,12 +15,9 @@ const commonLinkClass = 'hover:underline focus:outline focus:outline-2 focus:out
 const commonIconLinkClass =
   'transition-all transform hover:scale-110 focus:scale-110 outline-none focus:outline focus:outline-2 focus:outline-white/50 focus:outline-offset-2 focus:rounded';
 
-const Home: NextPage = () => {
-  const lanyard = useLanyard({ userId: '158049329150427136' });
-  const lanyardAvailable = lanyard.data && lanyard.data.success && lanyard.data!.data.discord_status === 'online';
-  const listeningToSpotify = lanyardAvailable && lanyard.data!.data.listening_to_spotify;
-  const spotify = listeningToSpotify ? lanyard.data!.data.spotify! : null;
+const USER_ID = '158049329150427136';
 
+const Home: NextPage = () => {
   return (
     <div id="home" className="min-h-screen bg-neutral-900 text-white">
       <Head>
@@ -94,53 +89,7 @@ const Home: NextPage = () => {
             <SnazzahLogo className="fill-current my-4 h-14 lg:h-20 lg:my-8 filter drop-shadow-txt transition-transform transform hover:scale-105" />
             <div className="relative self-end select-none" title="That's me!">
               <SnazzahAvatar className="xl:h-48 xl:mt-2 lg:h-32 h-20" />
-              <div className="absolute bottom-0 right-0 mb-2 mr-2">
-                {/* @ts-ignore */}
-                <Tooltip
-                  disabled={!lanyardAvailable}
-                  position="left"
-                  arrow={true}
-                  tabIndex={listeningToSpotify ? 0 : -1}
-                  className="outline-none group"
-                  html={
-                    <span>
-                      {listeningToSpotify ? (
-                        <>
-                          Listening to <b>{spotify!.song}</b> by {spotify!.artist}
-                        </>
-                      ) : (
-                        'Online on Discord'
-                      )}
-                    </span>
-                  }
-                >
-                  <a
-                    href={listeningToSpotify ? `https://open.spotify.com/track/${spotify!.track_id}` : undefined}
-                    target="_blank"
-                    title={listeningToSpotify ? 'Listening on Spotify' : 'Online on Discord'}
-                    rel="noopener noreferrer"
-                    tabIndex={-1}
-                  >
-                    <div
-                      className={clsx(
-                        {
-                          'opacity-0': !lanyardAvailable,
-                          'opacity-100': lanyardAvailable,
-                          'lg:w-10 lg:h-10 w-6 h-6': listeningToSpotify,
-                          'lg:w-8 lg:h-8 w-4 h-4': !listeningToSpotify,
-                          'hover:ring hover:ring-green-100/75 group-focus:ring group-focus:ring-green-100/50': listeningToSpotify
-                        },
-                        'bg-green-500 whitespace-nowrap flex rounded-full items-center justify-center transition-all shadow-md shadow-black/50'
-                      )}
-                    >
-                      <Icon
-                        icon={icons.spotify}
-                        className={clsx('lg:w-6 lg:h-6 text-white transition-all', listeningToSpotify ? 'opacity-100' : 'opacity-0')}
-                      />
-                    </div>
-                  </a>
-                </Tooltip>
-              </div>
+              <LanyardContainer userId={USER_ID} />
             </div>
           </div>
           <div className="p-2 text-center flex flex-col space-y-1 lg:text-xl lg:p-4 bg-black bg-opacity-25">
