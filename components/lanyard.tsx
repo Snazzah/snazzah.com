@@ -93,7 +93,7 @@ export default function LanyardContainer({ userId }: { userId: string }) {
         tabIndex={vscodeActivity ? 0 : -1}
         className="outline-none group"
         html={
-          <span>
+          <span className="lg:text-base md:text-base text-sm">
             Active on <b>Visual Studio Code</b>
             {vscodeExt ? <>, {vscodeExt}</> : ''}
           </span>
@@ -123,7 +123,7 @@ export default function LanyardContainer({ userId }: { userId: string }) {
         tabIndex={vscodeActivity ? 0 : -1}
         className="outline-none group"
         html={
-          <span>
+          <span className="lg:text-base md:text-base text-sm">
             Active on <b>Sublime Text</b>
             {sublimeExt ? <>, {sublimeExt}</> : ''}
           </span>
@@ -153,7 +153,7 @@ export default function LanyardContainer({ userId }: { userId: string }) {
         tabIndex={listeningToSpotify ? 0 : -1}
         className="outline-none group"
         html={
-          <span>
+          <span className="lg:text-base md:text-base text-sm">
             {listeningToSpotify ? (
               <>
                 Listening to <b>{spotify!.song}</b> by {spotify!.artist}
