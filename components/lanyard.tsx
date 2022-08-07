@@ -8,7 +8,7 @@ import * as icons from '../util/icons';
 type CodeExt = [IconifyIcon, string] | [IconifyIcon, string, true];
 type CodeExtMap = { [id: string]: CodeExt };
 
-const VSCODE_ID = 'bcb81b6439d30df7';
+const VSCODE_ID = '383226320970055681';
 const VSCODE_EXT_MAP: CodeExtMap = {
   '565945769320775680': [icons.react, 'TSX'],
   '565944802462531603': [icons.react, 'JSX'],
@@ -25,7 +25,7 @@ const VSCODE_EXT_MAP: CodeExtMap = {
   '565944799455346703': [icons.html, 'HTML']
 };
 
-const SUBLIME_ID = '55cc4ffbecdcca85';
+const SUBLIME_ID = '389368374645227520';
 const SUBLIME_MAP: CodeExtMap = {
   react: [icons.react, 'React'],
   typescript: [icons.ts, 'TypeScript'],
@@ -76,10 +76,10 @@ export default function LanyardContainer({ userId }: { userId: string }) {
   const listeningToSpotify = lanyardAvailable && lanyard.data!.data.listening_to_spotify;
   const spotify = listeningToSpotify ? lanyard.data!.data.spotify! : null;
 
-  const vscodeActivity = lanyardAvailable && lanyard.data!.data.activities.find((act) => act.id === VSCODE_ID);
+  const vscodeActivity = lanyardAvailable && lanyard.data!.data.activities.find((act) => act.application_id === VSCODE_ID);
   const vscodeExt = vscodeActivity ? getExt(vscodeActivity, VSCODE_EXT_MAP, 'vscode') : null;
 
-  const sublimeActivity = lanyardAvailable && lanyard.data!.data.activities.find((act) => act.id === SUBLIME_ID);
+  const sublimeActivity = lanyardAvailable && lanyard.data!.data.activities.find((act) => act.application_id === SUBLIME_ID);
   const sublimeExt = sublimeActivity ? getExt(sublimeActivity, SUBLIME_MAP, 'sublime') : null;
 
   return (
