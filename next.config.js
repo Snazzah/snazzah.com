@@ -1,23 +1,15 @@
-const withPWA = require('next-pwa');
+const withPWA = require('next-pwa'); // next.config.js
+const withPreact = require('next-plugin-preact');
 
 /** @type {import('next').NextConfig} */
-const nextConfig = withPWA({
-  pwa: {
-    dest: 'public',
-    publicExcludes: ['!_headers', '!_redirects']
-  },
-  reactStrictMode: true,
-  webpack: (config, { dev, isServer }) => {
-    if (!dev && !isServer) {
-      Object.assign(config.resolve.alias, {
-        react: 'preact/compat',
-        'react-dom/test-utils': 'preact/test-utils',
-        'react-dom': 'preact/compat'
-      });
-    }
-
-    return config;
-  }
-});
+const nextConfig = withPWA(
+  withPreact({
+    pwa: {
+      dest: 'public',
+      publicExcludes: ['!_headers', '!_redirects']
+    },
+    reactStrictMode: true
+  })
+);
 
 module.exports = nextConfig;
