@@ -19,7 +19,7 @@
     "@iconify/react": "3.2.2",
     "autoprefixer": "10.4.8",
     "clsx": "1.2.1",
-    "cssnano": "5.1.12",
+    "cssnano": "5.1.13",
     "next": "12.2.5",
     "next-plugin-preact": "3.0.7",
     "next-pwa": "5.5.5",
