@@ -24,7 +24,7 @@
     "next-plugin-preact": "3.0.7",
     "next-pwa": "5.5.5",
     "postcss": "8.4.16",
-    "preact": "10.10.2",
+    "preact": "10.10.6",
     "preact-render-to-string": "5.2.1",
     "react": "npm:@preact/compat",
     "react-dom": "npm:@preact/compat",
