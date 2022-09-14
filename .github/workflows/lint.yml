@@ -5,10 +5,12 @@ on:
       - "*"
       - "!docs"
     paths:
-      - "src/**"
-      - ".eslintignore"
+      - "components/**"
+      - "pages/**"
+      - "util/**"
       - ".eslintrc.*"
-      - ".prettierrc"
+      - "package.json"
+      - "yarn.lock"
       - ".github/workflows/lint.yml"
   workflow_dispatch:
 
@@ -20,16 +22,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install Node v12
+      - name: Install Node v18
         uses: actions/setup-node@v3
         with:
-          node-version: 12.x
+          node-version: 18.x
 
       - name: Install dependencies
-        run: npm install
+        run: yarn
 
       - name: Run ESLint
-        run: npm run lint:fix
+        run: yarn lint:fix
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
