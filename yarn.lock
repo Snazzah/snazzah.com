@@ -972,10 +972,10 @@
   dependencies:
     "@iconify/types" "*"
 
-"@iconify-icons/mdi@1.2.30":
-  version "1.2.30"
-  resolved "https://registry.yarnpkg.com/@iconify-icons/mdi/-/mdi-1.2.30.tgz#ebfbc4a5e77b5cc23c2d80e9b3363dd647f02d6c"
-  integrity sha512-67EIs70BkAzg2dNzvZ7mlyuTUP9NxLxWFO5U7v6BVaUIYkToKmo/+UtrHxEU3pBUUqziiJY7ZHfmT+u1kz6uIQ==
+"@iconify-icons/mdi@1.2.31":
+  version "1.2.31"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/mdi/-/mdi-1.2.31.tgz#4c3811f831a74c72e94654faf32ba94f5947604a"
+  integrity sha512-jlNSKo7j4Exh2gmt5En1x1j51O0Iiqgdg/V+ePlan187hzEacI7jrKWp7kCPgDfc1JGcIe9P0jN0Txn4aRz4Zw==
   dependencies:
     "@iconify/types" "*"
 
