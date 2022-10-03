@@ -23,7 +23,7 @@
     "next": "12.2.5",
     "next-plugin-preact": "3.0.7",
     "next-pwa": "5.5.5",
-    "postcss": "8.4.16",
+    "postcss": "8.4.17",
     "preact": "10.11.0",
     "preact-render-to-string": "5.2.4",
     "react": "npm:@preact/compat",
