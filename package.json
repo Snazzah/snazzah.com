@@ -25,7 +25,7 @@
     "next-pwa": "5.5.5",
     "postcss": "8.4.17",
     "preact": "10.11.1",
-    "preact-render-to-string": "5.2.4",
+    "preact-render-to-string": "5.2.5",
     "react": "npm:@preact/compat",
     "react-dom": "npm:@preact/compat",
     "react-schemaorg": "2.0.0",
