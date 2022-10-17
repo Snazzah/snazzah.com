@@ -14,7 +14,7 @@
   "dependencies": {
     "@iconify-icons/cib": "1.2.3",
     "@iconify-icons/file-icons": "1.2.2",
-    "@iconify-icons/mdi": "1.2.31",
+    "@iconify-icons/mdi": "1.2.32",
     "@iconify-icons/simple-icons": "1.2.30",
     "@iconify/react": "4.0.0",
     "autoprefixer": "10.4.12",
