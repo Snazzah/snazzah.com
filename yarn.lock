@@ -984,10 +984,10 @@
   dependencies:
     "@iconify/types" "*"
 
-"@iconify-icons/simple-icons@1.2.33":
-  version "1.2.33"
-  resolved "https://registry.yarnpkg.com/@iconify-icons/simple-icons/-/simple-icons-1.2.33.tgz#4b39513f24d6de7de12809adeac3cc429c73c03f"
-  integrity sha512-FKNKdj6InQ7J/C1NKFZF8PU9sb8A2uXD7Z9gFGOa67P+RLQP2CiHPAVrZtcaVj1xv7n91J7rMOkjq5YIysgs9Q==
+"@iconify-icons/simple-icons@1.2.34":
+  version "1.2.34"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/simple-icons/-/simple-icons-1.2.34.tgz#2ced64fce28c1e1cc98b24b0c23dfd6d405441c2"
+  integrity sha512-18A7QO6v1yY84SGh3JYio7xt+J4IZQdarQFDWhRNN3ciOXc6XrxemjOubAZNQga11u02XbAdY3GlupbjbwqrMg==
   dependencies:
     "@iconify/types" "*"
 
