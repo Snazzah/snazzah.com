@@ -1,0 +1,111 @@
+---
+import { Icon } from 'astro-icon';
+import Card from './common/Card.astro';
+import { commonIconLinkClass, SectionContent } from './common/constants';
+
+export const projects: SectionContent = [
+  {
+    icons: ['ts'],
+    name: 'slash-create',
+    description: 'A library for creating Discord slash commands.',
+    buttons: [
+      {
+        name: 'Website',
+        url: 'https://slash-create.js.org/'
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/Snazzah/slash-create'
+      }
+    ]
+  },
+  {
+    icons: ['discord', 'nodejs'],
+    name: 'Craig',
+    description: 'A multi-track voice channel recording bot for Discord.',
+    buttons: [
+      {
+        name: 'Website',
+        url: 'https://craig.chat/'
+      },
+      {
+        name: 'GitHub',
+        url: 'https://github.com/CraigChat/craig'
+      }
+    ]
+  },
+  {
+    icons: ['discord', 'nodejs'],
+    name: 'Taco',
+    description: 'A Discord bot that manages Trello boards.',
+    buttons: [
+      {
+        name: 'Website',
+        url: 'https://tacobot.app/'
+      }
+    ]
+  }
+];
+
+export const viewMore = [
+  {
+    name: 'GitHub Repositories',
+    icon: 'github',
+    url: 'https://github.com/Snazzah?tab=repositories'
+  },
+  {
+    name: 'NPM Packages',
+    icon: 'npm',
+    url: 'https://www.npmjs.com/~snazzah'
+  },
+  {
+    name: 'Ruby Gems',
+    icon: 'rubygems',
+    url: 'https://rubygems.org/profiles/Snazzah'
+  }
+];
+---
+
+<Card color="bg-green-500" title="Projects">
+  {
+    projects.map((project, i) => (
+      /* bg-opacity-20 bg-opacity-25 */ <div class={`flex flex-col p-4 bg-black bg-opacity-2${(i % 2) * 5} space-y-2`}>
+        <span class="text-xl flex flex-row items-center space-x-2">
+          {project.icons && project.icons.map((icon) => <Icon name={icon} class="w-6 h-6" />)}
+          <b>{project.name}</b>
+        </span>
+        <span>{project.description}</span>
+        {project.buttons && (
+          <div class="flex flex-row space-x-2">
+            {project.buttons.map((button) => (
+              <a
+                class="rounded-full bg-green-900 bg-opacity-50 py-1 px-4 ring-0 transition-all hover:bg-green-500 focus:ring-green-300 focus:ring-2 outline-none"
+                target="_blank"
+                rel="noopener noreferrer"
+                href={button.url}
+              >
+                {button.name}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+    ))
+  }
+  <h4 class="text-md py-2 px-6 bg-black bg-opacity-40 italic text-center">View more projects&hellip;</h4>
+  <div class="flex flex-row flex-wrap pb-3 px-4 bg-black bg-opacity-40 justify-center">
+    {
+      viewMore.map((link) => (
+        <a
+          href={link.url}
+          target="_blank"
+          title={link.name}
+          rel="noopener noreferrer"
+          class={`text-white hover:text-neutral-300 m-2 ${commonIconLinkClass}`}
+        >
+          <Icon class="w-8 h-8" name={link.icon} />
+        </a>
+      ))
+    }
+  </div>
+</Card>

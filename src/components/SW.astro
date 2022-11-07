@@ -1,0 +1,11 @@
+{/*
+  Having this snippet in Layout gives eslint-astro parsing errors,
+  so I moved it so it's own file and ignored this file.
+*/}
+
+<>
+  {import.meta.env.MODE === 'production' && <>
+    <script is:inline src="/registerSW.js" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+  </>}
+</>
