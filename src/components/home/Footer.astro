@@ -1,0 +1,22 @@
+---
+import { commonLinkClass } from './common/constants';
+---
+
+<footer class="flex flex-col p-10 space-y-2 text-center">
+  <div class="text-xl font-light leading-none tracking-tight">
+    <a
+      href="https://snazzah.com"
+      class="decoration-clone bg-clip-text font-bold text-transparent bg-gradient-to-b from-red-400 to-red-500 focus:outline focus:outline-2 focus:outline-red-200/50 focus:outline-offset-4 focus:rounded"
+      >Snazzah</a
+    > &copy; {new Date().getFullYear()}
+  </div>
+  <span class="text-sm">
+    Made with
+    <a class={`font-bold ${commonLinkClass} focus:outline-white/50`} href="https://astro.build/" target="_blank" rel="noopener noreferrer">Astro</a>,
+    <a class={`font-bold ${commonLinkClass} focus:outline-white/50`} href="https://tailwindcss.com" target="_blank" rel="noopener noreferrer"
+      >Tailwind</a
+    >
+    and
+    <a class={`font-bold ${commonLinkClass} focus:outline-white/50`} href="https://preactjs.com" target="_blank" rel="noopener noreferrer">Preact</a>
+  </span>
+</footer>

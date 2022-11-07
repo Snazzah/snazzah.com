@@ -1,0 +1,129 @@
+---
+import { Icon } from 'astro-icon';
+import Card from './common/Card.astro';
+import Lanyard from './lanyard/Lanyard';
+import SnazzahAvatar from './SnazzahAvatar';
+import SnazzahLogo from './SnazzahLogo';
+import { commonIconLinkClass, commonLinkClass, SimpleLinkContent } from './common/constants';
+
+const USER_ID = '158049329150427136';
+
+const links: SimpleLinkContent = [
+  {
+    name: 'Twitter',
+    url: 'https://twitter.com/Snazzah',
+    icon: 'twitter'
+  },
+  {
+    name: 'GitHub',
+    url: 'https://github.com/Snazzah',
+    icon: 'github'
+  },
+  {
+    name: 'Steam',
+    url: 'https://steamcommunity.com/id/Snazzah',
+    icon: 'steam'
+  },
+  {
+    name: 'Twitch',
+    url: 'https://twitch.tv/SnazzahGuy',
+    icon: 'twitch'
+  },
+  {
+    name: 'Discord',
+    url: 'https://snaz.in/discord',
+    icon: 'discord'
+  },
+  {
+    name: 'E-mail',
+    url: 'mailto:me@snazzah.com',
+    icon: 'email'
+  }
+];
+
+const donationLinks: SimpleLinkContent = [
+  {
+    name: 'PayPal',
+    url: 'https://paypal.me/Snazzah',
+    icon: 'paypal'
+  },
+  {
+    name: 'Patreon',
+    url: 'https://patreon.com/Snazzah',
+    icon: 'patreon'
+  },
+  {
+    name: 'Cash.app',
+    url: 'https://cash.app/$Snazzah',
+    icon: 'cashapp'
+  },
+  {
+    name: 'GitHub Sponsors',
+    url: 'https://github.com/sponsors/Snazzah',
+    icon: 'github-sponsors'
+  }
+];
+---
+
+<Card color="bg-brand">
+  <div class="flex flex-row items-center justify-center space-x-4 sm:rounded-t-xl">
+    <SnazzahLogo className="fill-current my-4 h-14 lg:h-20 lg:my-8 filter drop-shadow-txt transition-transform transform hover:scale-105" />
+    <div class="relative self-end select-none" title="That's me!">
+      <SnazzahAvatar className="xl:h-48 xl:mt-2 lg:h-32 h-20" />
+      <Lanyard userId={USER_ID} client:only="preact" />
+    </div>
+  </div>
+
+  {/* TODO update description */}
+  <div class="p-2 text-center flex flex-col space-y-1 lg:text-xl lg:p-4 bg-black bg-opacity-25">
+    <span>
+      Full-stack developer, mainly proficient in
+      <a
+        class={`font-medium ${commonLinkClass} focus:outline-white/50`}
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.typescriptlang.org/">TypeScript</a
+      >.
+    </span>
+    <span class="text-base">
+      I make websites, bots, and APIs and have been since <b>2014</b>.
+    </span>
+  </div>
+
+  <div class="flex flex-row flex-wrap justify-center p-3 space-x-4 bg-black bg-opacity-50">
+    {
+      links.map((link) => (
+        <a
+          href={link.url}
+          title={link.name}
+          target="_blank"
+          rel="noopener noreferrer"
+          class={`text-white hover:text-neutral-300 ${commonIconLinkClass}`}
+        >
+          <Icon class="w-8 h-8" name={link.icon} />
+        </a>
+      ))
+    }
+  </div>
+
+  <div class="flex flex-row flex-wrap justify-center p-3 space-x-6 bg-black bg-opacity-60">
+    {
+      donationLinks.map((link) => (
+        <a
+          href={link.url}
+          title={link.name}
+          target="_blank"
+          rel="noopener noreferrer"
+          class={`text-white hover:text-neutral-300 ${commonIconLinkClass}`}
+        >
+          <Icon class="w-6 h-6" name={link.icon} />
+        </a>
+      ))
+    }
+  </div>
+</Card>
+
+<style lang="sass">
+  .drop-shadow-txt
+    --tw-drop-shadow: drop-shadow(0 3px 1px rgba(0, 0, 0, 0.5)) drop-shadow(0 4px 3px rgba(0, 0, 0, 0.1))
+</style>

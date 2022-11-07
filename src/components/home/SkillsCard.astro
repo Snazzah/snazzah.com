@@ -1,0 +1,207 @@
+---
+import { Icon } from 'astro-icon';
+import Card from './common/Card.astro';
+import { commonIconLinkClass, IconSectionContent } from './common/constants';
+
+export const skills: IconSectionContent = [
+  [
+    'Language & Syntax',
+    [
+      {
+        name: 'HTML',
+        url: 'https://www.w3schools.com/html/',
+        color: 'hover:text-orange-500',
+        icon: 'html'
+      },
+      {
+        name: 'CSS',
+        url: 'https://www.w3schools.com/css/',
+        color: 'hover:text-blue-400',
+        icon: 'css'
+      },
+      {
+        name: 'JavaScript',
+        url: 'https://www.javascript.com/',
+        color: 'hover:text-yellow-300',
+        icon: 'js'
+      },
+      {
+        name: 'TypeScript',
+        url: 'https://www.typescriptlang.org/',
+        color: 'hover:text-blue-500',
+        icon: 'ts'
+      },
+      {
+        name: 'Node.js',
+        url: 'https://www.nodejs.org/',
+        color: 'hover:text-green-500',
+        icon: 'nodejs'
+      },
+      {
+        name: 'Python',
+        url: 'https://www.python.org/',
+        color: 'hover:text-yellow-300',
+        icon: 'python'
+      },
+      {
+        name: 'Sass',
+        url: 'https://sass-lang.com/',
+        color: 'hover:text-pink-400',
+        icon: 'sass'
+      },
+      {
+        name: 'Stylus',
+        url: 'https://stylus-lang.com/',
+        color: 'hover:text-neutral-400',
+        icon: 'stylus'
+      }
+    ]
+  ],
+  [
+    'Frameworks',
+    [
+      {
+        name: 'React',
+        url: 'https://reactjs.org/',
+        color: 'hover:text-blue-400',
+        icon: 'react'
+      },
+      {
+        name: 'Vue',
+        url: 'https://vuejs.org/',
+        color: 'hover:text-green-400',
+        icon: 'vue'
+      },
+      {
+        name: 'TailwindCSS',
+        url: 'https://tailwindcss.com/',
+        color: 'hover:text-teal-500',
+        icon: 'tailwind'
+      },
+      {
+        name: 'Next.js',
+        url: 'https://nextjs.org/',
+        color: 'hover:text-neutral-200',
+        icon: 'nextjs'
+      },
+      {
+        name: 'Nuxt.js',
+        url: 'https://nuxtjs.org/',
+        color: 'hover:text-green-400',
+        icon: 'nuxtjs'
+      },
+      {
+        name: 'Fastify',
+        url: 'https://fastify.io/',
+        color: 'hover:text-neutral-200',
+        icon: 'fastify'
+      },
+      {
+        name: 'Express',
+        url: 'https://expressjs.com/',
+        color: 'hover:text-neutral-200',
+        icon: 'express'
+      }
+    ]
+  ],
+  [
+    'Tools',
+    [
+      {
+        name: 'Visual Studio Code',
+        url: 'https://code.visualstudio.com/',
+        color: 'hover:text-blue-500',
+        icon: 'vscode'
+      },
+      {
+        name: 'Sublime Text',
+        url: 'https://www.sublimetext.com/',
+        color: 'hover:text-yellow-500',
+        icon: 'sublime'
+      },
+      {
+        name: 'Git',
+        url: 'https://git-scm.com/',
+        color: 'hover:text-red-500',
+        icon: 'git'
+      },
+      {
+        name: 'PostgreSQL',
+        url: 'https://www.postgresql.org/',
+        color: 'hover:text-blue-500',
+        icon: 'psql'
+      },
+      {
+        name: 'Redis',
+        url: 'https://redis.io/',
+        color: 'hover:text-red-500',
+        icon: 'redis'
+      },
+      {
+        name: 'nginx',
+        url: 'https://nginx.org/en/',
+        color: 'hover:text-green-500',
+        icon: 'nginx'
+      },
+      {
+        name: 'Prisma',
+        url: 'https://prisma.io/',
+        color: 'hover:text-sky-900',
+        icon: 'prisma'
+      },
+      {
+        name: 'Figma',
+        url: 'https://figma.com/',
+        color: 'hover:text-blue-500',
+        icon: 'figma'
+      }
+    ]
+  ],
+  [
+    'Services & APIs',
+    [
+      {
+        name: 'GitHub',
+        url: 'https://github.com/',
+        color: 'hover:text-neutral-200',
+        icon: 'github'
+      },
+      {
+        name: 'Cloudflare',
+        url: 'https://cloudflare.com/',
+        color: 'hover:text-amber-500',
+        icon: 'cloudflare'
+      },
+      {
+        name: 'Discord',
+        url: 'https://discord.com/',
+        color: 'hover:text-blue-500',
+        icon: 'discord'
+      }
+    ]
+  ]
+];
+---
+
+<Card color="bg-yellow-500" title="Skills">
+  {
+    skills.map(([title, icons], i) => (
+      /* bg-opacity-20 bg-opacity-30 bg-opacity-40 bg-opacity-50 */ <>
+        <h4 class={`text-md py-2 px-6 bg-black bg-opacity-${i + 2}0`}>{title}</h4>
+        <div class={`flex flex-row flex-wrap pb-3 px-4 bg-black bg-opacity-${i + 2}0`}>
+          {icons.map((icon) => (
+            <a
+              title={icon.name}
+              href={icon.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class={`text-white ${icon.color} m-2 ${commonIconLinkClass}`}
+            >
+              <Icon class="w-8 h-8" name={icon.icon} />
+            </a>
+          ))}
+        </div>
+      </>
+    ))
+  }
+</Card>

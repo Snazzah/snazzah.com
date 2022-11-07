@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LandingCard from '../components/home/LandingCard.astro';
+import SkillsCard from '../components/home/SkillsCard.astro';
+import ProjectsCard from '../components/home/ProjectsCard.astro';
+import Footer from '../components/home/Footer.astro';
+
+import 'react-tippy/dist/tippy.css';
+import '../styles/default.sass';
+---
+
+<Layout>
+  <div class="min-h-screen bg-neutral-900 text-white">
+    <main class="sm:max-w-4xl sm:mx-auto sm:p-12 sm:space-y-10">
+      <LandingCard />
+
+      <SkillsCard />
+      <ProjectsCard />
+
+      <Footer />
+    </main>
+  </div>
+</Layout>
