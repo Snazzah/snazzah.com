@@ -1119,17 +1119,17 @@
   dependencies:
     "@iconify/types" "*"
 
-"@iconify-icons/mdi@1.2.32":
-  version "1.2.32"
-  resolved "https://registry.yarnpkg.com/@iconify-icons/mdi/-/mdi-1.2.32.tgz#44176b921daddf7a9afd6007add88d0e61bdd3a4"
-  integrity sha512-LLXgR3qQVJdoXbv48d3iMWeQvMZOuSNRVdM/8tQeuepoGdmZXxgbPuLSPoe1s+DTP2N4aKRgsFKmz+Y9GyNAYg==
+"@iconify-icons/mdi@1.2.33":
+  version "1.2.33"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/mdi/-/mdi-1.2.33.tgz#0ebd9fe1af16b2f163e81639eddab529b352ab7a"
+  integrity sha512-DeXUsqn5NQpks0JrZ8EiPXwlcwzxArPOETI4G9L4iFhHKvr5Hb90Xul//XtIKeDF0OXuUCjooQg6kdYrw5PwEQ==
   dependencies:
     "@iconify/types" "*"
 
-"@iconify-icons/simple-icons@1.2.34":
-  version "1.2.34"
-  resolved "https://registry.yarnpkg.com/@iconify-icons/simple-icons/-/simple-icons-1.2.34.tgz#2ced64fce28c1e1cc98b24b0c23dfd6d405441c2"
-  integrity sha512-18A7QO6v1yY84SGh3JYio7xt+J4IZQdarQFDWhRNN3ciOXc6XrxemjOubAZNQga11u02XbAdY3GlupbjbwqrMg==
+"@iconify-icons/simple-icons@1.2.35":
+  version "1.2.35"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/simple-icons/-/simple-icons-1.2.35.tgz#bf39586020cd3a5db53d0dcffe4c40a4d689b0d4"
+  integrity sha512-3FMU2v1AwKz4LRQoS/vO9+ba8zvvmimFu5oRYGHudV6PDStReZ9vdfs2YxSoP4x71ZwQ6PzIHBv9T1daw6pJeQ==
   dependencies:
     "@iconify/types" "*"
 
