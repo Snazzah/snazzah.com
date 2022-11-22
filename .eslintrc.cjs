@@ -52,6 +52,15 @@ module.exports = {
         // you don't need to format inside <script> as it will be formatted as a `.astro` file.
         'prettier/prettier': 'off'
       }
+    },
+    {
+      files: ['**/*.mjs'],
+      env: {
+        es2020: true
+      },
+      parserOptions: {
+        sourceType: 'module'
+      }
     }
   ]
 };
