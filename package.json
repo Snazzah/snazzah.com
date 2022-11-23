@@ -15,9 +15,9 @@
   "dependencies": {
     "@astrojs/preact": "1.2.0",
     "@astrojs/tailwind": "2.1.2",
-    "@iconify-icons/cib": "1.2.3",
-    "@iconify-icons/mdi": "1.2.33",
-    "@iconify-icons/simple-icons": "1.2.35",
+    "@iconify-icons/cib": "1.2.4",
+    "@iconify-icons/mdi": "1.2.34",
+    "@iconify-icons/simple-icons": "1.2.36",
     "@iconify/react": "4.0.0",
     "@preact/compat": "17.1.2",
     "astro": "1.6.10",
