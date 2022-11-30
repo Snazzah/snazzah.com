@@ -18,7 +18,7 @@
     "@iconify-icons/cib": "1.2.4",
     "@iconify-icons/mdi": "1.2.34",
     "@iconify-icons/simple-icons": "1.2.37",
-    "@iconify/react": "4.0.0",
+    "@iconify/react": "4.0.1",
     "@preact/compat": "17.1.2",
     "astro": "1.6.11",
     "astro-compress": "1.1.9",
