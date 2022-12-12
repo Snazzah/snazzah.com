@@ -1126,10 +1126,10 @@
   dependencies:
     "@iconify/types" "*"
 
-"@iconify-icons/simple-icons@1.2.37":
-  version "1.2.37"
-  resolved "https://registry.yarnpkg.com/@iconify-icons/simple-icons/-/simple-icons-1.2.37.tgz#6a547da744809962a48a633950adf8a8eac09a2f"
-  integrity sha512-LngPVboRenK/rA9TBN2RHXzHokC0+bWObuJbweKVB9qF2wsZPuk/q8ayhosAC/pU3GrKsfCRrmNjPGfj3UXqVw==
+"@iconify-icons/simple-icons@1.2.38":
+  version "1.2.38"
+  resolved "https://registry.yarnpkg.com/@iconify-icons/simple-icons/-/simple-icons-1.2.38.tgz#6ef6e90e61326be9c8ed9e320d16f96936069988"
+  integrity sha512-8qcHeLCSIR0eCJEUxUT6cldbpB3TLKq7XyXfOlxTiUONB2pVkqF+gJRAVD1fys8AGzBU+FDoNAy/XLOHYyC8dg==
   dependencies:
     "@iconify/types" "*"
 
