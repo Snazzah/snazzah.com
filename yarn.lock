@@ -1203,10 +1203,10 @@
   resolved "https://registry.yarnpkg.com/@ljharb/has-package-exports-patterns/-/has-package-exports-patterns-0.0.2.tgz#c1718939b65efa1f45f53686c2fcfa992b9fb68f"
   integrity sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==
 
-"@nikolarhristov/pipeline@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@nikolarhristov/pipeline/-/pipeline-0.1.0.tgz#c8a31c319c4c92ef6d781a73758855fb1ecc1a2a"
-  integrity sha512-kxrVA9uXidzQIC1AUSWhnG8JskTiAXpRqBbovCR7zlSdexFm6qb5TtP1dXj+nW3zHwMKTHTt7b+G1MjLnHFniA==
+"@nikolarhristov/pipeline@0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@nikolarhristov/pipeline/-/pipeline-0.1.7.tgz#0a3c074acf579a2c1450f9854d06bd30448020fb"
+  integrity sha512-ImQX3HW9VqL6koGyR8zkTUWFGcASiAooULyfN+9IdKyPo1eje0uTe3eogNErzvd2okKYXsrONNwIvpccaywuiA==
   dependencies:
     "@types/csso" "5.0.0"
     "@types/html-minifier-terser" "7.0.0"
@@ -1776,12 +1776,12 @@ ast-types@0.14.2:
   dependencies:
     tslib "^2.0.1"
 
-astro-compress@1.1.18:
-  version "1.1.18"
-  resolved "https://registry.yarnpkg.com/astro-compress/-/astro-compress-1.1.18.tgz#71255cb80f08f51467f10e6cbb9a78561d8c1662"
-  integrity sha512-/691T3/hxPbaxoatsNG3JUuUA7jj6+qQqWyqU4kAaFBNEV6lms6pmv1DECM8qaOx47pLZe7VeuXGkb8tOS2x9g==
+astro-compress@1.1.22:
+  version "1.1.22"
+  resolved "https://registry.yarnpkg.com/astro-compress/-/astro-compress-1.1.22.tgz#355ffee47c52dd2283c98ffb8c4391dc6e0a8f9e"
+  integrity sha512-8gcYqN8nOC/JwH6dxcoLHTQQaAQNe7tS/yd4uc3dmO93n684ZdMXuPfr6KvjkQEOTEuYYS/lqkC8gjObVtFN1g==
   dependencies:
-    "@nikolarhristov/pipeline" "0.1.0"
+    "@nikolarhristov/pipeline" "0.1.7"
 
 astro-eslint-parser@^0.9.0:
   version "0.9.0"
