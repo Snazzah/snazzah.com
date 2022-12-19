@@ -5,6 +5,8 @@ import { Activity, useLanyard } from 'react-use-lanyard';
 
 import * as icons from './icons';
 
+// TODO replace using react-tippy eventually...
+
 type CodeExt = [IconifyIcon, string] | [IconifyIcon, string, true];
 type CodeExtMap = { [id: string]: CodeExt };
 
