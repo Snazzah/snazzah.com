@@ -4,8 +4,8 @@ specifiers:
   '@astrojs/preact': 1.2.0
   '@astrojs/tailwind': 2.1.3
   '@iconify-icons/cib': 1.2.4
-  '@iconify-icons/mdi': 1.2.36
-  '@iconify-icons/simple-icons': 1.2.39
+  '@iconify-icons/mdi': 1.2.38
+  '@iconify-icons/simple-icons': 1.2.40
   '@iconify/react': 4.0.1
   '@preact/compat': 17.1.2
   astro: 1.8.0
@@ -28,8 +28,8 @@ dependencies:
   '@astrojs/preact': 1.2.0_preact@10.11.3
   '@astrojs/tailwind': 2.1.3_tailwindcss@3.2.4
   '@iconify-icons/cib': 1.2.4
-  '@iconify-icons/mdi': 1.2.36
-  '@iconify-icons/simple-icons': 1.2.39
+  '@iconify-icons/mdi': 1.2.38
+  '@iconify-icons/simple-icons': 1.2.40
   '@iconify/react': 4.0.1
   '@preact/compat': 17.1.2_preact@10.11.3
   astro: 1.8.0_sass@1.57.1
@@ -1416,14 +1416,14 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
-  /@iconify-icons/mdi/1.2.36:
-    resolution: {integrity: sha512-3rx7Hr4wZrbPnpJh/f9uoZ8yHutyozXOnI8h96B3MyjE/lZmWqCx1fCxzDvAlRD6G09RN18zX9uPHd6HPZUtKA==}
+  /@iconify-icons/mdi/1.2.38:
+    resolution: {integrity: sha512-OESxkbDZcIgwkEZzO5kry+fcuGAiz6zvACepWalkFiZV8eHJgXULLbnJSeNc2POKyfpPbj8vPsu5HPB/xu6RmA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
 
-  /@iconify-icons/simple-icons/1.2.39:
-    resolution: {integrity: sha512-kVrJf5dbGcP9is0wwh4Hc9kAcY54ciz9YdG5+6pw2iR10tVlgPmnXuNs3bi+Z8rYp3uLn3VgfqRrJI/Mn3mSLA==}
+  /@iconify-icons/simple-icons/1.2.40:
+    resolution: {integrity: sha512-6Djrgkf7nnzs7XsFKGOeY+5bpDZuuB2ecRO0YsPQG0RFyk0sMaKrf8mVJ/eL+k6ogCI2vKH+AatNTHs1+aoOGg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
