@@ -4,7 +4,7 @@ specifiers:
   '@astrojs/preact': 1.2.0
   '@astrojs/tailwind': 2.1.3
   '@iconify-icons/cib': 1.2.4
-  '@iconify-icons/mdi': 1.2.38
+  '@iconify-icons/mdi': 1.2.39
   '@iconify-icons/simple-icons': 1.2.40
   '@iconify/react': 4.0.1
   '@preact/compat': 17.1.2
@@ -28,7 +28,7 @@ dependencies:
   '@astrojs/preact': 1.2.0_preact@10.11.3
   '@astrojs/tailwind': 2.1.3_tailwindcss@3.2.4
   '@iconify-icons/cib': 1.2.4
-  '@iconify-icons/mdi': 1.2.38
+  '@iconify-icons/mdi': 1.2.39
   '@iconify-icons/simple-icons': 1.2.40
   '@iconify/react': 4.0.1
   '@preact/compat': 17.1.2_preact@10.11.3
@@ -1416,8 +1416,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
-  /@iconify-icons/mdi/1.2.38:
-    resolution: {integrity: sha512-OESxkbDZcIgwkEZzO5kry+fcuGAiz6zvACepWalkFiZV8eHJgXULLbnJSeNc2POKyfpPbj8vPsu5HPB/xu6RmA==}
+  /@iconify-icons/mdi/1.2.39:
+    resolution: {integrity: sha512-fFYh21To6lmqyYy1w3ZahE3aTjoDxwiehI7KPYxDplmM7ZUfeP0sPeyuCHzwfJ/YlV8w8JTZWIgKGdpmmuqtCQ==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
