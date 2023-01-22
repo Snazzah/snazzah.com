@@ -30,8 +30,14 @@ const links: SimpleLinkContent = [
     icon: 'twitch'
   },
   {
+    name: 'Mastodon',
+    url: 'https://uwu.social/@snazzah',
+    icon: 'mastodon',
+    rel: 'me'
+  },
+  {
     name: 'Discord',
-    url: 'https://snaz.in/discord',
+    url: 'https://discord.com/users/158049329150427136',
     icon: 'discord'
   },
   {
@@ -96,6 +102,7 @@ const donationLinks: SimpleLinkContent = [
         <a
           href={link.url}
           title={link.name}
+          rel={link.rel}
           target="_blank"
           rel="noopener noreferrer"
           class={`text-white hover:text-neutral-300 ${commonIconLinkClass}`}

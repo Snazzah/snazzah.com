@@ -26,4 +26,5 @@ export type SimpleLinkContent = {
   name: string;
   url: string;
   icon: string;
+  rel?: string;
 }[];
