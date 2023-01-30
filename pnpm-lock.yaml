@@ -6,7 +6,7 @@ specifiers:
   '@iconify-icons/cib': 1.2.4
   '@iconify-icons/mdi': 1.2.39
   '@iconify-icons/simple-icons': 1.2.41
-  '@iconify/react': 4.0.1
+  '@iconify/react': 4.1.0
   '@preact/compat': 17.1.2
   astro: 1.9.2
   astro-compress: 1.1.23
@@ -30,7 +30,7 @@ dependencies:
   '@iconify-icons/cib': 1.2.4
   '@iconify-icons/mdi': 1.2.39
   '@iconify-icons/simple-icons': 1.2.41
-  '@iconify/react': 4.0.1
+  '@iconify/react': 4.1.0
   '@preact/compat': 17.1.2_preact@10.11.3
   astro: 1.9.2_sass@1.57.1
   astro-compress: 1.1.23
@@ -1433,8 +1433,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
-  /@iconify/react/4.0.1:
-    resolution: {integrity: sha512-/DBJqh5K7W4f+d4kpvyJa/OTpVa3GfgrE9bZFAKP0vIWDr0cvVU9MVvbbkek216w9nLQhpJY/FeJtc6izB1PHw==}
+  /@iconify/react/4.1.0:
+    resolution: {integrity: sha512-Mf72i3TNNKpKCKxmo7kzqyrUdCgaoljpqtWmtqpqwyxoV4ukhnDsSRNLhf2yBnqGr3cVZsdj/i0FMpXIY0Qk0g==}
     peerDependencies:
       react: '>=16'
     dependencies:
