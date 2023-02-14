@@ -21,12 +21,12 @@ specifiers:
   react-use-lanyard: 0.2.0
   sass: 1.57.1
   schema-dts: 1.1.0
-  tailwindcss: 3.2.4
+  tailwindcss: 3.2.6
   vite-plugin-pwa: 0.14.3
 
 dependencies:
   '@astrojs/preact': 2.0.2_preact@10.11.3
-  '@astrojs/tailwind': 2.1.3_tailwindcss@3.2.4
+  '@astrojs/tailwind': 2.1.3_tailwindcss@3.2.6
   '@iconify-icons/cib': 1.2.4
   '@iconify-icons/mdi': 1.2.41
   '@iconify-icons/simple-icons': 1.2.42
@@ -40,7 +40,7 @@ dependencies:
   react-schemaorg: 2.0.0_schema-dts@1.1.0
   react-tippy: 1.4.0
   react-use-lanyard: 0.2.0
-  tailwindcss: 3.2.4
+  tailwindcss: 3.2.6
 
 devDependencies:
   eslint: 8.33.0
@@ -169,7 +169,7 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/tailwind/2.1.3_tailwindcss@3.2.4:
+  /@astrojs/tailwind/2.1.3_tailwindcss@3.2.6:
     resolution: {integrity: sha512-W7UUUBJ3itDGcvJPvk+M/eNKFlLBYGODIzPsJ3zuehNzcJDhv/Ues+TzrpSvd0FaKfmV9Zlq3ZtToy96xxJU6Q==}
     peerDependencies:
       tailwindcss: ^3.0.24
@@ -177,7 +177,7 @@ packages:
       '@proload/core': 0.3.3
       autoprefixer: 10.4.13_postcss@8.4.20
       postcss: 8.4.20
-      tailwindcss: 3.2.4
+      tailwindcss: 3.2.6
     dev: false
 
   /@astrojs/telemetry/1.0.1:
@@ -6356,8 +6356,8 @@ packages:
       '@pkgr/utils': 2.3.1
       tslib: 2.4.1
 
-  /tailwindcss/3.2.4:
-    resolution: {integrity: sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==}
+  /tailwindcss/3.2.6:
+    resolution: {integrity: sha512-BfgQWZrtqowOQMC2bwaSNe7xcIjdDEgixWGYOd6AL0CbKHJlvhfdbINeAW76l1sO+1ov/MJ93ODJ9yluRituIw==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     dependencies:
