@@ -40,7 +40,7 @@
     "eslint-config-snazzah": "1.2.1",
     "eslint-plugin-astro": "0.23.0",
     "sass": "1.57.1",
-    "schema-dts": "1.1.0",
+    "schema-dts": "1.1.2",
     "vite-plugin-pwa": "0.14.4"
   }
 }

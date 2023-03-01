@@ -20,7 +20,7 @@ specifiers:
   react-tippy: 1.4.0
   react-use-lanyard: 0.2.0
   sass: 1.57.1
-  schema-dts: 1.1.0
+  schema-dts: 1.1.2
   svgo: 2.8.0
   tailwindcss: 3.2.6
   vite-plugin-pwa: 0.14.4
@@ -38,7 +38,7 @@ dependencies:
   astro-icon: 0.8.0
   clsx: 1.2.1
   preact: 10.11.3
-  react-schemaorg: 2.0.0_schema-dts@1.1.0
+  react-schemaorg: 2.0.0_schema-dts@1.1.2
   react-tippy: 1.4.0
   react-use-lanyard: 0.2.0
   svgo: 2.8.0
@@ -49,7 +49,7 @@ devDependencies:
   eslint-config-snazzah: 1.2.1
   eslint-plugin-astro: 0.23.0_eslint@8.33.0
   sass: 1.57.1
-  schema-dts: 1.1.0
+  schema-dts: 1.1.2
   vite-plugin-pwa: 0.14.4
 
 packages:
@@ -5636,7 +5636,7 @@ packages:
       strip-json-comments: 2.0.1
     dev: false
 
-  /react-schemaorg/2.0.0_schema-dts@1.1.0:
+  /react-schemaorg/2.0.0_schema-dts@1.1.2:
     resolution: {integrity: sha512-UqciFKA203ewNjn0zC09uYKuJSvMD8L75L1s/cW4rc7cS64w8l7vaI3SYkuoI/nwCBkJRmOkSJedWDUZBlYZwg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -5644,7 +5644,7 @@ packages:
       schema-dts: '>=0.7.4'
       typescript: '>=3.1.6'
     dependencies:
-      schema-dts: 1.1.0
+      schema-dts: 1.1.2
     dev: false
 
   /react-tippy/1.4.0:
@@ -5995,8 +5995,8 @@ packages:
       immutable: 4.2.4
       source-map-js: 1.0.2
 
-  /schema-dts/1.1.0:
-    resolution: {integrity: sha512-vdmbs/5ycj4zyKpZIDqTcy+IZi4s7c38RVAYuDmRi7zgxUT8wRWPMLzg0jr7FjdVunYu9yZ00F3+XcZTTFcTOQ==}
+  /schema-dts/1.1.2:
+    resolution: {integrity: sha512-MpNwH0dZJHinVxk9bT8XUdjKTxMYrA5bLtrrGmFA6PTLwlOKnhi67XoRd6/ty+Djt6ZC0slR57qFhZDNMI6DhQ==}
     peerDependencies:
       typescript: '>=4.1.0'
 
