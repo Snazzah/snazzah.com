@@ -19,7 +19,7 @@ specifiers:
   react-schemaorg: 2.0.0
   react-tippy: 1.4.0
   react-use-lanyard: 0.3.0
-  sass: 1.57.1
+  sass: 1.58.3
   schema-dts: 1.1.2
   svgo: 2.8.0
   tailwindcss: 3.2.7
@@ -33,7 +33,7 @@ dependencies:
   '@iconify-icons/simple-icons': 1.2.44
   '@iconify/react': 4.1.0
   '@preact/compat': 17.1.2_preact@10.13.0
-  astro: 1.9.2_sass@1.57.1
+  astro: 1.9.2_sass@1.58.3
   astro-compress: 1.1.33
   astro-icon: 0.8.0
   clsx: 1.2.1
@@ -48,7 +48,7 @@ devDependencies:
   eslint: 8.35.0
   eslint-config-snazzah: 1.2.1
   eslint-plugin-astro: 0.23.0_eslint@8.35.0
-  sass: 1.57.1
+  sass: 1.58.3
   schema-dts: 1.1.2
   vite-plugin-pwa: 0.14.4
 
@@ -2139,7 +2139,7 @@ packages:
       svgo: 2.8.0
     dev: false
 
-  /astro/1.9.2_sass@1.57.1:
+  /astro/1.9.2_sass@1.58.3:
     resolution: {integrity: sha512-L+Ma0eR0Aa6QZg7RF0lEs+106Ye1/zukvtq3KtsYIogAojltlwllwU9X5CwMBzFwA55NxpNp4gSRh5US/xb+8Q==}
     engines: {node: ^14.18.0 || >=16.12.0, npm: '>=6.14.0'}
     hasBin: true
@@ -2203,7 +2203,7 @@ packages:
       typescript: 4.9.5
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 3.2.5_sass@1.57.1
+      vite: 3.2.5_sass@1.58.3
       vitefu: 0.2.4_vite@3.2.5
       yargs-parser: 21.1.1
       zod: 3.20.6
@@ -5992,8 +5992,8 @@ packages:
       suf-log: 2.5.3
     dev: false
 
-  /sass/1.57.1:
-    resolution: {integrity: sha512-O2+LwLS79op7GI0xZ8fqzF7X2m/m8WFfI02dHOdsK5R2ECeS5F62zrwg/relM1rjSLy7Vd/DiMNIvPrQGsA0jw==}
+  /sass/1.58.3:
+    resolution: {integrity: sha512-Q7RaEtYf6BflYrQ+buPudKR26/lH+10EmO9bBqbmPh/KeLqv8bjpTNqxe71ocONqXq+jYiCbpPUmQMS+JJPk4A==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -6790,7 +6790,7 @@ packages:
       - supports-color
     dev: true
 
-  /vite/3.2.5_sass@1.57.1:
+  /vite/3.2.5_sass@1.58.3:
     resolution: {integrity: sha512-4mVEpXpSOgrssFZAOmGIr85wPHKvaDAcXqxVxVRZhljkJOMZi1ibLibzjLHzJvcok8BMguLc7g1W6W/GqZbLdQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -6819,7 +6819,7 @@ packages:
       postcss: 8.4.21
       resolve: 1.22.1
       rollup: 2.79.1
-      sass: 1.57.1
+      sass: 1.58.3
     optionalDependencies:
       fsevents: 2.3.2
     dev: false
@@ -6832,7 +6832,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 3.2.5_sass@1.57.1
+      vite: 3.2.5_sass@1.58.3
     dev: false
 
   /vscode-css-languageservice/6.2.3:
