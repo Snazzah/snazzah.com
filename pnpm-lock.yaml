@@ -15,7 +15,7 @@ specifiers:
   eslint: 8.35.0
   eslint-config-snazzah: 1.2.1
   eslint-plugin-astro: 0.23.0
-  preact: 10.13.0
+  preact: 10.13.1
   react-schemaorg: 2.0.0
   react-tippy: 1.4.0
   react-use-lanyard: 0.3.0
@@ -26,18 +26,18 @@ specifiers:
   vite-plugin-pwa: 0.14.4
 
 dependencies:
-  '@astrojs/preact': 2.1.0_preact@10.13.0
+  '@astrojs/preact': 2.1.0_preact@10.13.1
   '@astrojs/tailwind': 2.1.3_tailwindcss@3.2.7
   '@iconify-icons/cib': 1.2.4
   '@iconify-icons/mdi': 1.2.44
   '@iconify-icons/simple-icons': 1.2.44
   '@iconify/react': 4.1.0
-  '@preact/compat': 17.1.2_preact@10.13.0
+  '@preact/compat': 17.1.2_preact@10.13.1
   astro: 1.9.2_sass@1.58.3
   astro-compress: 1.1.33
   astro-icon: 0.8.0
   clsx: 1.2.1
-  preact: 10.13.0
+  preact: 10.13.1
   react-schemaorg: 2.0.0_schema-dts@1.1.2
   react-tippy: 1.4.0
   react-use-lanyard: 0.3.0
@@ -144,7 +144,7 @@ packages:
       vfile-message: 3.1.4
     dev: false
 
-  /@astrojs/preact/2.1.0_preact@10.13.0:
+  /@astrojs/preact/2.1.0_preact@10.13.1:
     resolution: {integrity: sha512-1AnXpnjC24/mWJyq+EN5DoWp+w9Hg/y3dwFX3728rlBhyuY573jx+4+VHuG/g0A1alzJuIAhSPtqCP0YQktUnw==}
     engines: {node: '>=16.12.0'}
     peerDependencies:
@@ -152,10 +152,10 @@ packages:
     dependencies:
       '@babel/core': 7.20.12
       '@babel/plugin-transform-react-jsx': 7.20.13_@babel+core@7.20.12
-      '@preact/signals': 1.1.3_preact@10.13.0
+      '@preact/signals': 1.1.3_preact@10.13.1
       babel-plugin-module-resolver: 5.0.0
-      preact: 10.13.0
-      preact-render-to-string: 5.2.6_preact@10.13.0
+      preact: 10.13.1
+      preact-render-to-string: 5.2.6_preact@10.13.1
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -1528,25 +1528,25 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: false
 
-  /@preact/compat/17.1.2_preact@10.13.0:
+  /@preact/compat/17.1.2_preact@10.13.1:
     resolution: {integrity: sha512-7pOZN9lMDDRQ+6aWvjwTp483KR8/zOpfS83wmOo3zfuLKdngS8/5RLbsFWzFZMGdYlotAhX980hJ75bjOHTwWg==}
     peerDependencies:
       preact: '*'
     dependencies:
-      preact: 10.13.0
+      preact: 10.13.1
     dev: false
 
   /@preact/signals-core/1.2.3:
     resolution: {integrity: sha512-Kui4p7PMcEQevBgsTO0JBo3gyQ88Q3qzEvsVCuSp11t0JcN4DmGCTJcGRVSCq7Bn7lGxJBO+57jNSzDoDJ+QmA==}
     dev: false
 
-  /@preact/signals/1.1.3_preact@10.13.0:
+  /@preact/signals/1.1.3_preact@10.13.1:
     resolution: {integrity: sha512-N09DuAVvc90bBZVRwD+aFhtGyHAmJLhS3IFoawO/bYJRcil4k83nBOchpCEoS0s5+BXBpahgp0Mjf+IOqP57Og==}
     peerDependencies:
       preact: 10.x
     dependencies:
       '@preact/signals-core': 1.2.3
-      preact: 10.13.0
+      preact: 10.13.1
     dev: false
 
   /@proload/core/0.3.3:
@@ -5506,17 +5506,17 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
-  /preact-render-to-string/5.2.6_preact@10.13.0:
+  /preact-render-to-string/5.2.6_preact@10.13.1:
     resolution: {integrity: sha512-JyhErpYOvBV1hEPwIxc/fHWXPfnEGdRKxc8gFdAZ7XV4tlzyzG847XAyEZqoDnynP88akM4eaHcSOzNcLWFguw==}
     peerDependencies:
       preact: '>=10'
     dependencies:
-      preact: 10.13.0
+      preact: 10.13.1
       pretty-format: 3.8.0
     dev: false
 
-  /preact/10.13.0:
-    resolution: {integrity: sha512-ERdIdUpR6doqdaSIh80hvzebHB7O6JxycOhyzAeLEchqOq/4yueslQbfnPwXaNhAYacFTyCclhwkEbOumT0tHw==}
+  /preact/10.13.1:
+    resolution: {integrity: sha512-KyoXVDU5OqTpG9LXlB3+y639JAGzl8JSBXLn1J9HTSB3gbKcuInga7bZnXLlxmK94ntTs1EFeZp0lrja2AuBYQ==}
     dev: false
 
   /prebuild-install/7.1.1:
