@@ -5,7 +5,7 @@ specifiers:
   '@astrojs/tailwind': 2.1.3
   '@iconify-icons/cib': 1.2.4
   '@iconify-icons/mdi': 1.2.44
-  '@iconify-icons/simple-icons': 1.2.45
+  '@iconify-icons/simple-icons': 1.2.46
   '@iconify/react': 4.1.0
   '@preact/compat': 17.1.2
   astro: 1.9.2
@@ -30,7 +30,7 @@ dependencies:
   '@astrojs/tailwind': 2.1.3_tailwindcss@3.2.7
   '@iconify-icons/cib': 1.2.4
   '@iconify-icons/mdi': 1.2.44
-  '@iconify-icons/simple-icons': 1.2.45
+  '@iconify-icons/simple-icons': 1.2.46
   '@iconify/react': 4.1.0
   '@preact/compat': 17.1.2_preact@10.13.1
   astro: 1.9.2_sass@1.58.3
@@ -1450,8 +1450,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
-  /@iconify-icons/simple-icons/1.2.45:
-    resolution: {integrity: sha512-rj3EeKZKOprD0PLCjGiTSIsrq7/uTau6da6jzFSK3ky78QPFsQRT7Flj42kRrvfj2G8/1uFBg39YOU5BXgC9PA==}
+  /@iconify-icons/simple-icons/1.2.46:
+    resolution: {integrity: sha512-OSNDzLvKzUY8hJ8K7tmj1iJqf4c44lux9DgVYC0Q4BwXuhQ3qXgF+WJne+hn2LyZuCYC8oJpDuFPJnzPH2tmSw==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
