@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/preact': 2.1.0
-  '@astrojs/tailwind': 2.1.3
+  '@astrojs/tailwind': 3.1.1
   '@iconify-icons/cib': 1.2.4
   '@iconify-icons/mdi': 1.2.44
   '@iconify-icons/simple-icons': 1.2.46
@@ -27,7 +27,7 @@ specifiers:
 
 dependencies:
   '@astrojs/preact': 2.1.0_preact@10.13.1
-  '@astrojs/tailwind': 2.1.3_tailwindcss@3.2.7
+  '@astrojs/tailwind': 3.1.1_i2edz4k4sltgxlsdytj2v63b7q
   '@iconify-icons/cib': 1.2.4
   '@iconify-icons/mdi': 1.2.44
   '@iconify-icons/simple-icons': 1.2.46
@@ -167,15 +167,20 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/tailwind/2.1.3_tailwindcss@3.2.7:
-    resolution: {integrity: sha512-W7UUUBJ3itDGcvJPvk+M/eNKFlLBYGODIzPsJ3zuehNzcJDhv/Ues+TzrpSvd0FaKfmV9Zlq3ZtToy96xxJU6Q==}
+  /@astrojs/tailwind/3.1.1_i2edz4k4sltgxlsdytj2v63b7q:
+    resolution: {integrity: sha512-Wx/ZtVnmtfqHWGVzvUEYZm8rufVKVgDIef0q6fzwUxoT1EpTTwBkTbpnzooogewMLOh2eTscasGe3Ih2HC1wVA==}
     peerDependencies:
+      astro: ^2.1.3
       tailwindcss: ^3.0.24
     dependencies:
       '@proload/core': 0.3.3
+      astro: 1.9.2_sass@1.58.3
       autoprefixer: 10.4.13_postcss@8.4.21
       postcss: 8.4.21
+      postcss-load-config: 4.0.1_postcss@8.4.21
       tailwindcss: 3.2.7
+    transitivePeerDependencies:
+      - ts-node
     dev: false
 
   /@astrojs/telemetry/1.0.1:
@@ -5493,6 +5498,23 @@ packages:
       yaml: 1.10.2
     dev: false
 
+  /postcss-load-config/4.0.1_postcss@8.4.21:
+    resolution: {integrity: sha512-vEJIc8RdiBRu3oRAI0ymerOn+7rPuMvRXslTvZUKZonDHFIczxztIyJ1urxM1x9JXEikvpWWTUUqal5j/8QgvA==}
+    engines: {node: '>= 14'}
+    peerDependencies:
+      postcss: '>=8.0.9'
+      ts-node: '>=9.0.0'
+    peerDependenciesMeta:
+      postcss:
+        optional: true
+      ts-node:
+        optional: true
+    dependencies:
+      lilconfig: 2.0.6
+      postcss: 8.4.21
+      yaml: 2.2.1
+    dev: false
+
   /postcss-nested/6.0.0_postcss@8.4.21:
     resolution: {integrity: sha512-0DkamqrPcmkBDsLn+vQDIrtkSbNkv5AD/M322ySo9kqFkCIYklym2xEmWkwo+Y3/qZo34tzEPNUw4y7yMCdv5w==}
     engines: {node: '>=12.0'}
@@ -7176,6 +7198,11 @@ packages:
   /yaml/1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
+    dev: false
+
+  /yaml/2.2.1:
+    resolution: {integrity: sha512-e0WHiYql7+9wr4cWMx3TVQrNwejKaEe7/rHNmQmqRjazfOP5W8PB6Jpebb5o6fIapbz9o9+2ipcaTM2ZwDI6lw==}
+    engines: {node: '>= 14'}
     dev: false
 
   /yargs-parser/21.1.1:
