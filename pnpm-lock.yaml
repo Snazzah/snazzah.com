@@ -9,7 +9,7 @@ specifiers:
   '@iconify/react': 4.1.0
   '@preact/compat': 17.1.2
   astro: 1.9.2
-  astro-compress: 1.1.33
+  astro-compress: 1.1.35
   astro-icon: 0.8.0
   clsx: 1.2.1
   eslint: 8.36.0
@@ -34,7 +34,7 @@ dependencies:
   '@iconify/react': 4.1.0
   '@preact/compat': 17.1.2_preact@10.13.1
   astro: 1.9.2_sass@1.60.0
-  astro-compress: 1.1.33
+  astro-compress: 1.1.35
   astro-icon: 0.8.0
   clsx: 1.2.1
   preact: 10.13.1
@@ -2117,18 +2117,18 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /astro-compress/1.1.33:
-    resolution: {integrity: sha512-i9LuEzQAeYPs9Vn+FbN9bdPDa/g2PYddT1GOkoUacFpAZCl9qIYFFvacULjeZIMMKhrRkPZ5f9lZVC3RJP7Qpg==}
+  /astro-compress/1.1.35:
+    resolution: {integrity: sha512-K6BK+iMbejXeUS1eAjoQhRh4geEutFrGkgCkeTAthf1XeRzPrWvtNPA7RjJBXWR8aNJtjryxyW02z3pE+4RNow==}
     dependencies:
       '@types/csso': 5.0.0
       '@types/html-minifier-terser': 7.0.0
       '@types/sharp': 0.31.1
       csso: 5.0.5
-      files-pipeline: 0.0.3
+      files-pipe: 0.0.1
       html-minifier-terser: 7.1.0
       sharp: 0.31.3
       svgo: 3.0.2
-      terser: 5.16.3
+      terser: 5.16.5
     dev: false
 
   /astro-eslint-parser/0.13.0:
@@ -2758,11 +2758,6 @@ packages:
   /deep-is/0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
     dev: true
-
-  /deepmerge-ts/4.2.2:
-    resolution: {integrity: sha512-Ka3Kb21tiWjvQvS9U+1Dx+aqFAHsdTnMdYptLTmC2VAmDFMugWMY1e15aTODstipmCun8iNuqeSfcx6rsUUk0Q==}
-    engines: {node: '>=12.4.0'}
-    dev: false
 
   /deepmerge-ts/4.3.0:
     resolution: {integrity: sha512-if3ZYdkD2dClhnXR5reKtG98cwyaRT1NeugQoAPTTfsOpV9kqyeiBF9Qa5RHjemb3KzD5ulqygv6ED3t5j9eJw==}
@@ -3674,10 +3669,10 @@ packages:
       minimatch: 5.1.6
     dev: true
 
-  /files-pipeline/0.0.3:
-    resolution: {integrity: sha512-dtHt96Rs0qsNBnIlPuHUP8vd5xPRGbMYgywMfA2Qy83QPz8feoWsoXSuxxLsWYv4vag+vAhNZ4YOHL0pdyGKFA==}
+  /files-pipe/0.0.1:
+    resolution: {integrity: sha512-+U75QMGwmNi6S3cLJPCXtCWCUP3QTKCf6zwtW+7A+OS06PDbiX6MOPI3KE6XZZKLl0UYdiB3rimyFeqZDUdh1g==}
     dependencies:
-      deepmerge-ts: 4.2.2
+      deepmerge-ts: 4.3.0
       fast-glob: 3.2.12
     dev: false
 
@@ -4077,7 +4072,7 @@ packages:
       entities: 4.4.0
       param-case: 3.0.4
       relateurl: 0.2.7
-      terser: 5.16.3
+      terser: 5.16.5
     dev: false
 
   /html-void-elements/2.0.1:
@@ -5957,7 +5952,7 @@ packages:
       jest-worker: 26.6.2
       rollup: 2.79.1
       serialize-javascript: 4.0.0
-      terser: 5.16.4
+      terser: 5.16.5
     dev: true
 
   /rollup/2.79.1:
@@ -6446,8 +6441,8 @@ packages:
       unique-string: 2.0.0
     dev: true
 
-  /terser/5.16.3:
-    resolution: {integrity: sha512-v8wWLaS/xt3nE9dgKEWhNUFP6q4kngO5B8eYFUuebsu7Dw/UNAnpUod6UHo04jSSkv8TzKHjZDSd7EXdDQAl8Q==}
+  /terser/5.16.5:
+    resolution: {integrity: sha512-qcwfg4+RZa3YvlFh0qjifnzBHjKGNbtDo9yivMqMFDy9Q6FSaQWSB/j1xKhsoUFJIqDOM3TsN6D5xbrMrFcHbg==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -6455,18 +6450,6 @@ packages:
       acorn: 8.8.2
       commander: 2.20.3
       source-map-support: 0.5.21
-    dev: false
-
-  /terser/5.16.4:
-    resolution: {integrity: sha512-5yEGuZ3DZradbogeYQ1NaGz7rXVBDWujWlx1PT8efXO6Txn+eWbfKqB2bTDVmFXmePFkoLU6XI8UektMIEA0ug==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      '@jridgewell/source-map': 0.3.2
-      acorn: 8.8.2
-      commander: 2.20.3
-      source-map-support: 0.5.21
-    dev: true
 
   /text-table/0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
