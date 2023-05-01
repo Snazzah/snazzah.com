@@ -26,8 +26,8 @@ dependencies:
     specifier: 2.3.2
     version: 2.3.2(sass@1.62.1)
   astro-compress:
-    specifier: 1.1.41
-    version: 1.1.41
+    specifier: 1.1.42
+    version: 1.1.42
   astro-icon:
     specifier: 0.8.0
     version: 0.8.0
@@ -2452,8 +2452,8 @@ packages:
       es-shim-unscopables: 1.0.0
     dev: true
 
-  /astro-compress@1.1.41:
-    resolution: {integrity: sha512-avAlzu3uNWLIKCXS5OlnJEmO779Ua8f3kdNaTqv5+BOIGel1glXqQNM8diIV48nVfuEp7aVSLaij1udjsvLAjw==}
+  /astro-compress@1.1.42:
+    resolution: {integrity: sha512-heMdV3amY/k1NA4FHuNu1Nwady834tY79x8O39fBSlSvBpgESUCX2qergd7sMsaWushwqr47hWaSrfItELGaUg==}
     dependencies:
       '@lightrix/config': 0.0.11
       '@lightrix/scripts': 1.0.3
