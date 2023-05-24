@@ -17,7 +17,7 @@
     "@astrojs/tailwind": "3.1.2",
     "@iconify-icons/cib": "1.2.4",
     "@iconify-icons/mdi": "1.2.46",
-    "@iconify-icons/simple-icons": "1.2.52",
+    "@iconify-icons/simple-icons": "1.2.53",
     "@iconify/react": "4.1.0",
     "@preact/compat": "17.1.2",
     "astro": "2.5.1",
