@@ -21,8 +21,8 @@ dependencies:
     specifier: 1.2.56
     version: 1.2.56
   '@iconify/react':
-    specifier: 4.1.0
-    version: 4.1.0(react@18.2.0)
+    specifier: 4.1.1
+    version: 4.1.1(react@18.2.0)
   '@preact/compat':
     specifier: 17.1.2
     version: 17.1.2(preact@10.13.2)
@@ -1795,8 +1795,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
-  /@iconify/react@4.1.0(react@18.2.0):
-    resolution: {integrity: sha512-Mf72i3TNNKpKCKxmo7kzqyrUdCgaoljpqtWmtqpqwyxoV4ukhnDsSRNLhf2yBnqGr3cVZsdj/i0FMpXIY0Qk0g==}
+  /@iconify/react@4.1.1(react@18.2.0):
+    resolution: {integrity: sha512-jed14EjvKjee8mc0eoscGxlg7mSQRkwQG3iX3cPBCO7UlOjz0DtlvTqxqEcHUJGh+z1VJ31Yhu5B9PxfO0zbdg==}
     peerDependencies:
       react: '>=16'
     dependencies:
