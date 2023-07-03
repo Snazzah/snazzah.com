@@ -18,8 +18,8 @@ dependencies:
     specifier: 1.2.46
     version: 1.2.46
   '@iconify-icons/simple-icons':
-    specifier: 1.2.56
-    version: 1.2.56
+    specifier: 1.2.57
+    version: 1.2.57
   '@iconify/react':
     specifier: 4.1.1
     version: 4.1.1(react@18.2.0)
@@ -1789,8 +1789,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
-  /@iconify-icons/simple-icons@1.2.56:
-    resolution: {integrity: sha512-2o44CXQs+DCWCYjE9gTEMTLKz5lOrsAz/Epw4g82sDSGODN0GW2MaFbi1jDX6GdciMxi/c1DCV8YSgLzuP6loQ==}
+  /@iconify-icons/simple-icons@1.2.57:
+    resolution: {integrity: sha512-xbtstGJD8FznafkpBxwhcafhO9hGmEFeRgpLMYKOLVFzOYupniG0MC38N8fp8nET/DAc6pdPMj2UdKBJA/d31Q==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
