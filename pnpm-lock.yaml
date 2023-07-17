@@ -15,11 +15,11 @@ dependencies:
     specifier: 1.2.4
     version: 1.2.4
   '@iconify-icons/mdi':
-    specifier: 1.2.46
-    version: 1.2.46
+    specifier: 1.2.47
+    version: 1.2.47
   '@iconify-icons/simple-icons':
-    specifier: 1.2.58
-    version: 1.2.58
+    specifier: 1.2.59
+    version: 1.2.59
   '@iconify/react':
     specifier: 4.1.1
     version: 4.1.1(react@18.2.0)
@@ -1880,14 +1880,14 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
-  /@iconify-icons/mdi@1.2.46:
-    resolution: {integrity: sha512-/8se1J8YqupamWqyTejcX6zIrWgZQ8A5+7hWhHXcJD5Rc5OteEM2nuEq2NI29loAs/W9JZP4mH38uz6w2CETkw==}
+  /@iconify-icons/mdi@1.2.47:
+    resolution: {integrity: sha512-XwrHxJb2GzToyyoI9gaVm6/yE3aRlxB2IolKXzTEf6qAtjv3S4xFAxYaOlm6iuylQv+WyquH9C4cBudNPRHApg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
 
-  /@iconify-icons/simple-icons@1.2.58:
-    resolution: {integrity: sha512-nZZRxw1Peo3DlYcDyjO1qjhIro021ZfZT8gHB3EDEcMyo2PhXXqEE41Kl2CkI8KS4XAAdutpiffiI1ua+DqfSg==}
+  /@iconify-icons/simple-icons@1.2.59:
+    resolution: {integrity: sha512-5iXYkc8/sOSO1jpeBtDc/bPslMkCOqYQOyKeOIJEfpCZdsS4PKXqs0RQZQlP+Mu9eOW7QOa0qfmmCnRYBUrJaw==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
