@@ -20,7 +20,7 @@
     "@iconify-icons/simple-icons": "1.2.61",
     "@iconify/react": "4.1.1",
     "@preact/compat": "17.1.2",
-    "astro": "2.6.4",
+    "astro": "2.10.8",
     "astro-compress": "1.1.50",
     "astro-icon": "0.8.1",
     "clsx": "1.2.1",
