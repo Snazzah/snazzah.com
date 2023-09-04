@@ -8,7 +8,7 @@ export { default as ts } from '@iconify-icons/simple-icons/typescript';
 export { default as python } from '@iconify-icons/simple-icons/python';
 export { default as sass } from '@iconify-icons/simple-icons/sass';
 export { default as stylus } from '@iconify-icons/simple-icons/stylus';
-export { default as vue } from '@iconify-icons/simple-icons/vuejs';
+export { default as vue } from '@iconify-icons/mdi/vuejs';
 export { default as git } from '@iconify-icons/simple-icons/git';
 export { default as react } from '@iconify-icons/simple-icons/react';
 export { default as vscode } from '@iconify-icons/simple-icons/visualstudiocode';
