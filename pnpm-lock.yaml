@@ -28,7 +28,7 @@ dependencies:
     version: 17.1.2(preact@10.17.1)
   astro:
     specifier: 3.1.1
-    version: 3.1.1(sass@1.66.1)
+    version: 3.1.1(sass@1.67.0)
   astro-compress:
     specifier: 2.0.15
     version: 2.0.15
@@ -68,8 +68,8 @@ devDependencies:
     specifier: 0.29.0
     version: 0.29.0(eslint@8.49.0)
   sass:
-    specifier: 1.66.1
-    version: 1.66.1
+    specifier: 1.67.0
+    version: 1.67.0
   schema-dts:
     specifier: 1.1.2
     version: 1.1.2(typescript@5.0.4)
@@ -124,7 +124,7 @@ packages:
       astro: ^3.1.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.1.1(sass@1.66.1)
+      astro: 3.1.1(sass@1.67.0)
       github-slugger: 2.0.0
       import-meta-resolve: 3.0.0
       mdast-util-definitions: 6.0.0
@@ -174,7 +174,7 @@ packages:
       astro: ^3.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 3.1.1(sass@1.66.1)
+      astro: 3.1.1(sass@1.67.0)
       autoprefixer: 10.4.15(postcss@8.4.29)
       postcss: 8.4.29
       postcss-load-config: 4.0.1(postcss@8.4.29)
@@ -1910,7 +1910,7 @@ packages:
       debug: 4.3.4
       kolorist: 1.8.0
       resolve: 1.22.4
-      vite: 4.4.9(sass@1.66.1)
+      vite: 4.4.9(sass@1.67.0)
     transitivePeerDependencies:
       - preact
       - supports-color
@@ -1957,7 +1957,7 @@ packages:
       '@prefresh/utils': 1.2.0
       '@rollup/pluginutils': 4.2.1
       preact: 10.17.1
-      vite: 4.4.9(sass@1.66.1)
+      vite: 4.4.9(sass@1.67.0)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -2531,7 +2531,7 @@ packages:
       svgo: 2.8.0
     dev: false
 
-  /astro@3.1.1(sass@1.66.1):
+  /astro@3.1.1(sass@1.67.0):
     resolution: {integrity: sha512-KLtzCcLiQEsoWHJO0vQ5QZ/9/80P3cUuBeIkl87YezRkzs3Am0kuzfeGLumb6OOcrR2W0AZGlVlS0ub+q/yiaA==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -2587,7 +2587,7 @@ packages:
       undici: 5.24.0
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.4.9(sass@1.66.1)
+      vite: 4.4.9(sass@1.67.0)
       vitefu: 0.2.4(vite@4.4.9)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -6220,8 +6220,8 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: false
 
-  /sass@1.66.1:
-    resolution: {integrity: sha512-50c+zTsZOJVgFfTgwwEzkjA3/QACgdNsKueWPyAR0mRINIvLAStVQBbPg14iuqEQ74NPDbXzJARJ/O4SI1zftA==}
+  /sass@1.67.0:
+    resolution: {integrity: sha512-SVrO9ZeX/QQyEGtuZYCVxoeAL5vGlYjJ9p4i4HFuekWl8y/LtJ7tJc10Z+ck1c8xOuoBm2MYzcLfTAffD0pl/A==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -7124,14 +7124,14 @@ packages:
       fast-glob: 3.3.1
       pretty-bytes: 6.1.1
       rollup: 3.29.1
-      vite: 4.4.9(sass@1.66.1)
+      vite: 4.4.9(sass@1.67.0)
       workbox-build: 6.6.0
       workbox-window: 6.6.0
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite@4.4.9(sass@1.66.1):
+  /vite@4.4.9(sass@1.67.0):
     resolution: {integrity: sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -7162,7 +7162,7 @@ packages:
       esbuild: 0.18.20
       postcss: 8.4.29
       rollup: 3.29.1
-      sass: 1.66.1
+      sass: 1.67.0
     optionalDependencies:
       fsevents: 2.3.3
 
@@ -7174,7 +7174,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.4.9(sass@1.66.1)
+      vite: 4.4.9(sass@1.67.0)
     dev: false
 
   /vscode-json-languageservice@4.2.1:
