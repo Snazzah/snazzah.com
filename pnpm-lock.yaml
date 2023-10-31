@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@astrojs/preact':
-    specifier: 3.0.0
-    version: 3.0.0(@babel/core@7.23.2)(preact@10.17.1)(vite@4.4.11)
+    specifier: 3.0.1
+    version: 3.0.1(@babel/core@7.23.2)(preact@10.17.1)(vite@4.4.11)
   '@astrojs/tailwind':
     specifier: 5.0.2
     version: 5.0.2(astro@3.4.0)(tailwindcss@3.3.5)
@@ -142,8 +142,8 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/preact@3.0.0(@babel/core@7.23.2)(preact@10.17.1)(vite@4.4.11):
-    resolution: {integrity: sha512-KlHyozAyQIOorYb3op8MJlktvtKiK/an1nXqHsVYxW5oiOJZjD4fkTEgcDFByl/uRpce93tuK4pdGKKzzyMUVw==}
+  /@astrojs/preact@3.0.1(@babel/core@7.23.2)(preact@10.17.1)(vite@4.4.11):
+    resolution: {integrity: sha512-pAfN+U7J4hw7qijqkBx1ZBpPO+ooa+MkKIgshCozfqsHTp18uPflxQUviz0TEzB5nn7hSndzncWuc3pz/HbtJw==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       preact: ^10.6.5
