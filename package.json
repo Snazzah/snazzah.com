@@ -36,7 +36,7 @@
     "react-dom": "npm:@preact/compat@latest"
   },
   "devDependencies": {
-    "eslint": "8.53.0",
+    "eslint": "8.54.0",
     "eslint-config-snazzah": "1.2.1",
     "eslint-plugin-astro": "0.29.1",
     "sass": "1.67.0",
