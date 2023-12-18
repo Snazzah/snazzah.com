@@ -48,8 +48,8 @@ dependencies:
     specifier: 1.4.0
     version: 1.4.0
   react-use-lanyard:
-    specifier: 0.3.0
-    version: 0.3.0(react@18.2.0)
+    specifier: 0.3.1
+    version: 0.3.1(react@18.2.0)
   svgo:
     specifier: 2.8.0
     version: 2.8.0
@@ -6429,8 +6429,8 @@ packages:
       popper.js: 1.16.1
     dev: false
 
-  /react-use-lanyard@0.3.0(react@18.2.0):
-    resolution: {integrity: sha512-kUglLmUU5b1YK+EF+eMt2gH9SiWS1tk2vF1G8fR0/KVr/fPhYFOZm8XEDU9Xbeix2kNfHm+f1qUnLNuDmUIojA==}
+  /react-use-lanyard@0.3.1(react@18.2.0):
+    resolution: {integrity: sha512-p8aT7txFa+hIHEdSnSr7ZwF2bL8E8Ei0RPQI2sMtOtoO0Xo51tPNMDwq80pNBAzfcaRRpRcg6wefv6hT70n7Nw==}
     peerDependencies:
       react: '>=16'
     dependencies:
