@@ -9,8 +9,8 @@ dependencies:
     specifier: 3.0.1
     version: 3.0.1(@babel/core@7.23.6)(preact@10.19.3)(vite@4.5.1)
   '@astrojs/tailwind':
-    specifier: 5.0.3
-    version: 5.0.3(astro@3.6.4)(tailwindcss@3.3.5)
+    specifier: 5.1.0
+    version: 5.1.0(astro@3.6.4)(tailwindcss@3.3.5)
   '@iconify-icons/cib':
     specifier: 1.2.4
     version: 1.2.4
@@ -168,8 +168,8 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/tailwind@5.0.3(astro@3.6.4)(tailwindcss@3.3.5):
-    resolution: {integrity: sha512-p+uFa1PNuV8RxhGkPUFgVq8CUbmS3xr0u5k1An2xKECLotRh7vsrGcPUijHvYOt42URohcg8rIq0CxNoVMhReg==}
+  /@astrojs/tailwind@5.1.0(astro@3.6.4)(tailwindcss@3.3.5):
+    resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
