@@ -13,7 +13,7 @@
     "lint:fix": "eslint ./src --fix"
   },
   "dependencies": {
-    "@astrojs/preact": "3.0.2",
+    "@astrojs/preact": "3.1.0",
     "@astrojs/tailwind": "5.1.0",
     "@iconify-icons/cib": "1.2.4",
     "@iconify-icons/mdi": "1.2.48",

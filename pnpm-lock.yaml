@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@astrojs/preact':
-    specifier: 3.0.2
-    version: 3.0.2(@babel/core@7.23.6)(preact@10.19.3)(vite@4.5.1)
+    specifier: 3.1.0
+    version: 3.1.0(@babel/core@7.23.6)(preact@10.19.3)(vite@4.5.1)
   '@astrojs/tailwind':
     specifier: 5.1.0
     version: 5.1.0(astro@3.6.4)(tailwindcss@3.3.5)
@@ -142,8 +142,8 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/preact@3.0.2(@babel/core@7.23.6)(preact@10.19.3)(vite@4.5.1):
-    resolution: {integrity: sha512-qQ9xoWqX9gwO2n7NVTp4umt5auDgaGtqdKmZMqif6bCuBr1yWpNjWyREb/22iQAcouveybC6wFfiQnC0ewAXzw==}
+  /@astrojs/preact@3.1.0(@babel/core@7.23.6)(preact@10.19.3)(vite@4.5.1):
+    resolution: {integrity: sha512-17Eo+H3fTgcmKUa7v6aAt2BIkffdTZGR4aC0K2jO4nyNhgLRAEuaoXXJwzAG1x0UHnCw7bTQ2Vv3vuJFRy1PTg==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       preact: ^10.6.5
@@ -155,6 +155,7 @@ packages:
       babel-plugin-transform-hook-names: 1.0.2(@babel/core@7.23.6)
       preact: 10.19.3
       preact-render-to-string: 6.3.1(preact@10.19.3)
+      preact-ssr-prepass: 1.2.1(preact@10.19.3)
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -6348,6 +6349,14 @@ packages:
     dependencies:
       preact: 10.19.3
       pretty-format: 3.8.0
+    dev: false
+
+  /preact-ssr-prepass@1.2.1(preact@10.19.3):
+    resolution: {integrity: sha512-bLgbUfy8nL+PZghAPpyk9MF+cmXjdwEnxYPaJBmwbzFQqzIz8dQVBqjwB60RqZ9So/vIf6BRfHCiwFGuMCyfbQ==}
+    peerDependencies:
+      preact: '>=10 || ^10.0.0-beta.0 || ^10.0.0-alpha.0'
+    dependencies:
+      preact: 10.19.3
     dev: false
 
   /preact@10.19.3:
