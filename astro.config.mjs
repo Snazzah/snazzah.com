@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 
+import icon from 'astro-icon';
 import preact from '@astrojs/preact';
 import tailwind from '@astrojs/tailwind';
 import compress from 'astro-compress';
@@ -7,7 +8,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [preact({ compat: true }), tailwind(), compress()],
+  integrations: [preact({ compat: true }), icon(), tailwind(), compress()],
   vite: {
     ssr: {
       noExternal: ['react-use-lanyard', 'react-tippy', '@iconify/react']
