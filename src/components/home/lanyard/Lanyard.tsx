@@ -1,4 +1,4 @@
-import { type IconifyIcon, Icon, InlineIcon } from '@iconify/react/offline';
+import { Icon, type IconifyIcon, InlineIcon } from '@iconify/react/offline';
 import clsx from 'clsx';
 import { Tooltip } from 'react-tippy';
 import { type Activity, useLanyard } from 'react-use-lanyard';

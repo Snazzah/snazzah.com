@@ -27,10 +27,13 @@ module.exports = {
       rules: {
         // Enable recommended rules
         'astro/no-conflict-set-directives': 'error',
-        'astro/no-unused-define-vars-in-style': 'error'
+        'astro/no-unused-define-vars-in-style': 'error',
 
         // override/add rules settings here, such as:
         // "astro/no-set-html-directive": "error"
+
+        // FIXME parsing errors...
+        'prettier/prettier': 'off'
       }
     },
     {
