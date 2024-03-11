@@ -30,8 +30,8 @@ dependencies:
     specifier: 4.5.1
     version: 4.5.1(sass@1.71.1)(typescript@5.3.3)
   astro-compress:
-    specifier: 2.2.11
-    version: 2.2.11
+    specifier: 2.2.14
+    version: 2.2.14
   astro-icon:
     specifier: 1.1.0
     version: 1.1.0
@@ -2324,12 +2324,6 @@ packages:
       '@types/unist': 2.0.10
     dev: false
 
-  /@types/node@20.11.17:
-    resolution: {integrity: sha512-QmgQZGWu1Yw9TDyAP9ZzpFJKynYNeOvwMJmaxABfieQoVoiVOS6MN1WSpqpRcbeA5+RW82kraAVxCCJg+780Qw==}
-    dependencies:
-      undici-types: 5.26.5
-    dev: false
-
   /@types/node@20.11.25:
     resolution: {integrity: sha512-TBHyJxk2b7HceLVGFcpAUjsa5zIdsPWlR6XHfyGzd0SFu+/NFgQgMAl96MSDZgQDvJAvV6BKsFOrt6zIL09JDw==}
     dependencies:
@@ -2705,19 +2699,19 @@ packages:
       is-shared-array-buffer: 1.0.3
     dev: true
 
-  /astro-compress@2.2.11:
-    resolution: {integrity: sha512-cXN8FI0txjhteYRQjcXJby1EVHQvPA6oqt2ep1Z0MUfXcrn+F0AQA59vFGEt/pTnzmqp0R6TgrBxK1ZRDAR6Hg==}
+  /astro-compress@2.2.14:
+    resolution: {integrity: sha512-zQvzsDHm3/Hco/uoIs32ZCykH2OdxijeQ306oKc6yJp17CRZClVMjBBc6pdWTua7FJuWNfV7TKt+dZyvOOMbBg==}
     dependencies:
       '@types/csso': 5.0.4
       '@types/html-minifier-terser': 7.0.2
       csso: 5.0.5
-      files-pipe: 2.1.8
+      files-pipe: 2.1.12
       html-minifier-terser: 7.2.0
       kleur: 4.1.5
       lightningcss: 1.24.0
       sharp: 0.33.2
       svgo: 3.2.0
-      terser: 5.28.1
+      terser: 5.29.1
     dev: false
 
   /astro-eslint-parser@0.16.3:
@@ -4156,10 +4150,10 @@ packages:
       minimatch: 5.1.6
     dev: true
 
-  /files-pipe@2.1.8:
-    resolution: {integrity: sha512-2qebFhQ/Vnw7HygoeKpLjnd6ClzTt9y8qSNXjcP+5DHAFEwDq1T+d6sW8PLSkDujHMsN6Lq2ufFoWZCT8YraXw==}
+  /files-pipe@2.1.12:
+    resolution: {integrity: sha512-5yuP6+OfZ3EsarYxp64X6TofDjxUTJQFMzVOsX7HXClNoRD4+6uJr98alzs9VJg4ISgEXPU7HlWufdKnd26JsQ==}
     dependencies:
-      '@types/node': 20.11.17
+      '@types/node': 20.11.25
       deepmerge-ts: 5.1.0
       fast-glob: 3.3.2
     dev: false
@@ -4597,7 +4591,7 @@ packages:
       entities: 4.5.0
       param-case: 3.0.4
       relateurl: 0.2.7
-      terser: 5.28.1
+      terser: 5.29.1
     dev: false
 
   /html-void-elements@3.0.0:
@@ -7293,17 +7287,6 @@ packages:
       unique-string: 2.0.0
     dev: true
 
-  /terser@5.28.1:
-    resolution: {integrity: sha512-wM+bZp54v/E9eRRGXb5ZFDvinrJIOaTapx3WUokyVGZu5ucVCK55zEgGd5Dl2fSr3jUo5sDiERErUWLY6QPFyA==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      '@jridgewell/source-map': 0.3.5
-      acorn: 8.11.3
-      commander: 2.20.3
-      source-map-support: 0.5.21
-    dev: false
-
   /terser@5.29.1:
     resolution: {integrity: sha512-lZQ/fyaIGxsbGxApKmoPTODIzELy3++mXhS5hOqaAWZjQtpq/hFHAc+rm29NND1rYRxRWKcjuARNwULNXa5RtQ==}
     engines: {node: '>=10'}
@@ -7313,7 +7296,6 @@ packages:
       acorn: 8.11.3
       commander: 2.20.3
       source-map-support: 0.5.21
-    dev: true
 
   /text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
