@@ -10,7 +10,7 @@ dependencies:
     version: 3.1.1(@babel/core@7.24.3)(preact@10.19.6)(vite@5.2.7)
   '@astrojs/tailwind':
     specifier: 5.1.0
-    version: 5.1.0(astro@4.5.10)(tailwindcss@3.4.1)
+    version: 5.1.0(astro@4.5.16)(tailwindcss@3.4.1)
   '@iconify-icons/cib':
     specifier: 1.2.4
     version: 1.2.4
@@ -27,8 +27,8 @@ dependencies:
     specifier: 17.1.2
     version: 17.1.2(preact@10.19.6)
   astro:
-    specifier: 4.5.10
-    version: 4.5.10(sass@1.71.1)(typescript@5.4.3)
+    specifier: 4.5.16
+    version: 4.5.16(sass@1.71.1)(typescript@5.4.3)
   astro-compress:
     specifier: 2.2.18
     version: 2.2.18
@@ -134,13 +134,18 @@ packages:
 
   /@astrojs/compiler@2.7.0:
     resolution: {integrity: sha512-XpC8MAaWjD1ff6/IfkRq/5k1EFj6zhCNqXRd5J43SVJEBj/Bsmizkm8N0xOYscGcDFQkRgEw6/eKnI5x/1l6aA==}
+    dev: true
 
-  /@astrojs/internal-helpers@0.3.0:
-    resolution: {integrity: sha512-tGmHvrhpzuz0JBHaJX8GywN9g4rldVNHtkoVDC3m/DdzBO70jGoVuc0uuNVglRYnsdwkbG0K02Iw3nOOR3/Y4g==}
+  /@astrojs/compiler@2.7.1:
+    resolution: {integrity: sha512-/POejAYuj8WEw7ZI0J8JBvevjfp9jQ9Wmu/Bg52RiNwGXkMV7JnYpsenVfHvvf1G7R5sXHGKlTcxlQWhoUTiGQ==}
     dev: false
 
-  /@astrojs/markdown-remark@4.3.2:
-    resolution: {integrity: sha512-4Oa4VaYiBd0MatB+rWIU/0A8pZH/sK3c2QkRYb+OO2lPl+qzevJtWaZY8hAQc4qurIOlRdn6B6ofDAGhWw+DSg==}
+  /@astrojs/internal-helpers@0.4.0:
+    resolution: {integrity: sha512-6B13lz5n6BrbTqCTwhXjJXuR1sqiX/H6rTxzlXx+lN1NnV4jgnq/KJldCQaUWJzPL5SiWahQyinxAbxQtwgPHA==}
+    dev: false
+
+  /@astrojs/markdown-remark@5.0.0:
+    resolution: {integrity: sha512-QBXbxXZamVRoqCNN2gjDXa7qYPUkJZq7KYFfg3DX7rze3QL6xiz4N+Wg202dNPRaIkQa16BV6D8+EHibQFubRg==}
     dependencies:
       '@astrojs/prism': 3.0.0
       github-slugger: 2.0.0
@@ -191,13 +196,13 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/tailwind@5.1.0(astro@4.5.10)(tailwindcss@3.4.1):
+  /@astrojs/tailwind@5.1.0(astro@4.5.16)(tailwindcss@3.4.1):
     resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.5.10(sass@1.71.1)(typescript@5.4.3)
+      astro: 4.5.16(sass@1.71.1)(typescript@5.4.3)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -2947,14 +2952,14 @@ packages:
       - supports-color
     dev: false
 
-  /astro@4.5.10(sass@1.71.1)(typescript@5.4.3):
-    resolution: {integrity: sha512-xW/ZTSqSHEQyzWzXHJa9gEQXC+MUD3mhzEBJyrMp/JWT+geLgUK2m0Rrc/AnBl8EfdS/6uFadiJV1fWao4lc7w==}
+  /astro@4.5.16(sass@1.71.1)(typescript@5.4.3):
+    resolution: {integrity: sha512-1nOVsMq2OJiXnG6gO0Y77vTAboGN9nLQSy/8SGazq4h6x+alzbsMbQbArBgvaLzOSUXD0m91XLs3D8bOSuavrQ==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
-      '@astrojs/compiler': 2.7.0
-      '@astrojs/internal-helpers': 0.3.0
-      '@astrojs/markdown-remark': 4.3.2
+      '@astrojs/compiler': 2.7.1
+      '@astrojs/internal-helpers': 0.4.0
+      '@astrojs/markdown-remark': 5.0.0
       '@astrojs/telemetry': 3.0.4
       '@babel/core': 7.24.3
       '@babel/generator': 7.24.1
@@ -3452,6 +3457,7 @@ packages:
 
   /color-string@1.9.1:
     resolution: {integrity: sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==}
+    requiresBuild: true
     dependencies:
       color-name: 1.1.4
       simple-swizzle: 0.2.2
@@ -4959,6 +4965,7 @@ packages:
 
   /is-arrayish@0.3.2:
     resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==}
+    requiresBuild: true
     dev: false
 
   /is-bigint@1.0.4:
@@ -7168,6 +7175,7 @@ packages:
 
   /simple-swizzle@0.2.2:
     resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
+    requiresBuild: true
     dependencies:
       is-arrayish: 0.3.2
     dev: false
