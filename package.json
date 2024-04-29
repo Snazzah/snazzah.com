@@ -23,7 +23,7 @@
     "astro": "4.6.3",
     "astro-compress": "2.2.22",
     "astro-icon": "1.1.0",
-    "clsx": "2.1.0",
+    "clsx": "2.1.1",
     "preact": "10.19.6",
     "react-schemaorg": "2.0.0",
     "react-tippy": "1.4.0",
