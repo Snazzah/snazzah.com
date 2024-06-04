@@ -10,7 +10,7 @@ dependencies:
     version: 3.3.0(@babel/core@7.24.6)(preact@10.22.0)(vite@5.2.12)
   '@astrojs/tailwind':
     specifier: 5.1.0
-    version: 5.1.0(astro@4.8.2)(tailwindcss@3.4.3)
+    version: 5.1.0(astro@4.9.2)(tailwindcss@3.4.3)
   '@iconify-icons/cib':
     specifier: 1.2.4
     version: 1.2.4
@@ -27,8 +27,8 @@ dependencies:
     specifier: 17.1.2
     version: 17.1.2(preact@10.22.0)
   astro:
-    specifier: 4.8.2
-    version: 4.8.2(sass@1.77.4)(typescript@5.4.5)
+    specifier: 4.9.2
+    version: 4.9.2(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0)(typescript@5.4.5)
   astro-compress:
     specifier: 2.2.26
     version: 2.2.26(sass@1.77.4)(typescript@5.4.5)
@@ -186,13 +186,13 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/tailwind@5.1.0(astro@4.8.2)(tailwindcss@3.4.3):
+  /@astrojs/tailwind@5.1.0(astro@4.9.2)(tailwindcss@3.4.3):
     resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.8.2(sass@1.77.4)(typescript@5.4.5)
+      astro: 4.9.2(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0)(typescript@5.4.5)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -3043,88 +3043,6 @@ packages:
       '@iconify/utils': 2.1.24
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  /astro@4.8.2(sass@1.77.4)(typescript@5.4.5):
-    resolution: {integrity: sha512-WBrnNePQ03cF5c+9sjD3TeyJodWMuPCwygDOUo7r+7LbKDN9TJK+KxIxo01AOX4HcexhxcLiTVVCBLSsi+OX9A==}
-    engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
-    hasBin: true
-    dependencies:
-      '@astrojs/compiler': 2.8.0
-      '@astrojs/internal-helpers': 0.4.0
-      '@astrojs/markdown-remark': 5.1.0
-      '@astrojs/telemetry': 3.1.0
-      '@babel/core': 7.24.6
-      '@babel/generator': 7.24.6
-      '@babel/parser': 7.24.6
-      '@babel/plugin-transform-react-jsx': 7.24.6(@babel/core@7.24.6)
-      '@babel/traverse': 7.24.6
-      '@babel/types': 7.24.6
-      '@types/babel__core': 7.20.5
-      '@types/cookie': 0.6.0
-      acorn: 8.11.3
-      aria-query: 5.3.0
-      axobject-query: 4.0.0
-      boxen: 7.1.1
-      chokidar: 3.6.0
-      ci-info: 4.0.0
-      clsx: 2.1.1
-      common-ancestor-path: 1.0.1
-      cookie: 0.6.0
-      cssesc: 3.0.0
-      debug: 4.3.5
-      deterministic-object-hash: 2.0.2
-      devalue: 5.0.0
-      diff: 5.2.0
-      dlv: 1.1.3
-      dset: 3.1.3
-      es-module-lexer: 1.5.3
-      esbuild: 0.21.4
-      estree-walker: 3.0.3
-      execa: 8.0.1
-      fast-glob: 3.3.2
-      flattie: 1.1.1
-      github-slugger: 2.0.0
-      gray-matter: 4.0.3
-      html-escaper: 3.0.3
-      http-cache-semantics: 4.1.1
-      js-yaml: 4.1.0
-      kleur: 4.1.5
-      magic-string: 0.30.10
-      mrmime: 2.0.0
-      ora: 8.0.1
-      p-limit: 5.0.0
-      p-queue: 8.0.1
-      path-to-regexp: 6.2.2
-      preferred-pm: 3.1.3
-      prompts: 2.4.2
-      rehype: 13.0.1
-      resolve: 1.22.8
-      semver: 7.6.2
-      shiki: 1.6.2
-      string-width: 7.1.0
-      strip-ansi: 7.1.0
-      tsconfck: 3.1.0(typescript@5.4.5)
-      unist-util-visit: 5.0.0
-      vfile: 6.0.1
-      vite: 5.2.12(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0)
-      vitefu: 0.2.5(vite@5.2.12)
-      which-pm: 2.2.0
-      yargs-parser: 21.1.1
-      zod: 3.23.8
-      zod-to-json-schema: 3.23.0(zod@3.23.8)
-    optionalDependencies:
-      sharp: 0.33.4
-    transitivePeerDependencies:
-      - '@types/node'
-      - less
-      - lightningcss
-      - sass
-      - stylus
-      - sugarss
-      - supports-color
-      - terser
-      - typescript
     dev: false
 
   /astro@4.9.2(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.0)(typescript@5.4.5):
