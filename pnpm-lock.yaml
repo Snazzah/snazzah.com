@@ -30,8 +30,8 @@ dependencies:
     specifier: 4.9.2
     version: 4.9.2(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.1)(typescript@5.4.5)
   astro-compress:
-    specifier: 2.2.27
-    version: 2.2.27(sass@1.77.4)(typescript@5.4.5)
+    specifier: 2.2.28
+    version: 2.2.28(sass@1.77.4)(typescript@5.4.5)
   astro-icon:
     specifier: 1.1.0
     version: 1.1.0
@@ -2180,19 +2180,11 @@ packages:
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     dev: true
 
-  /@playform/pipe@0.0.5:
-    resolution: {integrity: sha512-lUQTs5duOtnBvpfFzoiIUuZt6148PcEYv3pESm7kTaVaFAb2shhYLdueYcy4Jr1F6gCFsCv6jUvAwDD1f8f5ZQ==}
-    peerDependencies:
-      '@playform/build': 0.0.9
-      '@playform/document': 0.0.7
-    peerDependenciesMeta:
-      '@playform/build':
-        optional: true
-      '@playform/document':
-        optional: true
+  /@playform/pipe@0.0.6:
+    resolution: {integrity: sha512-dsW6Dyq9yNLOSw0iV7iD0P13pqmKFk2YjlGzgJOM7Qnl05Vdv0beFz0MquOma7rCE+Kg4njCPNAQUDsSss8xZw==}
     dependencies:
-      '@types/node': 20.12.12
-      deepmerge-ts: 7.0.1
+      '@types/node': 20.14.2
+      deepmerge-ts: 7.0.3
       fast-glob: 3.3.2
     dev: false
 
@@ -2596,14 +2588,14 @@ packages:
       '@types/unist': 2.0.10
     dev: false
 
-  /@types/node@20.12.12:
-    resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
+  /@types/node@20.14.0:
+    resolution: {integrity: sha512-5cHBxFGJx6L4s56Bubp4fglrEpmyJypsqI6RgzMfBHWUJQGWAAi8cWcgetEbZXHYXo9C2Fa4EEds/uSyS4cxmA==}
     dependencies:
       undici-types: 5.26.5
     dev: false
 
-  /@types/node@20.14.0:
-    resolution: {integrity: sha512-5cHBxFGJx6L4s56Bubp4fglrEpmyJypsqI6RgzMfBHWUJQGWAAi8cWcgetEbZXHYXo9C2Fa4EEds/uSyS4cxmA==}
+  /@types/node@20.14.2:
+    resolution: {integrity: sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -2988,10 +2980,10 @@ packages:
       is-shared-array-buffer: 1.0.3
     dev: true
 
-  /astro-compress@2.2.27(sass@1.77.4)(typescript@5.4.5):
-    resolution: {integrity: sha512-T9SLt3+VbZRHIhOku2id78j/jOTCpRaocSc6PA2ryE+5AdErU5AvdGB3j937945i0RAp+vKx41v50kj8hMyrAA==}
+  /astro-compress@2.2.28(sass@1.77.4)(typescript@5.4.5):
+    resolution: {integrity: sha512-6vfP34YQzuRu+3S8ufmG4924NXZ8D095ii+BLNbkroDgAxlL5C6T6L47BSWdkSXofHvNMIa8nIVAGW+AUjubiw==}
     dependencies:
-      '@playform/pipe': 0.0.5
+      '@playform/pipe': 0.0.6
       '@types/csso': 5.0.4
       '@types/html-minifier-terser': 7.0.2
       astro: 4.9.2(lightningcss@1.25.1)(sass@1.77.4)(terser@5.31.1)(typescript@5.4.5)
@@ -3003,8 +2995,6 @@ packages:
       svgo: 3.3.2
       terser: 5.31.1
     transitivePeerDependencies:
-      - '@playform/build'
-      - '@playform/document'
       - '@types/node'
       - less
       - sass
@@ -3649,8 +3639,8 @@ packages:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
     dev: true
 
-  /deepmerge-ts@7.0.1:
-    resolution: {integrity: sha512-Qbiitd155MxdVp/ww9M6eeRPPMiWOugA34ptYOBQzOcFlPYl6JcWZLho6WvLmPDuxHLyLymhIN3YxrBleqZX9g==}
+  /deepmerge-ts@7.0.3:
+    resolution: {integrity: sha512-dxFbFO2RSIhPNBPL/j8Nvdt6/vrkW9+uGf1NLah/QxBGAVbK9fj2fGTO+HwdHpPAyFAsyT9iEn/1SI9SUvespw==}
     engines: {node: '>=16.0.0'}
     dev: false
 
