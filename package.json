@@ -41,7 +41,7 @@
     "eslint-plugin-astro": "0.34.0",
     "prettier": "3.3.2",
     "prettier-plugin-astro": "0.14.0",
-    "sass": "1.77.4",
+    "sass": "1.77.6",
     "schema-dts": "1.1.2",
     "typescript": "5.4.5",
     "vite-plugin-pwa": "0.19.8"
