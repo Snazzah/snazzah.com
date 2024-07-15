@@ -28,10 +28,10 @@ dependencies:
     version: 17.1.2(preact@10.22.1)
   astro:
     specifier: 4.11.5
-    version: 4.11.5(lightningcss@1.25.1)(sass@1.77.6)(terser@5.31.1)(typescript@5.4.5)
+    version: 4.11.5(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.1)(typescript@5.4.5)
   astro-compress:
     specifier: 2.2.28
-    version: 2.2.28(sass@1.77.6)(typescript@5.4.5)
+    version: 2.2.28(sass@1.77.8)(typescript@5.4.5)
   astro-icon:
     specifier: 1.1.0
     version: 1.1.0
@@ -74,8 +74,8 @@ devDependencies:
     specifier: 0.14.0
     version: 0.14.0
   sass:
-    specifier: 1.77.6
-    version: 1.77.6
+    specifier: 1.77.8
+    version: 1.77.8
   schema-dts:
     specifier: 1.1.2
     version: 1.1.2(typescript@5.4.5)
@@ -197,7 +197,7 @@ packages:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.11.5(lightningcss@1.25.1)(sass@1.77.6)(terser@5.31.1)(typescript@5.4.5)
+      astro: 4.11.5(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.1)(typescript@5.4.5)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -2037,7 +2037,7 @@ packages:
       resolve: 1.22.8
       source-map: 0.7.4
       stack-trace: 1.0.0-pre2
-      vite: 5.3.2(lightningcss@1.25.1)(sass@1.77.6)(terser@5.31.1)
+      vite: 5.3.2(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.1)
     transitivePeerDependencies:
       - preact
       - supports-color
@@ -2084,7 +2084,7 @@ packages:
       '@prefresh/utils': 1.2.0
       '@rollup/pluginutils': 4.2.1
       preact: 10.22.1
-      vite: 5.3.2(lightningcss@1.25.1)(sass@1.77.6)(terser@5.31.1)
+      vite: 5.3.2(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.1)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -2806,13 +2806,13 @@ packages:
       is-shared-array-buffer: 1.0.3
     dev: true
 
-  /astro-compress@2.2.28(sass@1.77.6)(typescript@5.4.5):
+  /astro-compress@2.2.28(sass@1.77.8)(typescript@5.4.5):
     resolution: {integrity: sha512-6vfP34YQzuRu+3S8ufmG4924NXZ8D095ii+BLNbkroDgAxlL5C6T6L47BSWdkSXofHvNMIa8nIVAGW+AUjubiw==}
     dependencies:
       '@playform/pipe': 0.0.6
       '@types/csso': 5.0.4
       '@types/html-minifier-terser': 7.0.2
-      astro: 4.11.5(lightningcss@1.25.1)(sass@1.77.6)(terser@5.31.1)(typescript@5.4.5)
+      astro: 4.11.5(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.1)(typescript@5.4.5)
       csso: 5.0.5
       html-minifier-terser: 7.2.0
       kleur: 4.1.5
@@ -2861,7 +2861,7 @@ packages:
       - supports-color
     dev: false
 
-  /astro@4.11.5(lightningcss@1.25.1)(sass@1.77.6)(terser@5.31.1)(typescript@5.4.5):
+  /astro@4.11.5(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.1)(typescript@5.4.5):
     resolution: {integrity: sha512-TCRhuaLwrxwMhS8S1GG+ZTdrAXigX9C8E/YUTs/r2t+owHxDgwl86IV9xH1IHrCPoqhK6civyAQNOT+GKmkb0A==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
@@ -2922,7 +2922,7 @@ packages:
       tsconfck: 3.1.1(typescript@5.4.5)
       unist-util-visit: 5.0.0
       vfile: 6.0.1
-      vite: 5.3.2(lightningcss@1.25.1)(sass@1.77.6)(terser@5.31.1)
+      vite: 5.3.2(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.1)
       vitefu: 0.2.5(vite@5.3.2)
       which-pm: 2.2.0
       yargs-parser: 21.1.1
@@ -6648,8 +6648,8 @@ packages:
       suf-log: 2.5.3
     dev: true
 
-  /sass@1.77.6:
-    resolution: {integrity: sha512-ByXE1oLD79GVq9Ht1PeHWCPMPB8XHpBuz1r85oByKHjZY6qV6rWnQovQzXJXuQ/XyE1Oj3iPk3lo28uzaRA2/Q==}
+  /sass@1.77.8:
+    resolution: {integrity: sha512-4UHg6prsrycW20fqLGPShtEvo/WyHRVRHwOP4DzkUrObWoWI05QBSfzU71TVB7PFaL104TwNaHpjlWXAZbQiNQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -7488,14 +7488,14 @@ packages:
       debug: 4.3.5
       fast-glob: 3.3.2
       pretty-bytes: 6.1.1
-      vite: 5.3.2(lightningcss@1.25.1)(sass@1.77.6)(terser@5.31.1)
+      vite: 5.3.2(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.1)
       workbox-build: 7.1.1
       workbox-window: 7.1.0
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite@5.3.2(lightningcss@1.25.1)(sass@1.77.6)(terser@5.31.1):
+  /vite@5.3.2(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.1):
     resolution: {integrity: sha512-6lA7OBHBlXUxiJxbO5aAY2fsHHzDr1q7DvXYnyZycRs2Dz+dXBWuhpWHvmljTRTpQC2uvGmUFFkSHF2vGo90MA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -7527,7 +7527,7 @@ packages:
       lightningcss: 1.25.1
       postcss: 8.4.38
       rollup: 4.18.0
-      sass: 1.77.6
+      sass: 1.77.8
       terser: 5.31.1
     optionalDependencies:
       fsevents: 2.3.3
@@ -7540,7 +7540,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 5.3.2(lightningcss@1.25.1)(sass@1.77.6)(terser@5.31.1)
+      vite: 5.3.2(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.1)
     dev: false
 
   /vscode-json-languageservice@4.2.1:
