@@ -33,8 +33,8 @@ importers:
         specifier: 4.13.2
         version: 4.13.2(@types/node@22.1.0)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(typescript@5.4.5)
       astro-compress:
-        specifier: 2.3.0
-        version: 2.3.0(@types/node@22.1.0)(sass@1.77.8)(typescript@5.4.5)
+        specifier: 2.3.1
+        version: 2.3.1(@types/node@22.1.0)(sass@1.77.8)(typescript@5.4.5)
       astro-icon:
         specifier: 1.1.0
         version: 1.1.0
@@ -1513,8 +1513,8 @@ packages:
     resolution: {integrity: sha512-bMxMKAjg13EBSVscxTaYA4mRc5t1UAXa2kXiGTNfZ079HIWXEkKmkgFrh/nJqamaLSrXO5H4WFFkPEaLJWbs3A==}
     engines: {node: '>= 0.4'}
 
-  astro-compress@2.3.0:
-    resolution: {integrity: sha512-7JkIgQyngmWnRnjVkOcPHelVIi9/4RXGAy68wmsIBREpfKsBCAIVnyF9riBaahkL6rqiGEecyFDUBk6aW9qIew==}
+  astro-compress@2.3.1:
+    resolution: {integrity: sha512-W2rv6Vr8dZEw2CEA0/QcBEFmXCERbY8onlyixfRul1nY5moPNkk3zdiw7Id3TkIJyHpqQTP6OyfTmTp6MhOqjw==}
 
   astro-eslint-parser@0.17.0:
     resolution: {integrity: sha512-yTgzioUI9MKgBF4LxP7YI+uuZLrnXgHDeW4dpa3VqCNbDmPzL7ix93tc0JJIwWGcskoSAAHZZVaBSp8bHyZZZA==}
@@ -5780,13 +5780,14 @@ snapshots:
       is-array-buffer: 3.0.4
       is-shared-array-buffer: 1.0.3
 
-  astro-compress@2.3.0(@types/node@22.1.0)(sass@1.77.8)(typescript@5.4.5):
+  astro-compress@2.3.1(@types/node@22.1.0)(sass@1.77.8)(typescript@5.4.5):
     dependencies:
       '@playform/pipe': 0.1.0
       '@types/csso': 5.0.4
       '@types/html-minifier-terser': 7.0.2
       astro: 4.13.2(@types/node@22.1.0)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(typescript@5.4.5)
       csso: 5.0.5
+      deepmerge-ts: 7.1.0
       html-minifier-terser: 7.2.0
       kleur: 4.1.5
       lightningcss: 1.25.1
