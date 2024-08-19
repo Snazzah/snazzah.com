@@ -22,7 +22,7 @@
     "@preact/compat": "17.1.2",
     "astro": "4.13.3",
     "astro-compress": "2.3.0",
-    "astro-icon": "1.1.0",
+    "astro-icon": "1.1.1",
     "clsx": "2.1.1",
     "preact": "10.22.1",
     "react-schemaorg": "2.0.0",
