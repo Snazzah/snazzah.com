@@ -13,7 +13,7 @@ importers:
         version: 3.5.1(@babel/core@7.25.2)(preact@10.22.1)(vite@5.4.1(@types/node@22.4.1)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.6))
       '@astrojs/tailwind':
         specifier: 5.1.0
-        version: 5.1.0(astro@4.13.3(@types/node@22.4.1)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.6)(typescript@5.4.5))(tailwindcss@3.4.10)
+        version: 5.1.0(astro@4.14.5(@types/node@22.4.1)(lightningcss@1.25.1)(rollup@2.79.1)(sass@1.77.8)(terser@5.31.6)(typescript@5.4.5))(tailwindcss@3.4.10)
       '@iconify-icons/cib':
         specifier: 1.2.4
         version: 1.2.4
@@ -30,11 +30,11 @@ importers:
         specifier: 17.1.2
         version: 17.1.2(preact@10.22.1)
       astro:
-        specifier: 4.13.3
-        version: 4.13.3(@types/node@22.4.1)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.6)(typescript@5.4.5)
+        specifier: 4.14.5
+        version: 4.14.5(@types/node@22.4.1)(lightningcss@1.25.1)(rollup@2.79.1)(sass@1.77.8)(terser@5.31.6)(typescript@5.4.5)
       astro-compress:
         specifier: 2.3.0
-        version: 2.3.0(@types/node@22.4.1)(sass@1.77.8)(typescript@5.4.5)
+        version: 2.3.0(@types/node@22.4.1)(rollup@2.79.1)(sass@1.77.8)(typescript@5.4.5)
       astro-icon:
         specifier: 1.1.1
         version: 1.1.1
@@ -1179,6 +1179,9 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
+  '@oslojs/encoding@0.4.1':
+    resolution: {integrity: sha512-hkjo6MuIK/kQR5CrGNdAPZhS01ZCXuWDRJ187zh6qqF2+yMHZpD9fAYpX8q2bOO6Ryhl3XpCT6kUX76N8hhm4Q==}
+
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
@@ -1625,8 +1628,8 @@ packages:
   astro-icon@1.1.1:
     resolution: {integrity: sha512-HKBesWk2Faw/0+klLX+epQVqdTfSzZz/9+5vxXUjTJaN/HnpDf608gRPgHh7ZtwBPNJMEFoU5GLegxoDcT56OQ==}
 
-  astro@4.13.3:
-    resolution: {integrity: sha512-MyhmM0v5sphiVwxAm5jjKxWeuPZijWPJ8Ajdign9QzEmLWSH8vUYIJWx/dWRQ6vF1I0jXrksoj3wtw5nzXt9nw==}
+  astro@4.14.5:
+    resolution: {integrity: sha512-sv47kPE6FnvyxxHHcCePNwTKpOMKBq0r1m6WZYg6ag9j3yF9m72ov64NFB7c+hAMDUKgsHfVdLKjOOqDC/c+fA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3189,6 +3192,10 @@ packages:
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
+  neotraverse@0.6.18:
+    resolution: {integrity: sha512-Z4SmBUweYa09+o6pG+eASabEpP6QkQ70yHj351pQoEXIs8uHbaU2DWVmzBANKgflPa47A50PtB2+NgRpQvr7vA==}
+    engines: {node: '>= 10'}
+
   nlcst-to-string@4.0.0:
     resolution: {integrity: sha512-YKLBCcUYKAg0FNlOBT6aI91qFmSiFKiluk655WzPF+DDMA02qIyy8uiRqI8QXtcFpEvll12LpL5MXqEmAZ+dcA==}
 
@@ -4275,6 +4282,9 @@ packages:
   wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
+  xxhash-wasm@1.0.2:
+    resolution: {integrity: sha512-ibF0Or+FivM9lNrg+HGJfVX8WJqgo+kCLDc4vx6xMeTce7Aj+DLttKbxxRR/gNLSAelRc1omAPlJ77N/Jem07A==}
+
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==}
 
@@ -4305,6 +4315,12 @@ packages:
     resolution: {integrity: sha512-uSt90Gzc/tUfyNqxnjlfBs8W6WSGpNBv0rVsNxP/BVSMHMKGdthPYff4xtCHYloJGM0CFxFsb3NbC0eqPhfImw==}
     peerDependencies:
       zod: ^3.23.3
+
+  zod-to-ts@1.2.0:
+    resolution: {integrity: sha512-x30XE43V+InwGpvTySRNz9kB7qFU8DlyEy7BsSTCHPH1R0QasMmHWZDCzYm6bVXtj/9NNJAZF3jW8rzFvH5OFA==}
+    peerDependencies:
+      typescript: ^4.9.4 || ^5.0.2
+      zod: ^3
 
   zod@3.23.8:
     resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
@@ -4380,9 +4396,9 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.0(astro@4.13.3(@types/node@22.4.1)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.6)(typescript@5.4.5))(tailwindcss@3.4.10)':
+  '@astrojs/tailwind@5.1.0(astro@4.14.5(@types/node@22.4.1)(lightningcss@1.25.1)(rollup@2.79.1)(sass@1.77.8)(terser@5.31.6)(typescript@5.4.5))(tailwindcss@3.4.10)':
     dependencies:
-      astro: 4.13.3(@types/node@22.4.1)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.6)(typescript@5.4.5)
+      astro: 4.14.5(@types/node@22.4.1)(lightningcss@1.25.1)(rollup@2.79.1)(sass@1.77.8)(terser@5.31.6)(typescript@5.4.5)
       autoprefixer: 10.4.20(postcss@8.4.41)
       postcss: 8.4.41
       postcss-load-config: 4.0.2(postcss@8.4.41)
@@ -5536,6 +5552,8 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
+  '@oslojs/encoding@0.4.1': {}
+
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
@@ -6021,12 +6039,12 @@ snapshots:
       is-array-buffer: 3.0.4
       is-shared-array-buffer: 1.0.3
 
-  astro-compress@2.3.0(@types/node@22.4.1)(sass@1.77.8)(typescript@5.4.5):
+  astro-compress@2.3.0(@types/node@22.4.1)(rollup@2.79.1)(sass@1.77.8)(typescript@5.4.5):
     dependencies:
       '@playform/pipe': 0.1.0
       '@types/csso': 5.0.4
       '@types/html-minifier-terser': 7.0.2
-      astro: 4.13.3(@types/node@22.4.1)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(typescript@5.4.5)
+      astro: 4.14.5(@types/node@22.4.1)(lightningcss@1.25.1)(rollup@2.79.1)(sass@1.77.8)(terser@5.31.3)(typescript@5.4.5)
       csso: 5.0.5
       html-minifier-terser: 7.2.0
       kleur: 4.1.5
@@ -6037,6 +6055,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
       - less
+      - rollup
       - sass
       - sass-embedded
       - stylus
@@ -6071,7 +6090,7 @@ snapshots:
       - debug
       - supports-color
 
-  astro@4.13.3(@types/node@22.4.1)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)(typescript@5.4.5):
+  astro@4.14.5(@types/node@22.4.1)(lightningcss@1.25.1)(rollup@2.79.1)(sass@1.77.8)(terser@5.31.3)(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -6083,6 +6102,8 @@ snapshots:
       '@babel/plugin-transform-react-jsx': 7.25.2(@babel/core@7.25.2)
       '@babel/traverse': 7.25.3
       '@babel/types': 7.25.2
+      '@oslojs/encoding': 0.4.1
+      '@rollup/pluginutils': 5.1.0(rollup@2.79.1)
       '@types/babel__core': 7.20.5
       '@types/cookie': 0.6.0
       acorn: 8.12.1
@@ -6113,7 +6134,9 @@ snapshots:
       js-yaml: 4.1.0
       kleur: 4.1.5
       magic-string: 0.30.11
+      micromatch: 4.0.7
       mrmime: 2.0.0
+      neotraverse: 0.6.18
       ora: 8.0.1
       p-limit: 6.1.0
       p-queue: 8.0.1
@@ -6131,15 +6154,18 @@ snapshots:
       vite: 5.4.1(@types/node@22.4.1)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3)
       vitefu: 0.2.5(vite@5.4.1(@types/node@22.4.1)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.3))
       which-pm: 3.0.0
+      xxhash-wasm: 1.0.2
       yargs-parser: 21.1.1
       zod: 3.23.8
       zod-to-json-schema: 3.23.2(zod@3.23.8)
+      zod-to-ts: 1.2.0(typescript@5.4.5)(zod@3.23.8)
     optionalDependencies:
       sharp: 0.33.5
     transitivePeerDependencies:
       - '@types/node'
       - less
       - lightningcss
+      - rollup
       - sass
       - sass-embedded
       - stylus
@@ -6148,7 +6174,7 @@ snapshots:
       - terser
       - typescript
 
-  astro@4.13.3(@types/node@22.4.1)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.6)(typescript@5.4.5):
+  astro@4.14.5(@types/node@22.4.1)(lightningcss@1.25.1)(rollup@2.79.1)(sass@1.77.8)(terser@5.31.6)(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -6160,6 +6186,8 @@ snapshots:
       '@babel/plugin-transform-react-jsx': 7.25.2(@babel/core@7.25.2)
       '@babel/traverse': 7.25.3
       '@babel/types': 7.25.2
+      '@oslojs/encoding': 0.4.1
+      '@rollup/pluginutils': 5.1.0(rollup@2.79.1)
       '@types/babel__core': 7.20.5
       '@types/cookie': 0.6.0
       acorn: 8.12.1
@@ -6190,7 +6218,9 @@ snapshots:
       js-yaml: 4.1.0
       kleur: 4.1.5
       magic-string: 0.30.11
+      micromatch: 4.0.7
       mrmime: 2.0.0
+      neotraverse: 0.6.18
       ora: 8.0.1
       p-limit: 6.1.0
       p-queue: 8.0.1
@@ -6208,15 +6238,18 @@ snapshots:
       vite: 5.4.1(@types/node@22.4.1)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.6)
       vitefu: 0.2.5(vite@5.4.1(@types/node@22.4.1)(lightningcss@1.25.1)(sass@1.77.8)(terser@5.31.6))
       which-pm: 3.0.0
+      xxhash-wasm: 1.0.2
       yargs-parser: 21.1.1
       zod: 3.23.8
       zod-to-json-schema: 3.23.2(zod@3.23.8)
+      zod-to-ts: 1.2.0(typescript@5.4.5)(zod@3.23.8)
     optionalDependencies:
       sharp: 0.33.5
     transitivePeerDependencies:
       - '@types/node'
       - less
       - lightningcss
+      - rollup
       - sass
       - sass-embedded
       - stylus
@@ -8064,6 +8097,8 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
+  neotraverse@0.6.18: {}
+
   nlcst-to-string@4.0.0:
     dependencies:
       '@types/nlcst': 2.0.3
@@ -9389,6 +9424,8 @@ snapshots:
 
   wrappy@1.0.2: {}
 
+  xxhash-wasm@1.0.2: {}
+
   yallist@3.1.1: {}
 
   yallist@4.0.0: {}
@@ -9408,6 +9445,11 @@ snapshots:
 
   zod-to-json-schema@3.23.2(zod@3.23.8):
     dependencies:
+      zod: 3.23.8
+
+  zod-to-ts@1.2.0(typescript@5.4.5)(zod@3.23.8):
+    dependencies:
+      typescript: 5.4.5
       zod: 3.23.8
 
   zod@3.23.8: {}
