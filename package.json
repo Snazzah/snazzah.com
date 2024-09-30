@@ -24,7 +24,7 @@
     "astro-compress": "2.3.0",
     "astro-icon": "1.1.1",
     "clsx": "2.1.1",
-    "preact": "10.24.0",
+    "preact": "10.24.1",
     "react-schemaorg": "2.0.0",
     "react-tippy": "1.4.0",
     "react-use-lanyard": "0.3.1",
