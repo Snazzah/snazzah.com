@@ -13,7 +13,7 @@ importers:
         version: 3.5.3(@babel/core@7.25.2)(preact@10.24.1)(vite@5.4.7(@types/node@22.5.5)(lightningcss@1.25.1)(sass@1.78.0)(terser@5.33.0))
       '@astrojs/tailwind':
         specifier: 5.1.1
-        version: 5.1.1(astro@4.15.9(@types/node@22.5.5)(lightningcss@1.25.1)(rollup@2.79.1)(sass@1.78.0)(terser@5.33.0)(typescript@5.6.2))(tailwindcss@3.4.11)
+        version: 5.1.1(astro@4.15.9(@types/node@22.5.5)(lightningcss@1.25.1)(rollup@2.79.1)(sass@1.78.0)(terser@5.33.0)(typescript@5.6.2))(tailwindcss@3.4.13)
       '@iconify-icons/cib':
         specifier: 1.2.4
         version: 1.2.4
@@ -57,8 +57,8 @@ importers:
         specifier: 3.3.2
         version: 3.3.2
       tailwindcss:
-        specifier: 3.4.11
-        version: 3.4.11
+        specifier: 3.4.13
+        version: 3.4.13
     devDependencies:
       eslint:
         specifier: 8.57.1
@@ -3841,8 +3841,8 @@ packages:
     resolution: {integrity: sha512-7gr8p9TQP6RAHusBOSLs46F4564ZrjV8xFmw5zCmgmhGUcw2hxsShhJ6CEiHQMgPDwAQ1fWHPM0ypc4RMAig4A==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  tailwindcss@3.4.11:
-    resolution: {integrity: sha512-qhEuBcLemjSJk5ajccN9xJFtM/h0AVCPaA6C92jNP+M2J8kX+eMJHI7R2HFKUvvAsMpcfLILMCFYSeDwpMmlUg==}
+  tailwindcss@3.4.13:
+    resolution: {integrity: sha512-KqjHOJKogOUt5Bs752ykCeiwvi0fKVkr5oqsFNt/8px/tA8scFPIlkygsf6jXrfCqGHz7VflA6+yytWuM+XhFw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -4354,13 +4354,13 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.1.1(astro@4.15.9(@types/node@22.5.5)(lightningcss@1.25.1)(rollup@2.79.1)(sass@1.78.0)(terser@5.33.0)(typescript@5.6.2))(tailwindcss@3.4.11)':
+  '@astrojs/tailwind@5.1.1(astro@4.15.9(@types/node@22.5.5)(lightningcss@1.25.1)(rollup@2.79.1)(sass@1.78.0)(terser@5.33.0)(typescript@5.6.2))(tailwindcss@3.4.13)':
     dependencies:
       astro: 4.15.9(@types/node@22.5.5)(lightningcss@1.25.1)(rollup@2.79.1)(sass@1.78.0)(terser@5.33.0)(typescript@5.6.2)
       autoprefixer: 10.4.20(postcss@8.4.47)
       postcss: 8.4.47
       postcss-load-config: 4.0.2(postcss@8.4.47)
-      tailwindcss: 3.4.11
+      tailwindcss: 3.4.13
     transitivePeerDependencies:
       - ts-node
 
@@ -8847,7 +8847,7 @@ snapshots:
       '@pkgr/core': 0.1.1
       tslib: 2.7.0
 
-  tailwindcss@3.4.11:
+  tailwindcss@3.4.13:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
