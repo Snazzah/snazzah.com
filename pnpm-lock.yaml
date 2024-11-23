@@ -36,8 +36,8 @@ importers:
         specifier: 2.3.0
         version: 2.3.0(@types/node@22.9.0)(rollup@2.79.2)(sass@1.81.0)(typescript@5.6.3)
       astro-icon:
-        specifier: 1.1.1
-        version: 1.1.1
+        specifier: 1.1.4
+        version: 1.1.4
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -1650,8 +1650,8 @@ packages:
     resolution: {integrity: sha512-yTgzioUI9MKgBF4LxP7YI+uuZLrnXgHDeW4dpa3VqCNbDmPzL7ix93tc0JJIwWGcskoSAAHZZVaBSp8bHyZZZA==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  astro-icon@1.1.1:
-    resolution: {integrity: sha512-HKBesWk2Faw/0+klLX+epQVqdTfSzZz/9+5vxXUjTJaN/HnpDf608gRPgHh7ZtwBPNJMEFoU5GLegxoDcT56OQ==}
+  astro-icon@1.1.4:
+    resolution: {integrity: sha512-sMLkQaevIQLv38WBzb/RDbsmxhg5+X+KcNmpTi9cE6MLurNWU1MPnlO87d9Vwg4HxTenKpDlYp81A3syXFW/gw==}
 
   astro@4.16.13:
     resolution: {integrity: sha512-Mtd76+BC0zLWqoXpf9xc731AhdH4MNh5JFHYdLRvSH0Nqn48hA64dPGh/cWsJvh/DZFmC0NTZusM1Qq2gyNaVg==}
@@ -6028,7 +6028,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro-icon@1.1.1:
+  astro-icon@1.1.4:
     dependencies:
       '@iconify/tools': 4.0.7
       '@iconify/types': 2.0.0
