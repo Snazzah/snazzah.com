@@ -51,8 +51,8 @@ importers:
         specifier: 1.4.0
         version: 1.4.0
       react-use-lanyard:
-        specifier: 0.3.1
-        version: 0.3.1(react@19.0.0)
+        specifier: 0.3.2
+        version: 0.3.2(react@19.0.0)
       svgo:
         specifier: 3.3.2
         version: 3.3.2
@@ -3427,8 +3427,8 @@ packages:
   react-tippy@1.4.0:
     resolution: {integrity: sha512-r/hM5XK9Ztr2ZY7IWKuRmISTlUPS/R6ddz6PO2EuxCgW+4JBcGZRPU06XcVPRDCOIiio8ryBQFrXMhFMhsuaHA==}
 
-  react-use-lanyard@0.3.1:
-    resolution: {integrity: sha512-p8aT7txFa+hIHEdSnSr7ZwF2bL8E8Ei0RPQI2sMtOtoO0Xo51tPNMDwq80pNBAzfcaRRpRcg6wefv6hT70n7Nw==}
+  react-use-lanyard@0.3.2:
+    resolution: {integrity: sha512-aNxbABUL63jGRoFFCFWEvb5kSykomkdvbqKLvK/ey3awhErIw/DfAa0+RQtdPbXtgrp/vz3OBZMqYN2s+7vvaQ==}
     peerDependencies:
       react: '>=16'
 
@@ -8251,7 +8251,7 @@ snapshots:
     dependencies:
       popper.js: 1.16.1
 
-  react-use-lanyard@0.3.1(react@19.0.0):
+  react-use-lanyard@0.3.2(react@19.0.0):
     dependencies:
       react: 19.0.0
       swr: 2.3.0(react@19.0.0)
