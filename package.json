@@ -21,7 +21,7 @@
     "@iconify/react": "4.1.1",
     "@preact/compat": "17.1.2",
     "astro": "4.16.18",
-    "astro-compress": "2.3.5",
+    "astro-compress": "2.3.6",
     "astro-icon": "1.1.5",
     "clsx": "2.1.1",
     "preact": "10.25.4",
