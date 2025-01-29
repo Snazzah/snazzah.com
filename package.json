@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@astrojs/preact": "3.5.4",
-    "@astrojs/tailwind": "5.1.4",
+    "@astrojs/tailwind": "5.1.5",
     "@iconify-icons/cib": "1.2.4",
     "@iconify-icons/mdi": "1.2.48",
     "@iconify-icons/simple-icons": "1.2.74",
