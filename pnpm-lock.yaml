@@ -24,8 +24,8 @@ importers:
         specifier: 1.2.74
         version: 1.2.74
       '@iconify/react':
-        specifier: 4.1.1
-        version: 4.1.1(react@19.1.0)
+        specifier: 5.2.1
+        version: 5.2.1(react@19.1.0)
       '@preact/compat':
         specifier: 17.1.2
         version: 17.1.2(preact@10.26.4)
@@ -835,8 +835,8 @@ packages:
   '@iconify-icons/simple-icons@1.2.74':
     resolution: {integrity: sha512-FWmuSbg+KDUreysuaE8DYu/jbv4+FtSY+ppAi8w8sgX9CKTP6watB+PLeMbklOL/G5PnBlHnvM/ihkZ+n96OZw==}
 
-  '@iconify/react@4.1.1':
-    resolution: {integrity: sha512-jed14EjvKjee8mc0eoscGxlg7mSQRkwQG3iX3cPBCO7UlOjz0DtlvTqxqEcHUJGh+z1VJ31Yhu5B9PxfO0zbdg==}
+  '@iconify/react@5.2.1':
+    resolution: {integrity: sha512-37GDR3fYDZmnmUn9RagyaX+zca24jfVOMY8E1IXTqJuE8pxNtN51KWPQe3VODOWvuUurq7q9uUu3CFrpqj5Iqg==}
     peerDependencies:
       react: '>=16'
 
@@ -5257,7 +5257,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify/react@4.1.1(react@19.1.0)':
+  '@iconify/react@5.2.1(react@19.1.0)':
     dependencies:
       '@iconify/types': 2.0.0
       react: 19.1.0
