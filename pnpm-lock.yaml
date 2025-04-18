@@ -46,7 +46,7 @@ importers:
         version: 10.26.4
       react-schemaorg:
         specifier: 2.0.0
-        version: 2.0.0(react@19.1.0)(schema-dts@1.1.2(typescript@5.7.3))(typescript@5.7.3)
+        version: 2.0.0(react@19.1.0)(schema-dts@1.1.5)(typescript@5.7.3)
       react-tippy:
         specifier: 1.4.0
         version: 1.4.0
@@ -79,8 +79,8 @@ importers:
         specifier: 1.85.1
         version: 1.85.1
       schema-dts:
-        specifier: 1.1.2
-        version: 1.1.2(typescript@5.7.3)
+        specifier: 1.1.5
+        version: 1.1.5
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -3618,10 +3618,8 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  schema-dts@1.1.2:
-    resolution: {integrity: sha512-MpNwH0dZJHinVxk9bT8XUdjKTxMYrA5bLtrrGmFA6PTLwlOKnhi67XoRd6/ty+Djt6ZC0slR57qFhZDNMI6DhQ==}
-    peerDependencies:
-      typescript: '>=4.1.0'
+  schema-dts@1.1.5:
+    resolution: {integrity: sha512-RJr9EaCmsLzBX2NDiO5Z3ux2BVosNZN5jo0gWgsyKvxKIUL5R3swNvoorulAeL9kLB0iTSX7V6aokhla2m7xbg==}
 
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
@@ -8449,10 +8447,10 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  react-schemaorg@2.0.0(react@19.1.0)(schema-dts@1.1.2(typescript@5.7.3))(typescript@5.7.3):
+  react-schemaorg@2.0.0(react@19.1.0)(schema-dts@1.1.5)(typescript@5.7.3):
     dependencies:
       react: 19.1.0
-      schema-dts: 1.1.2(typescript@5.7.3)
+      schema-dts: 1.1.5
       typescript: 5.7.3
 
   react-tippy@1.4.0:
@@ -8716,9 +8714,7 @@ snapshots:
     optionalDependencies:
       '@parcel/watcher': 2.5.1
 
-  schema-dts@1.1.2(typescript@5.7.3):
-    dependencies:
-      typescript: 5.7.3
+  schema-dts@1.1.5: {}
 
   semver@6.3.1: {}
 
