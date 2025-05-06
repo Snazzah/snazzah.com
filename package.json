@@ -13,14 +13,14 @@
     "lint:fix": "eslint ./src --fix"
   },
   "dependencies": {
-    "@astrojs/preact": "4.0.10",
+    "@astrojs/preact": "4.0.11",
     "@astrojs/tailwind": "6.0.2",
     "@iconify-icons/cib": "1.2.4",
     "@iconify-icons/mdi": "1.2.48",
     "@iconify-icons/simple-icons": "1.2.74",
     "@iconify/react": "4.1.1",
     "@preact/compat": "17.1.2",
-    "astro": "5.7.5",
+    "astro": "5.7.11",
     "astro-compress": "2.3.8",
     "astro-icon": "1.1.5",
     "clsx": "2.1.1",
