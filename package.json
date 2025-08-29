@@ -43,7 +43,7 @@
     "prettier-plugin-astro": "0.14.1",
     "sass": "1.91.0",
     "schema-dts": "1.1.5",
-    "typescript": "5.8.3",
+    "typescript": "5.9.2",
     "vite-plugin-pwa": "0.21.2"
   }
 }
