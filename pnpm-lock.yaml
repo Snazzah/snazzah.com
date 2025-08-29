@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@astrojs/preact':
         specifier: 4.1.0
-        version: 4.1.0(@babel/core@7.28.0)(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(preact@10.26.9)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0)
+        version: 4.1.0(@babel/core@7.28.0)(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(preact@10.26.9)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0)
       '@astrojs/tailwind':
         specifier: 6.0.2
-        version: 6.0.2(astro@5.12.3(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(rollup@2.79.2)(sass@1.89.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)
+        version: 6.0.2(astro@5.12.3(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(rollup@2.79.2)(sass@1.91.0)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)
       '@iconify-icons/cib':
         specifier: 1.2.4
         version: 1.2.4
@@ -31,10 +31,10 @@ importers:
         version: 17.1.2(preact@10.26.9)
       astro:
         specifier: 5.12.3
-        version: 5.12.3(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(rollup@2.79.2)(sass@1.89.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0)
+        version: 5.12.3(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(rollup@2.79.2)(sass@1.91.0)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0)
       astro-compress:
         specifier: 2.3.8
-        version: 2.3.8(@types/node@24.1.0)(jiti@1.21.7)(rollup@2.79.2)(sass@1.89.2)(typescript@5.8.3)(yaml@2.8.0)
+        version: 2.3.8(@types/node@24.1.0)(jiti@1.21.7)(rollup@2.79.2)(sass@1.91.0)(typescript@5.8.3)(yaml@2.8.0)
       astro-icon:
         specifier: 1.1.5
         version: 1.1.5
@@ -76,8 +76,8 @@ importers:
         specifier: 0.14.1
         version: 0.14.1
       sass:
-        specifier: 1.89.2
-        version: 1.89.2
+        specifier: 1.91.0
+        version: 1.91.0
       schema-dts:
         specifier: 1.1.5
         version: 1.1.5
@@ -86,7 +86,7 @@ importers:
         version: 5.8.3
       vite-plugin-pwa:
         specifier: 0.21.2
-        version: 0.21.2(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0))(workbox-build@7.3.0)(workbox-window@7.3.0)
+        version: 0.21.2(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0))(workbox-build@7.3.0)(workbox-window@7.3.0)
 
 packages:
 
@@ -3622,8 +3622,8 @@ packages:
   sass-formatter@0.7.9:
     resolution: {integrity: sha512-CWZ8XiSim+fJVG0cFLStwDvft1VI7uvXdCNJYXhDvowiv+DsbD1nXLiQ4zrE5UBvj5DWZJ93cwN0NX5PMsr1Pw==}
 
-  sass@1.89.2:
-    resolution: {integrity: sha512-xCmtksBKd/jdJ9Bt9p7nPKiuqrlBMBuuGkQlkhZjjQk3Ty48lv93k5Dq6OPkKt4XwxDJ7tvlfrTa1MPA9bf+QA==}
+  sass@1.91.0:
+    resolution: {integrity: sha512-aFOZHGf+ur+bp1bCHZ+u8otKGh77ZtmFyXDo4tlYvT7PWql41Kwd8wdkPqhhT+h2879IVblcHFglIMofsFd1EA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -3727,6 +3727,7 @@ packages:
   source-map@0.8.0-beta.0:
     resolution: {integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==}
     engines: {node: '>= 8'}
+    deprecated: The work that was done in this beta branch won't be included in future versions
 
   sourcemap-codec@1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
@@ -4451,13 +4452,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/preact@4.1.0(@babel/core@7.28.0)(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(preact@10.26.9)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0)':
+  '@astrojs/preact@4.1.0(@babel/core@7.28.0)(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(preact@10.26.9)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0)':
     dependencies:
-      '@preact/preset-vite': 2.10.2(@babel/core@7.28.0)(preact@10.26.9)(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0))
+      '@preact/preset-vite': 2.10.2(@babel/core@7.28.0)(preact@10.26.9)(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0))
       '@preact/signals': 2.2.1(preact@10.26.9)
       preact: 10.26.9
       preact-render-to-string: 6.5.13(preact@10.26.9)
-      vite: 6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0)
+      vite: 6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0)
     transitivePeerDependencies:
       - '@babel/core'
       - '@types/node'
@@ -4477,9 +4478,9 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/tailwind@6.0.2(astro@5.12.3(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(rollup@2.79.2)(sass@1.89.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)':
+  '@astrojs/tailwind@6.0.2(astro@5.12.3(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(rollup@2.79.2)(sass@1.91.0)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)':
     dependencies:
-      astro: 5.12.3(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(rollup@2.79.2)(sass@1.89.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.12.3(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(rollup@2.79.2)(sass@1.91.0)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0)
       autoprefixer: 10.4.21(postcss@8.5.6)
       postcss: 8.5.6
       postcss-load-config: 4.0.2(postcss@8.5.6)
@@ -5546,18 +5547,18 @@ snapshots:
     dependencies:
       preact: 10.26.9
 
-  '@preact/preset-vite@2.10.2(@babel/core@7.28.0)(preact@10.26.9)(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0))':
+  '@preact/preset-vite@2.10.2(@babel/core@7.28.0)(preact@10.26.9)(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0))':
     dependencies:
       '@babel/core': 7.28.0
       '@babel/plugin-transform-react-jsx': 7.27.1(@babel/core@7.28.0)
       '@babel/plugin-transform-react-jsx-development': 7.27.1(@babel/core@7.28.0)
-      '@prefresh/vite': 2.4.8(preact@10.26.9)(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0))
+      '@prefresh/vite': 2.4.8(preact@10.26.9)(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0))
       '@rollup/pluginutils': 4.2.1
       babel-plugin-transform-hook-names: 1.0.2(@babel/core@7.28.0)
       debug: 4.4.1
       picocolors: 1.1.1
-      vite: 6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0)
-      vite-prerender-plugin: 0.5.11(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0))
+      vite: 6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0)
+      vite-prerender-plugin: 0.5.11(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0))
     transitivePeerDependencies:
       - preact
       - supports-color
@@ -5577,7 +5578,7 @@ snapshots:
 
   '@prefresh/utils@1.2.1': {}
 
-  '@prefresh/vite@2.4.8(preact@10.26.9)(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0))':
+  '@prefresh/vite@2.4.8(preact@10.26.9)(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0))':
     dependencies:
       '@babel/core': 7.28.0
       '@prefresh/babel-plugin': 0.5.2
@@ -5585,7 +5586,7 @@ snapshots:
       '@prefresh/utils': 1.2.1
       '@rollup/pluginutils': 4.2.1
       preact: 10.26.9
-      vite: 6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0)
+      vite: 6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -6029,12 +6030,12 @@ snapshots:
       get-intrinsic: 1.3.0
       is-array-buffer: 3.0.5
 
-  astro-compress@2.3.8(@types/node@24.1.0)(jiti@1.21.7)(rollup@2.79.2)(sass@1.89.2)(typescript@5.8.3)(yaml@2.8.0):
+  astro-compress@2.3.8(@types/node@24.1.0)(jiti@1.21.7)(rollup@2.79.2)(sass@1.91.0)(typescript@5.8.3)(yaml@2.8.0):
     dependencies:
       '@playform/pipe': 0.1.3
       '@types/csso': 5.0.4
       '@types/html-minifier-terser': 7.0.2
-      astro: 5.12.3(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(rollup@2.79.2)(sass@1.89.2)(terser@5.39.0)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.12.3(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(rollup@2.79.2)(sass@1.91.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.8.0)
       commander: 13.1.0
       csso: 5.0.5
       deepmerge-ts: 7.1.5
@@ -6105,7 +6106,7 @@ snapshots:
       - debug
       - supports-color
 
-  astro@5.12.3(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(rollup@2.79.2)(sass@1.89.2)(terser@5.39.0)(typescript@5.8.3)(yaml@2.8.0):
+  astro@5.12.3(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(rollup@2.79.2)(sass@1.91.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.8.0):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.6.1
@@ -6161,8 +6162,8 @@ snapshots:
       unist-util-visit: 5.0.0
       unstorage: 1.16.1
       vfile: 6.0.3
-      vite: 6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.39.0)(yaml@2.8.0)
-      vitefu: 1.1.1(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0))
+      vite: 6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.39.0)(yaml@2.8.0)
+      vitefu: 1.1.1(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.3
@@ -6206,7 +6207,7 @@ snapshots:
       - uploadthing
       - yaml
 
-  astro@5.12.3(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(rollup@2.79.2)(sass@1.89.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0):
+  astro@5.12.3(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(rollup@2.79.2)(sass@1.91.0)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.6.1
@@ -6262,8 +6263,8 @@ snapshots:
       unist-util-visit: 5.0.0
       unstorage: 1.16.1
       vfile: 6.0.3
-      vite: 6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0)
-      vitefu: 1.1.1(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0))
+      vite: 6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0)
+      vitefu: 1.1.1(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.3
@@ -8751,7 +8752,7 @@ snapshots:
     dependencies:
       suf-log: 2.5.3
 
-  sass@1.89.2:
+  sass@1.91.0:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.1.3
@@ -9346,18 +9347,18 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite-plugin-pwa@0.21.2(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0))(workbox-build@7.3.0)(workbox-window@7.3.0):
+  vite-plugin-pwa@0.21.2(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0))(workbox-build@7.3.0)(workbox-window@7.3.0):
     dependencies:
       debug: 4.4.1
       pretty-bytes: 6.1.1
       tinyglobby: 0.2.14
-      vite: 6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0)
+      vite: 6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0)
       workbox-build: 7.3.0
       workbox-window: 7.3.0
     transitivePeerDependencies:
       - supports-color
 
-  vite-prerender-plugin@0.5.11(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0)):
+  vite-prerender-plugin@0.5.11(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0)):
     dependencies:
       kolorist: 1.8.0
       magic-string: 0.30.17
@@ -9365,9 +9366,9 @@ snapshots:
       simple-code-frame: 1.3.0
       source-map: 0.7.6
       stack-trace: 1.0.0-pre2
-      vite: 6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0)
+      vite: 6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0)
 
-  vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.39.0)(yaml@2.8.0):
+  vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.39.0)(yaml@2.8.0):
     dependencies:
       esbuild: 0.25.8
       fdir: 6.4.6(picomatch@4.0.3)
@@ -9380,11 +9381,11 @@ snapshots:
       fsevents: 2.3.3
       jiti: 1.21.7
       lightningcss: 1.29.3
-      sass: 1.89.2
+      sass: 1.91.0
       terser: 5.39.0
       yaml: 2.8.0
 
-  vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0):
+  vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0):
     dependencies:
       esbuild: 0.25.8
       fdir: 6.4.6(picomatch@4.0.3)
@@ -9397,13 +9398,13 @@ snapshots:
       fsevents: 2.3.3
       jiti: 1.21.7
       lightningcss: 1.29.3
-      sass: 1.89.2
+      sass: 1.91.0
       terser: 5.43.1
       yaml: 2.8.0
 
-  vitefu@1.1.1(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0)):
+  vitefu@1.1.1(vite@6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0)):
     optionalDependencies:
-      vite: 6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.89.2)(terser@5.43.1)(yaml@2.8.0)
+      vite: 6.3.5(@types/node@24.1.0)(jiti@1.21.7)(lightningcss@1.29.3)(sass@1.91.0)(terser@5.43.1)(yaml@2.8.0)
 
   vscode-json-languageservice@4.2.1:
     dependencies:
