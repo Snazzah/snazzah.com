@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@plugin '@tailwindcss/typography';
+@import "tw-animate-css";
+
+@theme inline {
+  --font-sans: var(--font-supreme), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-display: var(--font-satoshi), var(--font-sans);
+  --color-brand: #fc2929;
+}
+
+html, body {
+  @apply m-0 p-0 font-sans;
+}
+
+html {
+  @apply bg-zinc-950 text-zinc-400 overflow-x-hidden;
+
+  /* https://css-pattern.com/diagonal-chevrons/ */
+  --s: 20px; /* control the size*/
+  --c1: var(--color-zinc-950);
+  --c2: var(--color-black);
+
+  background:
+    conic-gradient(var(--c1)   135deg,var(--c2) 0 270deg,
+                   var(--c1) 0 315deg,var(--c2) 0)
+    0/var(--s) var(--s);
+}
+
+body {
+  @apply min-h-svh flex flex-col relative overflow-x-hidden;
+}
+
+@layer base {
+  :where(a, button, summary, [role='button'], [tabindex]:not([tabindex='-1'])) {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-300 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950;
+  }
+
+  :where(button, a) {
+    @apply transition-[transform,color,background-color,border-color,box-shadow,opacity] duration-200 ease-out;
+  }
+}
+
+img:not([draggable]) {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.half-fade {
+  -webkit-mask-image: linear-gradient(270deg, #000 0%, #0000 100%);
+  mask-image: linear-gradient(270deg, #000 0%, #0000 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
