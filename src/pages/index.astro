@@ -4,6 +4,7 @@ import craigBanner from '../assets/craig_banner.png';
 import craigAvatar from '../assets/craig_avatar.png';
 import audreyBanner from '../assets/audrey_banner.png';
 import audreyAvatar from '../assets/audrey_avatar.png';
+import tacoAvatar from '../assets/taco_avatar.png';
 import { Image } from 'astro:assets';
 import MainShell from '../components/MainShell.svelte';
 
@@ -33,6 +34,24 @@ const projects = [
     url: 'https://audrey.gg',
     bg: audreyBanner,
     avatar: audreyAvatar
+  },
+  {
+    name: 'Taco',
+    description: 'A Discord bot that manages Trello boards.',
+    class: 'bg-lime-500/10',
+    url: 'https://tacobot.app',
+    avatar: tacoAvatar
+  }
+];
+
+const smallerProjects = [
+  {
+    url: 'https://hytale.photo',
+    label: 'hytale.photo'
+  },
+  {
+    url: 'https://github.com/Snazzah/slash-create',
+    label: 'slash-create'
   }
 ];
 ---
@@ -65,15 +84,29 @@ const projects = [
               <!-- Icon from Material Design Icons by Pictogrammers - https://github.com/Templarian/MaterialDesign/blob/master/LICENSE --><path fill="currentColor" d="M5 17.59L15.59 7H9V5h10v10h-2V8.41L6.41 19z"/>
             </svg>
           </a>
-          <Image
-            src={p.bg}
-            alt={p.name}
-            class="absolute w-full min-h-full half-fade opacity-25 z-0 pointer-events-none object-fill"
-            widths={[896, 600, 400]}
-          />
+          {p.bg && (
+            <Image
+              src={p.bg}
+              alt={p.name}
+              class="absolute w-full min-h-full half-fade opacity-25 z-0 pointer-events-none object-fill"
+              widths={[896, 600, 400]}
+            />
+          )}
         </div>
       ))}
+      <div class="p-4 [&_a]:transition-all [&_a]:decoration-2 [&_a]:font-medium [&_a]:text-zinc-200 [&_a]:hover:text-white [&_a]:hover:underline [&_a]:focus-visible:text-white [&_a]:focus-visible:underline [&_a]:decoration-brand [&_a]:rounded">
+        See also: {smallerProjects.map((p, i) => (
+          <span>
+            {i !== 0 ? ', ' : ''}
+            <a href={p.url}>{p.label}</a>
+          </span>
+        ))}
+      </div>
     </section>
+
+    <footer class="flex justify-center items-center p-4 border-t border-t-zinc-700 [&_a]:transition-all [&_a]:decoration-2 [&_a]:font-medium [&_a]:text-zinc-200 [&_a]:hover:text-white [&_a]:hover:underline [&_a]:focus-visible:text-white [&_a]:focus-visible:underline [&_a]:decoration-brand [&_a]:rounded">
+      <span>Made with <a href="https://astro.build/">Astro</a> and <a href="https://svelte.dev/">Svelte</a></span>
+    </footer>
   </MainShell>
 
   <!-- https://microformats.org/wiki/h-card -->
