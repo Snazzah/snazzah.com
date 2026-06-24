@@ -1,32 +1,120 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import LandingCard from '../components/home/LandingCard.astro';
-import SkillsCard from '../components/home/SkillsCard.astro';
-import ProjectsCard from '../components/home/ProjectsCard.astro';
-import Footer from '../components/home/Footer.astro';
+import craigBanner from '../assets/craig_banner.png';
+import craigAvatar from '../assets/craig_avatar.png';
+import audreyBanner from '../assets/audrey_banner.png';
+import audreyAvatar from '../assets/audrey_avatar.png';
+import tacoAvatar from '../assets/taco_avatar.png';
+import { Image } from 'astro:assets';
+import MainShell from '../components/MainShell.svelte';
 
-import 'react-tippy/dist/tippy.css';
-import '../styles/default.sass';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Snazzah',
+  url: 'https://snazzah.com',
+  image: 'https://cdn.snaz.in/avy/current.min.png',
+  knowsAbout: ['Computer Science', 'Design', 'Video Games', 'Programming'],
+  sameAs: ['https://github.com/Snazzah', 'https://twitter.com/Snazzah']
+};
+
+const projects = [
+  {
+    name: 'Craig',
+    description: 'A multi-track voice channel recording bot for Discord.',
+    class: 'bg-teal-500/10',
+    url: 'https://craig.chat',
+    bg: craigBanner,
+    avatar: craigAvatar
+  },
+  {
+    name: 'Audrey',
+    description: 'A voice channel moderation Discord bot.',
+    class: 'bg-purple-500/10',
+    url: 'https://audrey.gg',
+    bg: audreyBanner,
+    avatar: audreyAvatar
+  },
+  {
+    name: 'Taco',
+    description: 'A Discord bot that manages Trello boards.',
+    class: 'bg-lime-500/10',
+    url: 'https://tacobot.app',
+    avatar: tacoAvatar
+  }
+];
+
+const smallerProjects = [
+  {
+    url: 'https://hytale.photo',
+    label: 'hytale.photo'
+  },
+  {
+    url: 'https://github.com/Snazzah/slash-create',
+    label: 'slash-create'
+  }
+];
 ---
 
-<Layout>
-  <div class="min-h-screen bg-neutral-900 text-white">
-    <main class="sm:max-w-4xl sm:mx-auto sm:p-12 sm:space-y-10">
-      <LandingCard />
+<Layout {schema}>
+  <MainShell client:load>
+    <section class="flex flex-col text-zinc-200">
+      <h2 class="font-display font-bold text-2xl md:text-4xl text-white p-2 underline decoration-brand overflow-hidden">
+        <span class="-rotate-2 origin-left block w-fit">Projects</span>
+      </h2>
+      {projects.map((p) => (
+        <div class={`p-3 flex gap-3 items-center relative overflow-hidden ${p.class}`}>
+          <Image
+            src={p.avatar}
+            alt={p.name}
+            class="rounded-md size-12 md:size-16 z-1 shadow-md bg-zinc-950"
+            width={128}
+          />
+          <div class="flex-1 flex flex-col z-1 gap-1">
+            <span class="text-white font-display text-lg md:text-2xl font-semibold leading-none">{p.name}</span>
+            <span class="leading-none text-sm md:text-base">{p.description}</span>
+          </div>
+          <a href={p.url} target="_blank" class="px-3 rounded-full bg-white/20 h-fit flex gap-1 font-medium hover:bg-white/25 focus-visible:bg-white/25 transition-colors items-center z-1">
+            <span>{p.url.replace('https://', '')}</span>
+            <svg
+              class="size-4"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <!-- Icon from Material Design Icons by Pictogrammers - https://github.com/Templarian/MaterialDesign/blob/master/LICENSE --><path fill="currentColor" d="M5 17.59L15.59 7H9V5h10v10h-2V8.41L6.41 19z"/>
+            </svg>
+          </a>
+          {p.bg && (
+            <Image
+              src={p.bg}
+              alt={p.name}
+              class="absolute w-full min-h-full half-fade opacity-25 z-0 pointer-events-none object-fill"
+              widths={[896, 600, 400]}
+            />
+          )}
+        </div>
+      ))}
+      <div class="p-4 [&_a]:transition-all [&_a]:decoration-2 [&_a]:font-medium [&_a]:text-zinc-200 [&_a]:hover:text-white [&_a]:hover:underline [&_a]:focus-visible:text-white [&_a]:focus-visible:underline [&_a]:decoration-brand [&_a]:rounded">
+        See also: {smallerProjects.map((p, i) => (
+          <span>
+            {i !== 0 ? ', ' : ''}
+            <a href={p.url}>{p.label}</a>
+          </span>
+        ))}
+      </div>
+    </section>
 
-      <SkillsCard />
-      <ProjectsCard />
+    <footer class="flex justify-center items-center p-4 border-t border-t-zinc-700 [&_a]:transition-all [&_a]:decoration-2 [&_a]:font-medium [&_a]:text-zinc-200 [&_a]:hover:text-white [&_a]:hover:underline [&_a]:focus-visible:text-white [&_a]:focus-visible:underline [&_a]:decoration-brand [&_a]:rounded">
+      <span>Made with <a href="https://astro.build/">Astro</a> and <a href="https://svelte.dev/">Svelte</a></span>
+    </footer>
+  </MainShell>
 
-      <Footer />
-
-      <!-- https://microformats.org/wiki/h-card -->
-      <section class="hidden h-card">
-        <a class="p-name u-url u-uid" href="https://snazzah.com/">Snazzah</a>
-        <span class="p-nickname">snazzah</span>
-        <img class="u-logo" src="https://snazzah.com/images/avatar.min.png"/>
-        <a class="u-email" href="mailto:me@snazzah.com">me@snazzah.com</a>
-        <div class="p-note">internet wildcat</div>
-      </section>
-    </main>
-  </div>
+  <!-- https://microformats.org/wiki/h-card -->
+  <section class="hidden h-card">
+    <a class="p-name u-url u-uid" href="https://snazzah.com/">Snazzah</a>
+    <span class="p-nickname">snazzah</span>
+    <img class="u-logo" src="https://snazzah.com/images/avatar.min.png"/>
+    <a class="u-email" href="mailto:me@snazzah.com">me@snazzah.com</a>
+    <div class="p-note">I like coding things and developing software.</div>
+  </section>
 </Layout>

@@ -1,50 +1,61 @@
-import { defineConfig } from 'astro/config';
-
-import icon from 'astro-icon';
-import preact from '@astrojs/preact';
-import tailwind from '@astrojs/tailwind';
-import compress from 'astro-compress';
-import { VitePWA } from 'vite-plugin-pwa';
+// @ts-check
+import { defineConfig, envField, fontProviders } from 'astro/config';
+import tailwindcss from '@tailwindcss/vite';
+import svelte from '@astrojs/svelte';
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [preact({ compat: true }), icon(), tailwind(), compress()],
-  vite: {
-    ssr: {
-      noExternal: ['react-use-lanyard', 'react-tippy', '@iconify/react']
+  site: "https://snazzah.com",
+
+  fonts: [
+    {
+      provider: fontProviders.local(),
+      name: "Satoshi",
+      cssVariable: "--font-satoshi",
+      options: {
+        variants: [
+          {
+            weight: "300 900",
+            style: "normal",
+            src: ["./src/assets/fonts/Satoshi-Variable.woff2", "./src/assets/fonts/Satoshi-Variable.woff", "./src/assets/fonts/Satoshi-Variable.ttf"]
+          }
+        ]
+      }
     },
-    plugins: [
-      VitePWA({
-        registerType: 'autoUpdate',
-        manifest: {
-          name: 'Snazzah',
-          short_name: 'Snazzah',
-          start_url: '/',
-          display: 'standalone',
-          orientation: 'portrait',
-          background_color: '#171717',
-          theme_color: '#fc2929',
-          icons: [
-            {
-              src: '/images/meta/android-chrome-192x192.png',
-              type: 'image/png',
-              sizes: '192x192'
-            },
-            {
-              src: '/images/meta/android-chrome-512x512.png',
-              type: 'image/png',
-              sizes: '512x512'
-            }
-          ]
-        },
-        workbox: {
-          globDirectory: 'dist',
-          globPatterns: ['**/*.{js,css,svg,png,jpg,jpeg,gif,webp,woff,woff2,ttf,eot,ico}'],
-          // Don't fallback on document based (e.g. `/some-page`) requests
-          // This removes an errant console.log message from showing up.
-          navigateFallback: null
-        }
-      })
-    ]
-  }
+    {
+      provider: fontProviders.local(),
+      name: "Supreme",
+      cssVariable: "--font-supreme",
+      options: {
+        variants: [
+          {
+            weight: "100 800",
+            style: "normal",
+            src: ["./src/assets/fonts/Supreme-Variable.woff2", "./src/assets/fonts/Supreme-Variable.woff", "./src/assets/fonts/Supreme-Variable.ttf"]
+          },
+          {
+            weight: "100 800",
+            style: "italic",
+            src: ["./src/assets/fonts/Supreme-VariableItalic.woff2", "./src/assets/fonts/Supreme-VariableItalic.woff", "./src/assets/fonts/Supreme-VariableItalic.ttf"]
+          }
+        ]
+      }
+    }
+  ],
+
+  env: {
+    schema: {
+      PLAUSIBLE_URL: envField.string({ context: "client", access: "public", optional: true })
+    }
+  },
+
+  vite: {
+    plugins: [tailwindcss()],
+    server: {
+      allowedHosts: ['.trycloudflare.com']
+    }
+  },
+
+  integrations: [svelte({ extensions: ['.svelte'] }), sitemap()]
 });
