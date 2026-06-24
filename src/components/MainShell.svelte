@@ -95,6 +95,18 @@
     {
       id: 'chips',
       credit: '@ChipsGoWOAH on Twitter'
+    },
+    {
+      id: 'shizu',
+      credit: '"Bitty"'
+    },
+    {
+      id: 'rz',
+      credit: '@rznant on Twitter'
+    },
+    {
+      id: 'chikin',
+      credit: '@imchikin.bsky.social'
     }
   ];
   let avatarIndex = $state(0);
