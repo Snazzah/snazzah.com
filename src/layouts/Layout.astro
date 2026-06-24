@@ -1,7 +1,6 @@
 ---
 import '../styles/global.css';
 import { Font } from 'astro:assets';
-import { PLAUSIBLE_URL } from "astro:env/client";
 interface Props {
   pageTitle?: string;
   schema?: Record<string, unknown> | Record<string, unknown>[];
@@ -12,21 +11,64 @@ const {
 } = Astro.props;
 
 const fullTitle = pageTitle ? `${pageTitle} - Snazzah` : 'Snazzah';
+const description = "I like coding things and developing software.";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8">
-		<link rel="icon" type="image/png" href="/favicon.png" />
+		<link rel="icon" type="image/png" href="/images/avatar.min.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="generator" content={Astro.generator} />
+
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 		<title>{fullTitle}</title>
     <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)}>
 
     <Font cssVariable="--font-satoshi" preload />
     <Font cssVariable="--font-supreme" preload />
 
-    {PLAUSIBLE_URL && Astro.site && <script defer data-domain={Astro.site.hostname} src={new URL('/js/script.js', PLAUSIBLE_URL).toString()} />}
+    <meta content="Snazzah" property="og:site_name" />
+    <meta content={fullTitle} property="og:title" />
+    <meta content="https://snazzah.com/images/avatar.min.png" property="og:image" />
+    <meta content="image/png" property="og:image:type" />
+    <meta content="150" property="og:image:width" />
+    <meta content="150" property="og:image:height" />
+    <meta content={description} property="og:description" />
+    <meta content="https://snazzah.com" property="og:url" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://snazzah.com" />
+    <meta name="twitter:title" content="Snazzah" />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://snazzah.com/images/avatar.min.png" />
+    <meta name="twitter:image:type" content="image/png" />
+    <meta name="twitter:image:width" content="150" />
+    <meta name="twitter:image:height" content="150" />
+    <meta name="twitter:creator" content="@Snazzah" />
+    <meta name="twitter:site" content="@Snazzah" />
+
+    <meta name="description" content={description} />
+    <meta name="title" content="Snazzah" />
+
+    <meta name="subject" content={description} />
+    <meta name="copyright" content="Snazzah" />
+    <meta name="owner" content="Snazzah" />
+    <meta name="revised" content="Wednesday, June 26th, 2022, 10:00 am" />
+    <meta name="rating" content="General" />
+
+    <link rel="author" href="humans.txt" />
+    <link rel="fluid-icon" type="image/png" href="https://snazzah.com/images/avatar.min.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/meta/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/meta/favicon-96x96.png" />
+    <link rel="mask-icon" href="/images/meta/safari-pinned-tab.svg" color="#fc2929" />
+    <meta name="msapplication-TileColor" content="#fc2929" />
+    <meta name="theme-color" content="#fc2929" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <script defer data-domain="snazzah.com" src="https://p.snaz.in/js/script.js"></script>
 
     {schema && (
       <script type="application/ld+json" set:html={JSON.stringify(schema)} />

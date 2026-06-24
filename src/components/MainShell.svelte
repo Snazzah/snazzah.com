@@ -18,6 +18,7 @@
   import { Tooltip } from "bits-ui";
   import { Marquee } from "@selemondev/svelte-marquee";
   import "@selemondev/svelte-marquee/dist/style.css";
+  import MusicPlayer from "./MusicPlayer.svelte";
 
 	const isMobile = new MediaQuery('max-width: 768px');
 
@@ -97,7 +98,6 @@
     }
   ];
   let avatarIndex = $state(0);
-
   let loaded = $state(false);
   onMount(() => {
     loaded = true;
@@ -109,12 +109,13 @@
 </script>
 
 <Tooltip.Provider>
-  <main class="w-full max-w-4xl mx-auto text-zinc-300">
-    <div class="bg-black overflow-hidden md:rounded-2xl shadow-xl shadow-black/50 md:m-6">
-        <!-- Hero -->
+  <main class="w-full max-w-4xl mx-auto text-zinc-300 md:p-6">
+    <MusicPlayer bind:shaderTimeScale={shaderTimeSpeed} />
+    <div class="bg-black overflow-hidden md:rounded-2xl shadow-xl shadow-black/50">
+      <!-- Hero -->
       <section class="bg-brand h-40 md:h-80 flex relative px-6 overflow-hidden bg-[url('/images/tile.png')]">
         <SilkWavesShader
-          timeScale={5}
+          timeScale={shaderTimeSpeed}
           class="mix-blend-difference opacity-75"
         />
         <div class="absolute inset-0 bg-black/10 pointer-events-none z-1"></div>
