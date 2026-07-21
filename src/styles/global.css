@@ -14,16 +14,6 @@ html, body {
 
 html {
   @apply bg-zinc-950 text-zinc-400 overflow-x-hidden;
-
-  /* https://css-pattern.com/diagonal-chevrons/ */
-  --s: 20px; /* control the size*/
-  --c1: var(--color-zinc-950);
-  --c2: var(--color-black);
-
-  background:
-    conic-gradient(var(--c1)   135deg,var(--c2) 0 270deg,
-                   var(--c1) 0 315deg,var(--c2) 0)
-    0/var(--s) var(--s);
 }
 
 body {
