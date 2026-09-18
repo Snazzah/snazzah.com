@@ -4,10 +4,12 @@ import { Font } from 'astro:assets';
 interface Props {
   pageTitle?: string;
   schema?: Record<string, unknown> | Record<string, unknown>[];
+  discordEmbed?: Record<string, unknown>;
 }
 const {
   pageTitle,
-  schema
+  schema,
+  discordEmbed
 } = Astro.props;
 
 const fullTitle = pageTitle ? `${pageTitle} - Snazzah` : 'Snazzah';
@@ -72,6 +74,10 @@ const description = "I like coding things and developing software.";
 
     {schema && (
       <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    )}
+
+    {discordEmbed && (
+      <script id="discord:component-embed" type="application/json"  set:html={JSON.stringify({ component: discordEmbed })} />
     )}
   </head>
   <body>

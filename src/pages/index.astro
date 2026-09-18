@@ -18,6 +18,60 @@ const schema = {
   sameAs: ['https://github.com/Snazzah', 'https://twitter.com/Snazzah']
 };
 
+const discordEmbed = {
+  "type": 17,
+  "components": [
+    {
+      "type": 9,
+      "components": [
+        {
+          "type": 10,
+          "content": "# [Snazzah](https://snazzah.com)\nI like coding things and developing software."
+        }
+      ],
+      "accessory": {
+        "type": 11,
+        "media": {
+          "url": "https://snazzah.com/images/avatar.min.png"
+        },
+        "spoiler": false
+      }
+    },
+    {
+      "type": 1,
+      "components": [
+        {
+          "type": 2,
+          "style": 5,
+          "label": "@snazzah",
+          "emoji": {
+            "id": "1546158069027708948",
+            "name": "discord"
+          },
+          "url": "https://discord.com/users/158049329150427136"
+        },
+        {
+          "type": 2,
+          "style": 5,
+          "label": "GitHub",
+          "emoji": {
+            "id": "1119818837542576208",
+            "name": "github"
+          },
+          "url": "https://github.com/Snazzah",
+        },
+        {
+          "type": 2,
+          "style": 5,
+          "label": "Discord Server",
+          "url": "https://discord.gg/77mywNN",
+        }
+      ]
+    }
+  ],
+  "accent_color": 16525609
+};
+
 const projects = [
   {
     name: 'Craig',
@@ -46,6 +100,10 @@ const projects = [
 
 const smallerProjects = [
   {
+    url: 'https://catcut.snaz.in',
+    label: 'catcut'
+  },
+  {
     url: 'https://hytale.photo',
     label: 'hytale.photo'
   },
@@ -56,7 +114,7 @@ const smallerProjects = [
 ];
 ---
 
-<Layout {schema}>
+<Layout {schema} {discordEmbed}>
   <MainShell client:load>
     <section class="flex flex-col text-zinc-200">
       <h2 class="font-display font-bold text-2xl md:text-4xl text-white p-2 underline decoration-brand overflow-hidden">
